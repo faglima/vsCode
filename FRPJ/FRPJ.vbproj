@@ -1,0 +1,1839 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91C7F45E-7BE3-4938-8747-F77798516F33}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FRPJ.My.MyApplication</StartupObject>
+    <RootNamespace>FRPJ</RootNamespace>
+    <AssemblyName>FRPJ</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FRPJ.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FRPJ.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug1|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug1\</OutputPath>
+    <DocumentationFile>FRPJ.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>RedIconFone.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'HM|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\HM\</OutputPath>
+    <DocumentationFile>FRPJ.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="CenteredComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cls_Crypto.vb" />
+    <Compile Include="cls_Populate.vb" />
+    <Compile Include="cls_SqlConnect.vb" />
+    <Compile Include="cls_Utilities.vb" />
+    <Compile Include="frm_Farol.Designer.vb">
+      <DependentUpon>frm_Farol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Farol.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Farol_Importar.designer.vb">
+      <DependentUpon>frm_Farol_Importar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Farol_Importar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Altera_Dados_PJ.designer.vb">
+      <DependentUpon>frm_Altera_Dados_PJ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Altera_Dados_PJ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Altera_Dados_PF.designer.vb">
+      <DependentUpon>frm_Altera_Dados_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Altera_Dados_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Clientes_Seg.Designer.vb">
+      <DependentUpon>frm_Clientes_Seg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Clientes_Seg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Clientes_Seg_Importar.designer.vb">
+      <DependentUpon>frm_Clientes_Seg_Importar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Clientes_Seg_Importar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Connect_Canc_Importar_NOK.designer.vb">
+      <DependentUpon>frm_Connect_Canc_Importar_NOK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Connect_Canc_Importar_NOK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Connect_Canc_Importar_OK.designer.vb">
+      <DependentUpon>frm_Connect_Canc_Importar_OK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Connect_Canc_Importar_OK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Connect_Canc_Enviados_RECTOR.Designer.vb">
+      <DependentUpon>frm_Connect_Canc_Enviados_RECTOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Connect_Canc_Enviados_RECTOR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_OK_VC.Designer.vb">
+      <DependentUpon>frm_Canc_OK_VC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_OK_VC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_OK_VC_Devolvidos.Designer.vb">
+      <DependentUpon>frm_Canc_OK_VC_Devolvidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_OK_VC_Devolvidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Connect_Canc_Enviar_RECTOR.Designer.vb">
+      <DependentUpon>frm_Connect_Canc_Enviar_RECTOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Connect_Canc_Enviar_RECTOR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Retencao_Metas_PJ.Designer.vb">
+      <DependentUpon>frm_Retencao_Metas_PJ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Retencao_Metas_PJ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Retencao_PF_SAC.designer.vb">
+      <DependentUpon>frm_Retencao_PF_SAC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Retencao_PF_SAC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_VendaNRec_Nivel1.designer.vb">
+      <DependentUpon>frm_Canc_VendaNRec_Nivel1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_VendaNRec_Nivel1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_NEfetuado_Nivel1.designer.vb">
+      <DependentUpon>frm_Canc_NEfetuado_Nivel1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_NEfetuado_Nivel1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_NEfetuado_Nivel1_Ok.designer.vb">
+      <DependentUpon>frm_Canc_NEfetuado_Nivel1_Ok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_NEfetuado_Nivel1_Ok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_NEfetuado_Nivel2.designer.vb">
+      <DependentUpon>frm_Canc_NEfetuado_Nivel2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_NEfetuado_Nivel2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_VendaNRec_Nivel1_Ok.designer.vb">
+      <DependentUpon>frm_Canc_VendaNRec_Nivel1_Ok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_VendaNRec_Nivel1_Ok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Retencao_PJ_SAC.Designer.vb">
+      <DependentUpon>frm_Retencao_PJ_SAC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Retencao_PJ_SAC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Retencao_Metas.Designer.vb">
+      <DependentUpon>frm_Retencao_Metas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Retencao_Metas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Agencias_Consulta.Designer.vb">
+      <DependentUpon>frm_Agencias_Consulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Agencias_Consulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Agencias_NPermitidos.Designer.vb">
+      <DependentUpon>frm_Agencias_NPermitidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Agencias_NPermitidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_Enviar_Robo_Cheque.Designer.vb">
+      <DependentUpon>frm_Canc_Enviar_Robo_Cheque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_Enviar_Robo_Cheque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_OK_Robo_VC_Rector_OK.Designer.vb">
+      <DependentUpon>frm_Canc_OK_Robo_VC_Rector_OK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_OK_Robo_VC_Rector_OK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Nivel32_Baixar.Designer.vb">
+      <DependentUpon>frm_Canc_NOK_Nivel32_Baixar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Nivel32_Baixar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Nivel32.Designer.vb">
+      <DependentUpon>frm_Canc_NOK_Nivel32.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Nivel32.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_OK_Nivel32.Designer.vb">
+      <DependentUpon>frm_Canc_OK_Nivel32.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_OK_Nivel32.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_Pend_Robo_Cheque.Designer.vb">
+      <DependentUpon>frm_Canc_Pend_Robo_Cheque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_Pend_Robo_Cheque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Dash.Designer.vb">
+      <DependentUpon>frm_Dash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Dash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_N_Em_N_Inibidos_Encontrados_VCAL.designer.vb">
+      <DependentUpon>frm_N_Em_N_Inibidos_Encontrados_VCAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_N_Em_N_Inibidos_Encontrados_VCAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_Analitico_PJ.designer.vb">
+      <DependentUpon>frm_rpt_Analitico_PJ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Analitico_PJ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_Analitico_PF.designer.vb">
+      <DependentUpon>frm_rpt_Analitico_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Analitico_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Offline_Importar.designer.vb">
+      <DependentUpon>frm_Offline_Importar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Offline_Importar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_NEfetuado_Nivel2_Ok.designer.vb">
+      <DependentUpon>frm_Canc_NEfetuado_Nivel2_Ok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_NEfetuado_Nivel2_Ok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_VendaNREc_Nivel2_Ok.designer.vb">
+      <DependentUpon>frm_Canc_VendaNREc_Nivel2_Ok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_VendaNREc_Nivel2_Ok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_N_Em_N_Inibidos_N_Encontrados.designer.vb">
+      <DependentUpon>frm_N_Em_N_Inibidos_N_Encontrados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_N_Em_N_Inibidos_N_Encontrados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_N_Em_N_Inibidos_Encontrados.designer.vb">
+      <DependentUpon>frm_N_Em_N_Inibidos_Encontrados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_N_Em_N_Inibidos_Encontrados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_N_Em_Inibidos.designer.vb">
+      <DependentUpon>frm_N_Em_Inibidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_N_Em_Inibidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_Cancelamento.designer.vb">
+      <DependentUpon>frm_rpt_Cancelamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Cancelamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_Sla_Cancelamento.Designer.vb">
+      <DependentUpon>frm_rpt_Sla_Cancelamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Sla_Cancelamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_Sla_Endosso.Designer.vb">
+      <DependentUpon>frm_rpt_Sla_Endosso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Sla_Endosso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_Sla_Emissao.Designer.vb">
+      <DependentUpon>frm_rpt_Sla_Emissao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Sla_Emissao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Agencias_Importar.designer.vb">
+      <DependentUpon>frm_Agencias_Importar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Agencias_Importar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Retencao_Off.Designer.vb">
+      <DependentUpon>frm_Retencao_Off.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Retencao_Off.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Bancos.Designer.vb">
+      <DependentUpon>frm_Bancos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Bancos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Off_DigitarSenha.Designer.vb">
+      <DependentUpon>frm_Off_DigitarSenha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Off_DigitarSenha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Alertas.Designer.vb">
+      <DependentUpon>frm_Alertas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Alertas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Alertas_Importar.designer.vb">
+      <DependentUpon>frm_Alertas_Importar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Alertas_Importar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_Vs_Compromisso.Designer.vb">
+      <DependentUpon>frm_Canc_Vs_Compromisso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_Vs_Compromisso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MainForm_Off.designer.vb">
+      <DependentUpon>frm_MainForm_Off.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MainForm_Off.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Retencao_PF_Off.designer.vb">
+      <DependentUpon>frm_Retencao_PF_Off.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Retencao_PF_Off.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_Protocolo_PF.designer.vb">
+      <DependentUpon>frm_rpt_Protocolo_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Protocolo_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_Canc_Rector_Diario.Designer.vb">
+      <DependentUpon>frm_rpt_Canc_Rector_Diario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Canc_Rector_Diario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DS_rptOperacional.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_rptOperacional.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Canc_Rector_Mensal.Designer.vb">
+      <DependentUpon>frm_rpt_Canc_Rector_Mensal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Canc_Rector_Mensal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_Operacao_Mensal.Designer.vb">
+      <DependentUpon>frm_rpt_Operacao_Mensal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Operacao_Mensal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Endosso_NOK_Baixar.Designer.vb">
+      <DependentUpon>frm_Endosso_NOK_Baixar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Endosso_NOK_Baixar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Ferrari_Enviado.Designer.vb">
+      <DependentUpon>frm_Ferrari_Enviado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Ferrari_Enviado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Ferrari_Enviar.Designer.vb">
+      <DependentUpon>frm_Ferrari_Enviar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Ferrari_Enviar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_RECTOR_PE_VC90_NOK.Designer.vb">
+      <DependentUpon>frm_Canc_NOK_RECTOR_PE_VC90_NOK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_RECTOR_PE_VC90_NOK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_RECTOR_PE.Designer.vb">
+      <DependentUpon>frm_Canc_NOK_RECTOR_PE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_RECTOR_PE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EndossoCC_OK_Nivel2.Designer.vb">
+      <DependentUpon>frm_EndossoCC_OK_Nivel2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EndossoCC_OK_Nivel2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EndossoCC_NOK_Nivel2_Baixar.Designer.vb">
+      <DependentUpon>frm_EndossoCC_NOK_Nivel2_Baixar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EndossoCC_NOK_Nivel2_Baixar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EndossoCC_NOK_Nivel2.Designer.vb">
+      <DependentUpon>frm_EndossoCC_NOK_Nivel2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EndossoCC_NOK_Nivel2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EndossoCC_NOK.Designer.vb">
+      <DependentUpon>frm_EndossoCC_NOK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EndossoCC_NOK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EndossoCC_OK.Designer.vb">
+      <DependentUpon>frm_EndossoCC_OK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EndossoCC_OK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EndossoCC_Robo_Pendente.Designer.vb">
+      <DependentUpon>frm_EndossoCC_Robo_Pendente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EndossoCC_Robo_Pendente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EndossoCC_Enviar_Robo.Designer.vb">
+      <DependentUpon>frm_EndossoCC_Enviar_Robo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EndossoCC_Enviar_Robo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Endosso_OK_Nivel2.Designer.vb">
+      <DependentUpon>frm_Endosso_OK_Nivel2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Endosso_OK_Nivel2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Endosso_NOK_Nivel2_Baixar.Designer.vb">
+      <DependentUpon>frm_Endosso_NOK_Nivel2_Baixar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Endosso_NOK_Nivel2_Baixar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Endosso_NOK_Nivel2.Designer.vb">
+      <DependentUpon>frm_Endosso_NOK_Nivel2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Endosso_NOK_Nivel2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Endosso_NOK.Designer.vb">
+      <DependentUpon>frm_Endosso_NOK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Endosso_NOK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Endosso_OK.Designer.vb">
+      <DependentUpon>frm_Endosso_OK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Endosso_OK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Endosso_Robo_Pendente.Designer.vb">
+      <DependentUpon>frm_Endosso_Robo_Pendente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Endosso_Robo_Pendente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Endosso_Enviar_Robo.Designer.vb">
+      <DependentUpon>frm_Endosso_Enviar_Robo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Endosso_Enviar_Robo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_OK_Nivel3.Designer.vb">
+      <DependentUpon>frm_Canc_OK_Nivel3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_OK_Nivel3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Nivel3_Baixar.Designer.vb">
+      <DependentUpon>frm_Canc_NOK_Nivel3_Baixar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Nivel3_Baixar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Nivel3.Designer.vb">
+      <DependentUpon>frm_Canc_NOK_Nivel3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Nivel3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_OK_Robo_VC.Designer.vb">
+      <DependentUpon>frm_Canc_OK_Robo_VC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_OK_Robo_VC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_Hist_Protocolo_PF.designer.vb">
+      <DependentUpon>frm_rpt_Hist_Protocolo_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Hist_Protocolo_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_Operacao_Cancelamento_Diario.Designer.vb">
+      <DependentUpon>frm_rpt_Operacao_Cancelamento_Diario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Operacao_Cancelamento_Diario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_Operacao_Cancelamento_Mensal.Designer.vb">
+      <DependentUpon>frm_rpt_Operacao_Cancelamento_Mensal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Operacao_Cancelamento_Mensal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_Operacao_Emissao_Diario.Designer.vb">
+      <DependentUpon>frm_rpt_Operacao_Emissao_Diario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Operacao_Emissao_Diario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_Operacao_Emissao_Mensal.Designer.vb">
+      <DependentUpon>frm_rpt_Operacao_Emissao_Mensal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Operacao_Emissao_Mensal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_Operacao_Endosso_Diario.Designer.vb">
+      <DependentUpon>frm_rpt_Operacao_Endosso_Diario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Operacao_Endosso_Diario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_Operacao_Endosso_Mensal.Designer.vb">
+      <DependentUpon>frm_rpt_Operacao_Endosso_Mensal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Operacao_Endosso_Mensal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_T_SQL.Designer.vb">
+      <DependentUpon>frm_T_SQL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_T_SQL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_VC90_Importar.designer.vb">
+      <DependentUpon>frm_VC90_Importar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_VC90_Importar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Venda_OK_Nivel1.Designer.vb">
+      <DependentUpon>frm_Venda_OK_Nivel1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Venda_OK_Nivel1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Venda_OK.Designer.vb">
+      <DependentUpon>frm_Venda_OK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Venda_OK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Venda_Robo_Pendente.Designer.vb">
+      <DependentUpon>frm_Venda_Robo_Pendente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Venda_Robo_Pendente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Venda_Enviar_Robo.Designer.vb">
+      <DependentUpon>frm_Venda_Enviar_Robo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Venda_Enviar_Robo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_Enviar_Robo_VC.Designer.vb">
+      <DependentUpon>frm_Canc_Enviar_Robo_VC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_Enviar_Robo_VC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Endereco.Designer.vb">
+      <DependentUpon>frm_Endereco.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Endereco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Endosso_NOK_VC_PF.Designer.vb">
+      <DependentUpon>frm_Endosso_NOK_VC_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Endosso_NOK_VC_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Venda_NOK_Nivel1_Baixar.Designer.vb">
+      <DependentUpon>frm_Venda_NOK_Nivel1_Baixar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Venda_NOK_Nivel1_Baixar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Venda_NOK_Nivel1.Designer.vb">
+      <DependentUpon>frm_Venda_NOK_Nivel1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Venda_NOK_Nivel1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Venda_NOK.Designer.vb">
+      <DependentUpon>frm_Venda_NOK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Venda_NOK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_VendaNREc_Nivel2.designer.vb">
+      <DependentUpon>frm_Canc_VendaNREc_Nivel2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_VendaNREc_Nivel2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CartaoCredito.Designer.vb">
+      <DependentUpon>frm_CartaoCredito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CartaoCredito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Motivo2.Designer.vb">
+      <DependentUpon>frm_Motivo2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Motivo2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Motivo2_PF.Designer.vb">
+      <DependentUpon>frm_Motivo2_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Motivo2_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Alcada_VC_PF.Designer.vb">
+      <DependentUpon>frm_Canc_NOK_Alcada_VC_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Alcada_VC_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Alcada_Rector_PF.Designer.vb">
+      <DependentUpon>frm_Canc_NOK_Alcada_Rector_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Alcada_Rector_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Alcada_PF.Designer.vb">
+      <DependentUpon>frm_Alcada_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Alcada_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Desfecho_PF.Designer.vb">
+      <DependentUpon>frm_Desfecho_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Desfecho_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Desfecho_Grupo_PF.Designer.vb">
+      <DependentUpon>frm_Desfecho_Grupo_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Desfecho_Grupo_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Motivo_PF.Designer.vb">
+      <DependentUpon>frm_Motivo_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Motivo_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_Tipos_PF.Designer.vb">
+      <DependentUpon>frm_Canc_Tipos_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_Tipos_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_Data_PF.Designer.vb">
+      <DependentUpon>frm_Canc_Data_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_Data_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_Codigos_PF.Designer.vb">
+      <DependentUpon>frm_Canc_Codigos_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_Codigos_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_Local_PF.Designer.vb">
+      <DependentUpon>frm_Canc_Local_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_Local_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Planos.designer.vb">
+      <DependentUpon>frm_Planos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Planos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Produtos_Categ.designer.vb">
+      <DependentUpon>frm_Produtos_Categ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Produtos_Categ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Produto_PF.designer.vb">
+      <DependentUpon>frm_Produto_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Produto_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Produto_Segmento_PF.Designer.vb">
+      <DependentUpon>frm_Produto_Segmento_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Produto_Segmento_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Produto_Categoria_PF.Designer.vb">
+      <DependentUpon>frm_Produto_Categoria_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Produto_Categoria_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Retencao_PF.designer.vb">
+      <DependentUpon>frm_Retencao_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Retencao_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_Geral_PF.designer.vb">
+      <DependentUpon>frm_rpt_Geral_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Geral_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Tipo_Retencao_PF.Designer.vb">
+      <DependentUpon>frm_Tipo_Retencao_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Tipo_Retencao_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Produto_Grupo_PF.Designer.vb">
+      <DependentUpon>frm_Produto_Grupo_PF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Produto_Grupo_PF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_OK_Enviado_CM.Designer.vb">
+      <DependentUpon>frm_Canc_OK_Enviado_CM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_OK_Enviado_CM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_OK_Enviar_CM.Designer.vb">
+      <DependentUpon>frm_Canc_OK_Enviar_CM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_OK_Enviar_CM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Alcada_VC.Designer.vb">
+      <DependentUpon>frm_Canc_NOK_Alcada_VC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Alcada_VC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Alcada_Rector.Designer.vb">
+      <DependentUpon>frm_Canc_NOK_Alcada_Rector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Alcada_Rector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Nivel2.Designer.vb">
+      <DependentUpon>frm_Canc_NOK_Nivel2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Nivel2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Nivel2_Baixar.Designer.vb">
+      <DependentUpon>frm_Canc_NOK_Nivel2_Baixar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Nivel2_Baixar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_VC.Designer.vb">
+      <DependentUpon>frm_Canc_NOK_VC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_VC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Alcada.Designer.vb">
+      <DependentUpon>frm_Alcada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Alcada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Rector.Designer.vb">
+      <DependentUpon>frm_Canc_NOK_Rector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_NOK_Rector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_OK_Nivel2.Designer.vb">
+      <DependentUpon>frm_Canc_OK_Nivel2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_OK_Nivel2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_OK_Robo_RECTOR.Designer.vb">
+      <DependentUpon>frm_Canc_OK_Robo_RECTOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_OK_Robo_RECTOR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_Pend_Robo_Vc.Designer.vb">
+      <DependentUpon>frm_Canc_Pend_Robo_Vc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_Pend_Robo_Vc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_Pend_Robo_Rector.Designer.vb">
+      <DependentUpon>frm_Canc_Pend_Robo_Rector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_Pend_Robo_Rector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_Enviar_Robo_RECTOR.Designer.vb">
+      <DependentUpon>frm_Canc_Enviar_Robo_RECTOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_Enviar_Robo_RECTOR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_Protocolo.designer.vb">
+      <DependentUpon>frm_rpt_Protocolo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Protocolo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Desfecho.Designer.vb">
+      <DependentUpon>frm_Desfecho.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Desfecho.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Desfecho_Grupo.Designer.vb">
+      <DependentUpon>frm_Desfecho_Grupo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Desfecho_Grupo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Motivo.Designer.vb">
+      <DependentUpon>frm_Motivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Motivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_Tipos.Designer.vb">
+      <DependentUpon>frm_Canc_Tipos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_Tipos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_Data.Designer.vb">
+      <DependentUpon>frm_Canc_Data.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_Data.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_Codigos.Designer.vb">
+      <DependentUpon>frm_Canc_Codigos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_Codigos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Canc_Local.Designer.vb">
+      <DependentUpon>frm_Canc_Local.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Canc_Local.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Cargos.Designer.vb">
+      <DependentUpon>frm_Cargos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Cargos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Produto_Tickets.designer.vb">
+      <DependentUpon>frm_Produto_Tickets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Produto_Tickets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Produto_Segmento.Designer.vb">
+      <DependentUpon>frm_Produto_Segmento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Produto_Segmento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Produto_Categoria.Designer.vb">
+      <DependentUpon>frm_Produto_Categoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Produto_Categoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Retencao_PJ.Designer.vb">
+      <DependentUpon>frm_Retencao_PJ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Retencao_PJ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_rpt_Geral.designer.vb">
+      <DependentUpon>frm_rpt_Geral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_Geral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Tipo_Retencao.Designer.vb">
+      <DependentUpon>frm_Tipo_Retencao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Tipo_Retencao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Produto.Designer.vb">
+      <DependentUpon>frm_Produto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Produto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Produto_Grupo.Designer.vb">
+      <DependentUpon>frm_Produto_Grupo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Produto_Grupo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EPS.Designer.vb">
+      <DependentUpon>frm_EPS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EPS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Param.Designer.vb">
+      <DependentUpon>frm_Param.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Param.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MainForm.designer.vb">
+      <DependentUpon>frm_MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Under_Construction.designer.vb">
+      <DependentUpon>frm_Under_Construction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Under_Construction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Usuarios.designer.vb">
+      <DependentUpon>frm_Usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Welcome.designer.vb">
+      <DependentUpon>frm_Welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Welcome_Off.designer.vb">
+      <DependentUpon>frm_Welcome_Off.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Welcome_Off.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRPJ.Context.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FRPJ.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FRPJ.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FRPJ.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="FRPJ.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="imgSelect.vb" />
+    <Compile Include="ImportText.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="tbl_AgCc_Valida.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Agencias.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Atendimento.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Atendimento_Expurgo.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Bancos.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Canc_Alcada.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Canc_Codigo.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Canc_Data.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Canc_Local.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Canc_Lote_ID.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Canc_Motivo.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Canc_Motivo2.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Canc_Tipo.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Cargo.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ChEps_Situacoes_Robo.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Dash_Template.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Desfecho.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Eps.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Plano.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Procedente.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Produto.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Produto_Categoria.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Produto_Classe.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Produto_Grupo.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Produto_Segmento.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_PzCurto_Percentual_Calc.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Retencao_Meta.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Retencao_Meta_PJ.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Tipo_Retencao.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Usuario.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Usuario_Perfil.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tsys_Parametro.vb">
+      <DependentUpon>FRPJ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ValidCampo.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm_Farol.resx">
+      <DependentUpon>frm_Farol.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Farol_Importar.resx">
+      <DependentUpon>frm_Farol_Importar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Altera_Dados_PJ.resx">
+      <DependentUpon>frm_Altera_Dados_PJ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Altera_Dados_PF.resx">
+      <DependentUpon>frm_Altera_Dados_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Clientes_Seg.resx">
+      <DependentUpon>frm_Clientes_Seg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Clientes_Seg_Importar.resx">
+      <DependentUpon>frm_Clientes_Seg_Importar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Connect_Canc_Importar_NOK.resx">
+      <DependentUpon>frm_Connect_Canc_Importar_NOK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Connect_Canc_Importar_OK.resx">
+      <DependentUpon>frm_Connect_Canc_Importar_OK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Connect_Canc_Enviados_RECTOR.resx">
+      <DependentUpon>frm_Connect_Canc_Enviados_RECTOR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_OK_VC.resx">
+      <DependentUpon>frm_Canc_OK_VC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_OK_VC_Devolvidos.resx">
+      <DependentUpon>frm_Canc_OK_VC_Devolvidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Connect_Canc_Enviar_RECTOR.resx">
+      <DependentUpon>frm_Connect_Canc_Enviar_RECTOR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Retencao_Metas_PJ.resx">
+      <DependentUpon>frm_Retencao_Metas_PJ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Retencao_PF_SAC.resx">
+      <DependentUpon>frm_Retencao_PF_SAC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_VendaNRec_Nivel1.resx">
+      <DependentUpon>frm_Canc_VendaNRec_Nivel1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_NEfetuado_Nivel1.resx">
+      <DependentUpon>frm_Canc_NEfetuado_Nivel1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_NEfetuado_Nivel1_Ok.resx">
+      <DependentUpon>frm_Canc_NEfetuado_Nivel1_Ok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_NEfetuado_Nivel2.resx">
+      <DependentUpon>frm_Canc_NEfetuado_Nivel2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_VendaNRec_Nivel1_Ok.resx">
+      <DependentUpon>frm_Canc_VendaNRec_Nivel1_Ok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Retencao_PJ_SAC.resx">
+      <DependentUpon>frm_Retencao_PJ_SAC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Retencao_Metas.resx">
+      <DependentUpon>frm_Retencao_Metas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Agencias_Consulta.resx">
+      <DependentUpon>frm_Agencias_Consulta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Agencias_NPermitidos.resx">
+      <DependentUpon>frm_Agencias_NPermitidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_Enviar_Robo_Cheque.resx">
+      <DependentUpon>frm_Canc_Enviar_Robo_Cheque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_OK_Robo_VC_Rector_OK.resx">
+      <DependentUpon>frm_Canc_OK_Robo_VC_Rector_OK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_NOK_Nivel32_Baixar.resx">
+      <DependentUpon>frm_Canc_NOK_Nivel32_Baixar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_NOK_Nivel32.resx">
+      <DependentUpon>frm_Canc_NOK_Nivel32.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_OK_Nivel32.resx">
+      <DependentUpon>frm_Canc_OK_Nivel32.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_Pend_Robo_Cheque.resx">
+      <DependentUpon>frm_Canc_Pend_Robo_Cheque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Dash.resx">
+      <DependentUpon>frm_Dash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_N_Em_N_Inibidos_Encontrados_VCAL.resx">
+      <DependentUpon>frm_N_Em_N_Inibidos_Encontrados_VCAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_Analitico_PJ.resx">
+      <DependentUpon>frm_rpt_Analitico_PJ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_Analitico_PF.resx">
+      <DependentUpon>frm_rpt_Analitico_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Offline_Importar.resx">
+      <DependentUpon>frm_Offline_Importar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_NEfetuado_Nivel2_Ok.resx">
+      <DependentUpon>frm_Canc_NEfetuado_Nivel2_Ok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_VendaNREc_Nivel2_Ok.resx">
+      <DependentUpon>frm_Canc_VendaNREc_Nivel2_Ok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_N_Em_N_Inibidos_N_Encontrados.resx">
+      <DependentUpon>frm_N_Em_N_Inibidos_N_Encontrados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_N_Em_N_Inibidos_Encontrados.resx">
+      <DependentUpon>frm_N_Em_N_Inibidos_Encontrados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_N_Em_Inibidos.resx">
+      <DependentUpon>frm_N_Em_Inibidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_Cancelamento.resx">
+      <DependentUpon>frm_rpt_Cancelamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_Sla_Cancelamento.resx">
+      <DependentUpon>frm_rpt_Sla_Cancelamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_Sla_Endosso.resx">
+      <DependentUpon>frm_rpt_Sla_Endosso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_Sla_Emissao.resx">
+      <DependentUpon>frm_rpt_Sla_Emissao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_T_SQL.resx">
+      <DependentUpon>frm_T_SQL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Sla_Endosso.rdlc" />
+    <EmbeddedResource Include="rpt_Sla_Cancelamento.rdlc" />
+    <EmbeddedResource Include="rpt_Sla_Emissao.rdlc" />
+    <EmbeddedResource Include="frm_Agencias_Importar.resx">
+      <DependentUpon>frm_Agencias_Importar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Retencao_Off.resx">
+      <DependentUpon>frm_Retencao_Off.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Bancos.resx">
+      <DependentUpon>frm_Bancos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Off_DigitarSenha.resx">
+      <DependentUpon>frm_Off_DigitarSenha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Alertas.resx">
+      <DependentUpon>frm_Alertas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Alertas_Importar.resx">
+      <DependentUpon>frm_Alertas_Importar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_Vs_Compromisso.resx">
+      <DependentUpon>frm_Canc_Vs_Compromisso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MainForm_Off.resx">
+      <DependentUpon>frm_MainForm_Off.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Retencao_PF_Off.resx">
+      <DependentUpon>frm_Retencao_PF_Off.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_Protocolo_PF.resx">
+      <DependentUpon>frm_rpt_Protocolo_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_Canc_Rector_Diario.resx">
+      <DependentUpon>frm_rpt_Canc_Rector_Diario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_Canc_Rector_Mensal.resx">
+      <DependentUpon>frm_rpt_Canc_Rector_Mensal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_Operacao_Mensal.resx">
+      <DependentUpon>frm_rpt_Operacao_Mensal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Endosso_NOK_Baixar.resx">
+      <DependentUpon>frm_Endosso_NOK_Baixar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Ferrari_Enviado.resx">
+      <DependentUpon>frm_Ferrari_Enviado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Ferrari_Enviar.resx">
+      <DependentUpon>frm_Ferrari_Enviar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_NOK_RECTOR_PE_VC90_NOK.resx">
+      <DependentUpon>frm_Canc_NOK_RECTOR_PE_VC90_NOK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_NOK_RECTOR_PE.resx">
+      <DependentUpon>frm_Canc_NOK_RECTOR_PE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_Hist_Protocolo_PF.resx">
+      <DependentUpon>frm_rpt_Hist_Protocolo_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_Operacao_Cancelamento_Diario.resx">
+      <DependentUpon>frm_rpt_Operacao_Cancelamento_Diario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_Operacao_Cancelamento_Mensal.resx">
+      <DependentUpon>frm_rpt_Operacao_Cancelamento_Mensal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_Operacao_Emissao_Diario.resx">
+      <DependentUpon>frm_rpt_Operacao_Emissao_Diario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_Operacao_Emissao_Mensal.resx">
+      <DependentUpon>frm_rpt_Operacao_Emissao_Mensal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_Operacao_Endosso_Diario.resx">
+      <DependentUpon>frm_rpt_Operacao_Endosso_Diario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_Operacao_Endosso_Mensal.resx">
+      <DependentUpon>frm_rpt_Operacao_Endosso_Mensal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_VC90_Importar.resx">
+      <DependentUpon>frm_VC90_Importar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Welcome_Off.resx">
+      <DependentUpon>frm_Welcome_Off.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Canc_Rector_Diario.rdlc" />
+    <EmbeddedResource Include="rpt_Canc_Rector_Mensal.rdlc" />
+    <EmbeddedResource Include="rpt_Operacao_Cancelamento_Corretora.rdlc" />
+    <EmbeddedResource Include="rpt_Operacao_Cancelamento_Corretora_Mensal.rdlc" />
+    <EmbeddedResource Include="rpt_Operacao_Emissao.rdlc" />
+    <EmbeddedResource Include="rpt_Operacao_Emissao_Mensal.rdlc" />
+    <EmbeddedResource Include="rpt_Operacao_Endosso.rdlc" />
+    <EmbeddedResource Include="rpt_Operacao_Endosso_Mensal.rdlc" />
+    <EmbeddedResource Include="frm_EndossoCC_OK_Nivel2.resx">
+      <DependentUpon>frm_EndossoCC_OK_Nivel2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_EndossoCC_NOK_Nivel2_Baixar.resx">
+      <DependentUpon>frm_EndossoCC_NOK_Nivel2_Baixar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_EndossoCC_NOK_Nivel2.resx">
+      <DependentUpon>frm_EndossoCC_NOK_Nivel2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_EndossoCC_NOK.resx">
+      <DependentUpon>frm_EndossoCC_NOK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_EndossoCC_OK.resx">
+      <DependentUpon>frm_EndossoCC_OK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_EndossoCC_Robo_Pendente.resx">
+      <DependentUpon>frm_EndossoCC_Robo_Pendente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_EndossoCC_Enviar_Robo.resx">
+      <DependentUpon>frm_EndossoCC_Enviar_Robo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Endosso_OK_Nivel2.resx">
+      <DependentUpon>frm_Endosso_OK_Nivel2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Endosso_NOK_Nivel2_Baixar.resx">
+      <DependentUpon>frm_Endosso_NOK_Nivel2_Baixar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Endosso_NOK_Nivel2.resx">
+      <DependentUpon>frm_Endosso_NOK_Nivel2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Endosso_NOK.resx">
+      <DependentUpon>frm_Endosso_NOK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Endosso_OK.resx">
+      <DependentUpon>frm_Endosso_OK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Endosso_Robo_Pendente.resx">
+      <DependentUpon>frm_Endosso_Robo_Pendente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Endosso_Enviar_Robo.resx">
+      <DependentUpon>frm_Endosso_Enviar_Robo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_OK_Nivel3.resx">
+      <DependentUpon>frm_Canc_OK_Nivel3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_NOK_Nivel3_Baixar.resx">
+      <DependentUpon>frm_Canc_NOK_Nivel3_Baixar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_NOK_Nivel3.resx">
+      <DependentUpon>frm_Canc_NOK_Nivel3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_OK_Robo_VC.resx">
+      <DependentUpon>frm_Canc_OK_Robo_VC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Venda_OK_Nivel1.resx">
+      <DependentUpon>frm_Venda_OK_Nivel1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Venda_OK.resx">
+      <DependentUpon>frm_Venda_OK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Venda_Robo_Pendente.resx">
+      <DependentUpon>frm_Venda_Robo_Pendente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Venda_Enviar_Robo.resx">
+      <DependentUpon>frm_Venda_Enviar_Robo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_Enviar_Robo_VC.resx">
+      <DependentUpon>frm_Canc_Enviar_Robo_VC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Endereco.resx">
+      <DependentUpon>frm_Endereco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Endosso_NOK_VC_PF.resx">
+      <DependentUpon>frm_Endosso_NOK_VC_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Venda_NOK_Nivel1_Baixar.resx">
+      <DependentUpon>frm_Venda_NOK_Nivel1_Baixar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Venda_NOK_Nivel1.resx">
+      <DependentUpon>frm_Venda_NOK_Nivel1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Venda_NOK.resx">
+      <DependentUpon>frm_Venda_NOK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_VendaNREc_Nivel2.resx">
+      <DependentUpon>frm_Canc_VendaNREc_Nivel2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CartaoCredito.resx">
+      <DependentUpon>frm_CartaoCredito.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Motivo2.resx">
+      <DependentUpon>frm_Motivo2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Motivo2_PF.resx">
+      <DependentUpon>frm_Motivo2_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_NOK_Alcada_VC_PF.resx">
+      <DependentUpon>frm_Canc_NOK_Alcada_VC_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_NOK_Alcada_Rector_PF.resx">
+      <DependentUpon>frm_Canc_NOK_Alcada_Rector_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Alcada_PF.resx">
+      <DependentUpon>frm_Alcada_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Desfecho_PF.resx">
+      <DependentUpon>frm_Desfecho_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Desfecho_Grupo_PF.resx">
+      <DependentUpon>frm_Desfecho_Grupo_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Motivo_PF.resx">
+      <DependentUpon>frm_Motivo_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_Tipos_PF.resx">
+      <DependentUpon>frm_Canc_Tipos_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_Data_PF.resx">
+      <DependentUpon>frm_Canc_Data_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_Codigos_PF.resx">
+      <DependentUpon>frm_Canc_Codigos_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_Local_PF.resx">
+      <DependentUpon>frm_Canc_Local_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Planos.resx">
+      <DependentUpon>frm_Planos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Produtos_Categ.resx">
+      <DependentUpon>frm_Produtos_Categ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Produto_PF.resx">
+      <DependentUpon>frm_Produto_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Produto_Segmento_PF.resx">
+      <DependentUpon>frm_Produto_Segmento_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Produto_Categoria_PF.resx">
+      <DependentUpon>frm_Produto_Categoria_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Retencao_PF.resx">
+      <DependentUpon>frm_Retencao_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_Geral_PF.resx">
+      <DependentUpon>frm_rpt_Geral_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Tipo_Retencao_PF.resx">
+      <DependentUpon>frm_Tipo_Retencao_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Produto_Grupo_PF.resx">
+      <DependentUpon>frm_Produto_Grupo_PF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_OK_Enviado_CM.resx">
+      <DependentUpon>frm_Canc_OK_Enviado_CM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_OK_Enviar_CM.resx">
+      <DependentUpon>frm_Canc_OK_Enviar_CM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_NOK_Alcada_VC.resx">
+      <DependentUpon>frm_Canc_NOK_Alcada_VC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_NOK_Alcada_Rector.resx">
+      <DependentUpon>frm_Canc_NOK_Alcada_Rector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_NOK_Nivel2.resx">
+      <DependentUpon>frm_Canc_NOK_Nivel2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_NOK_Nivel2_Baixar.resx">
+      <DependentUpon>frm_Canc_NOK_Nivel2_Baixar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_NOK_VC.resx">
+      <DependentUpon>frm_Canc_NOK_VC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Alcada.resx">
+      <DependentUpon>frm_Alcada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_NOK_Rector.resx">
+      <DependentUpon>frm_Canc_NOK_Rector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_OK_Nivel2.resx">
+      <DependentUpon>frm_Canc_OK_Nivel2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_OK_Robo_RECTOR.resx">
+      <DependentUpon>frm_Canc_OK_Robo_RECTOR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_Pend_Robo_Vc.resx">
+      <DependentUpon>frm_Canc_Pend_Robo_Vc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_Pend_Robo_Rector.resx">
+      <DependentUpon>frm_Canc_Pend_Robo_Rector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_Enviar_Robo_RECTOR.resx">
+      <DependentUpon>frm_Canc_Enviar_Robo_RECTOR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_Protocolo.resx">
+      <DependentUpon>frm_rpt_Protocolo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Desfecho.resx">
+      <DependentUpon>frm_Desfecho.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Desfecho_Grupo.resx">
+      <DependentUpon>frm_Desfecho_Grupo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Motivo.resx">
+      <DependentUpon>frm_Motivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_Tipos.resx">
+      <DependentUpon>frm_Canc_Tipos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_Data.resx">
+      <DependentUpon>frm_Canc_Data.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_Codigos.resx">
+      <DependentUpon>frm_Canc_Codigos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Canc_Local.resx">
+      <DependentUpon>frm_Canc_Local.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Cargos.resx">
+      <DependentUpon>frm_Cargos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Produto_Tickets.resx">
+      <DependentUpon>frm_Produto_Tickets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Produto_Segmento.resx">
+      <DependentUpon>frm_Produto_Segmento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Produto_Categoria.resx">
+      <DependentUpon>frm_Produto_Categoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Retencao_PJ.resx">
+      <DependentUpon>frm_Retencao_PJ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_Geral.resx">
+      <DependentUpon>frm_rpt_Geral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Tipo_Retencao.resx">
+      <DependentUpon>frm_Tipo_Retencao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Produto.resx">
+      <DependentUpon>frm_Produto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Produto_Grupo.resx">
+      <DependentUpon>frm_Produto_Grupo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_EPS.resx">
+      <DependentUpon>frm_EPS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Param.resx">
+      <DependentUpon>frm_Param.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MainForm.resx">
+      <DependentUpon>frm_MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Under_Construction.resx">
+      <DependentUpon>frm_Under_Construction.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Usuarios.resx">
+      <DependentUpon>frm_Usuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Welcome.resx">
+      <DependentUpon>frm_Welcome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Operacao_Diario.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <EmbeddedResource Include="Arquivos\Retencao.xlsx" />
+    <EmbeddedResource Include="Arquivos\Modelo.pptx" />
+    <EmbeddedResource Include="Arquivos\Modelo_pj.pptx" />
+    <None Include="DS_rptOperacional.xsc">
+      <DependentUpon>DS_rptOperacional.xsd</DependentUpon>
+    </None>
+    <None Include="DS_rptOperacional.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_rptOperacional.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_rptOperacional.xss">
+      <DependentUpon>DS_rptOperacional.xsd</DependentUpon>
+    </None>
+    <EntityDeploy Include="FRPJ.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FRPJ.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <None Include="FRPJ.edmx.diagram">
+      <DependentUpon>FRPJ.edmx</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\seguro_Retencao_PJ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ieframe_589.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ieframe_635.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Santander..png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Santander1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ieframe_18211.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mmcndmgr_30565.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pifmgr_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StatusFlagGreen.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wmploc_29530.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CIFRAO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FRPJ.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FRPJ.edmx</DependentUpon>
+      <LastGenOutput>FRPJ.Context.vb</LastGenOutput>
+    </Content>
+    <Content Include="FRPJ.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FRPJ.edmx</DependentUpon>
+      <LastGenOutput>FRPJ.vb</LastGenOutput>
+    </Content>
+    <None Include="img\GREEN.png" />
+    <None Include="img\RED.png" />
+    <None Include="img\YELLOW.png" />
+    <Content Include="RedIconFone.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

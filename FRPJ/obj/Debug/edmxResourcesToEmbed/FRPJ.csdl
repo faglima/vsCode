@@ -1,0 +1,856 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="efFRPJ" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="eDB_FRPJ" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_AgCc_Valida" EntityType="efFRPJ.tbl_AgCc_Valida" />
+    <EntitySet Name="tbl_Agencias" EntityType="efFRPJ.tbl_Agencias" />
+    <EntitySet Name="tbl_Atendimento" EntityType="efFRPJ.tbl_Atendimento" />
+    <EntitySet Name="tbl_Atendimento_Expurgo" EntityType="efFRPJ.tbl_Atendimento_Expurgo" />
+    <EntitySet Name="tbl_Bancos" EntityType="efFRPJ.tbl_Bancos" />
+    <EntitySet Name="tbl_Canc_Alcada" EntityType="efFRPJ.tbl_Canc_Alcada" />
+    <EntitySet Name="tbl_Canc_Codigo" EntityType="efFRPJ.tbl_Canc_Codigo" />
+    <EntitySet Name="tbl_Canc_Data" EntityType="efFRPJ.tbl_Canc_Data" />
+    <EntitySet Name="tbl_Canc_Local" EntityType="efFRPJ.tbl_Canc_Local" />
+    <EntitySet Name="tbl_Canc_Lote_ID" EntityType="efFRPJ.tbl_Canc_Lote_ID" />
+    <EntitySet Name="tbl_Canc_Motivo" EntityType="efFRPJ.tbl_Canc_Motivo" />
+    <EntitySet Name="tbl_Canc_Motivo2" EntityType="efFRPJ.tbl_Canc_Motivo2" />
+    <EntitySet Name="tbl_Canc_Tipo" EntityType="efFRPJ.tbl_Canc_Tipo" />
+    <EntitySet Name="tbl_Cargo" EntityType="efFRPJ.tbl_Cargo" />
+    <EntitySet Name="tbl_ChEps_Situacoes_Robo" EntityType="efFRPJ.tbl_ChEps_Situacoes_Robo" />
+    <EntitySet Name="tbl_Dash_Template" EntityType="efFRPJ.tbl_Dash_Template" />
+    <EntitySet Name="tbl_Desfecho" EntityType="efFRPJ.tbl_Desfecho" />
+    <EntitySet Name="tbl_Eps" EntityType="efFRPJ.tbl_Eps" />
+    <EntitySet Name="tbl_Plano" EntityType="efFRPJ.tbl_Plano" />
+    <EntitySet Name="tbl_Procedente" EntityType="efFRPJ.tbl_Procedente" />
+    <EntitySet Name="tbl_Produto" EntityType="efFRPJ.tbl_Produto" />
+    <EntitySet Name="tbl_Produto_Categoria" EntityType="efFRPJ.tbl_Produto_Categoria" />
+    <EntitySet Name="tbl_Produto_Classe" EntityType="efFRPJ.tbl_Produto_Classe" />
+    <EntitySet Name="tbl_Produto_Grupo" EntityType="efFRPJ.tbl_Produto_Grupo" />
+    <EntitySet Name="tbl_Produto_Segmento" EntityType="efFRPJ.tbl_Produto_Segmento" />
+    <EntitySet Name="tbl_PzCurto_Percentual_Calc" EntityType="efFRPJ.tbl_PzCurto_Percentual_Calc" />
+    <EntitySet Name="tbl_Retencao_Meta" EntityType="efFRPJ.tbl_Retencao_Meta" />
+    <EntitySet Name="tbl_Retencao_Meta_PJ" EntityType="efFRPJ.tbl_Retencao_Meta_PJ" />
+    <EntitySet Name="tbl_Tipo_Retencao" EntityType="efFRPJ.tbl_Tipo_Retencao" />
+    <EntitySet Name="tbl_Usuario" EntityType="efFRPJ.tbl_Usuario" />
+    <EntitySet Name="tbl_Usuario_Perfil" EntityType="efFRPJ.tbl_Usuario_Perfil" />
+    <EntitySet Name="tsys_Parametro" EntityType="efFRPJ.tsys_Parametro" />
+  </EntityContainer>
+  <EntityType Name="tbl_AgCc_Valida">
+    <Key>
+      <PropertyRef Name="CodId_Ag_PK" />
+    </Key>
+    <Property Name="CodId_Ag_PK" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Banco" Type="Int32" />
+    <Property Name="Agencia" Type="Int32" />
+    <Property Name="Conta" Type="Int32" />
+    <Property Name="Ativo" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tbl_Agencias">
+    <Key>
+      <PropertyRef Name="Cod_Agencia" />
+    </Key>
+    <Property Name="Cod_Agencia" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Atendimento">
+    <Key>
+      <PropertyRef Name="CodId_Atend_Pk" />
+    </Key>
+    <Property Name="CodId_Atend_Pk" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Origem" Type="Int32" />
+    <Property Name="LigacaoData" Type="DateTime" Precision="3" />
+    <Property Name="LigacaoMesref" Type="Int32" />
+    <Property Name="Cnpj" Type="Int64" />
+    <Property Name="RazaoSocial" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Cpf" Type="Int64" />
+    <Property Name="Nome" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="DDD" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Fone" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Ramal" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="NCorrentista" Type="Boolean" Nullable="false" />
+    <Property Name="Banco" Type="Int32" />
+    <Property Name="Agencia" Type="Int32" />
+    <Property Name="ContaCorrente" Type="Int32" />
+    <Property Name="DG" Type="Int32" />
+    <Property Name="CodId_Segmento_Fk" Type="Int32" />
+    <Property Name="DataNasc" Type="DateTime" Precision="3" />
+    <Property Name="Idade" Type="Int32" />
+    <Property Name="CodProduto_Rector" Type="Int32" />
+    <Property Name="CodProduto_VC" Type="Int32" />
+    <Property Name="CodId_Prod_Grupo_Fk" Type="Int32" />
+    <Property Name="DataIniVig" Type="DateTime" Precision="3" />
+    <Property Name="DataFimVig" Type="DateTime" Precision="3" />
+    <Property Name="Proposta" Type="Int64" />
+    <Property Name="Apolice" Type="Int64" />
+    <Property Name="Certificado" Type="Int64" />
+    <Property Name="CodId_Categoria_Fk" Type="Int32" />
+    <Property Name="Premio" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ImpSegurada" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Argumentacao" Type="Boolean" Nullable="false" />
+    <Property Name="Cancelamento" Type="Boolean" Nullable="false" />
+    <Property Name="Retido" Type="Boolean" Nullable="false" />
+    <Property Name="CodId_Motivo" Type="Int32" />
+    <Property Name="Canc_Local" Type="Int32" />
+    <Property Name="Canc_Data" Type="Int32" />
+    <Property Name="Canc_Codigo" Type="Int32" />
+    <Property Name="Canc_OK" Type="Boolean" Nullable="false" />
+    <Property Name="Canc_Valor_Devolucao" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Canc_Ok_Data" Type="DateTime" Precision="3" />
+    <Property Name="Canc_Nok" Type="Boolean" Nullable="false" />
+    <Property Name="Canc_Nok_Data" Type="DateTime" Precision="3" />
+    <Property Name="Canc_Nok_Motivo" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel2_Enviar" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel2_Enviado" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel2_Enviado_Data" Type="DateTime" Precision="3" />
+    <Property Name="Nivel2_Cancelado" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel2_Cancelado_Data" Type="DateTime" Precision="3" />
+    <Property Name="Login_Operador" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Canc_Enviar_Robo" Type="Boolean" Nullable="false" />
+    <Property Name="Canc_Enviar_Robo_Data" Type="DateTime" Precision="3" />
+    <Property Name="Canc_Enviar_Robo_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Canc_Processamento_Data" Type="DateTime" Precision="3" />
+    <Property Name="Canc_Valor_Alcada" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Canc_Dias_Alcada" Type="Int32" />
+    <Property Name="Canc_Nok_Alcada" Type="Boolean" Nullable="false" />
+    <Property Name="Alcada" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel2_Enviado_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel2_Cancelado_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CM_Enviado" Type="Boolean" Nullable="false" />
+    <Property Name="CM_Enviado_Data" Type="DateTime" Precision="3" />
+    <Property Name="CM_Enviado_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CM_Calc_VC" Type="Boolean" Nullable="false" />
+    <Property Name="CM_Enviar" Type="Boolean" Nullable="false" />
+    <Property Name="ATM" Type="Boolean" Nullable="false" />
+    <Property Name="SMS" Type="Boolean" Nullable="false" />
+    <Property Name="N_Emitido" Type="Boolean" Nullable="false" />
+    <Property Name="Qtde_Parcelas" Type="Int32" />
+    <Property Name="ClienteAgencia" Type="Boolean" Nullable="false" />
+    <Property Name="MatriculaGerente" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CodId_Motivo2" Type="Int32" />
+    <Property Name="Atrito_VendaNRec" Type="Boolean" Nullable="false" />
+    <Property Name="Atrito_VendaNRec_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Atrito_VendaNRec_Data" Type="DateTime" Precision="3" />
+    <Property Name="Atrito_CancNEfetuado" Type="Boolean" Nullable="false" />
+    <Property Name="Atrito_CancNEfetuado_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Atrito_CancNEfetuado_Data" Type="DateTime" Precision="3" />
+    <Property Name="CodId_Cargo_Fk" Type="Int32" />
+    <Property Name="Atrito_CodId_Procedente" Type="Int32" />
+    <Property Name="Oferta" Type="Boolean" Nullable="false" />
+    <Property Name="Oferta_Proc_OK" Type="Boolean" Nullable="false" />
+    <Property Name="Oferta_Proc_NOK" Type="Boolean" Nullable="false" />
+    <Property Name="Oferta_Proc_NOK_Motivo" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Oferta_Proc_Data" Type="DateTime" Precision="3" />
+    <Property Name="Oferta_Produto_VC" Type="Int32" />
+    <Property Name="Oferta_Produto_Grupo" Type="Int32" />
+    <Property Name="Oferta_Cod_Ferrari" Type="Int32" />
+    <Property Name="Oferta_ImpSeg" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Oferta_Premio" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Endosso" Type="Boolean" Nullable="false" />
+    <Property Name="Endosso_Proc_OK" Type="Boolean" Nullable="false" />
+    <Property Name="Endosso_Proc_NOK" Type="Boolean" Nullable="false" />
+    <Property Name="Endosso_Proc_NOK_Motivo" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Endosso_Proc_NOK_Obs" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Endosso_Proc_Data" Type="DateTime" Precision="3" />
+    <Property Name="Endosso_ImpSeg" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Endosso_Premio" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Endosso_Enviar_Robo" Type="Boolean" Nullable="false" />
+    <Property Name="Endosso_Enviar_Robo_Data" Type="DateTime" Precision="3" />
+    <Property Name="Endosso_Enviar_Robo_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Endosso_Proposta" Type="Int64" />
+    <Property Name="Endosso_Liberado" Type="Boolean" Nullable="false" />
+    <Property Name="Venda" Type="Boolean" Nullable="false" />
+    <Property Name="Venda_Proc_OK" Type="Boolean" Nullable="false" />
+    <Property Name="Venda_Proc_NOK" Type="Boolean" Nullable="false" />
+    <Property Name="Venda_Proc_NOK_Motivo" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Venda_Proc_NOK_Obs" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Venda_Proc_Data" Type="DateTime" Precision="3" />
+    <Property Name="Venda_Produto_VC" Type="Int32" />
+    <Property Name="Venda_ImpSeg" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Venda_Premio" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Venda_Enviar_Robo" Type="Boolean" Nullable="false" />
+    <Property Name="Venda_Enviar_Robo_Data" Type="DateTime" Precision="3" />
+    <Property Name="Venda_Enviar_Robo_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Venda_Proposta" Type="Int64" />
+    <Property Name="CCred_TFC" Type="Boolean" Nullable="false" />
+    <Property Name="CCred_TFC_Bandeira" Type="Int32" />
+    <Property Name="CCred_TFC_Numero" Type="Int32" />
+    <Property Name="CCred_TFC_Proc_OK" Type="Boolean" Nullable="false" />
+    <Property Name="CCred_TFC_Proc_NOK" Type="Boolean" Nullable="false" />
+    <Property Name="CCred_TFC_Proc_NOK_Motivo" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="CCred_TFC_Proc_Data" Type="DateTime" Precision="3" />
+    <Property Name="CCred_TFC_Enviar_Robo" Type="Boolean" Nullable="false" />
+    <Property Name="CCred_TFC_Enviar_Robo_Data" Type="DateTime" Precision="3" />
+    <Property Name="CCred_TFC_Enviar_Robo_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CCred_TFC_Proposta" Type="Int64" />
+    <Property Name="CCred_TFC_Liberado" Type="Boolean" Nullable="false" />
+    <Property Name="Logradouro" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Numero" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Complemento" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Bairro" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Cidade" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="UF" Type="String" MaxLength="2" Unicode="true" FixedLength="false" />
+    <Property Name="CEP" Type="String" MaxLength="8" Unicode="true" FixedLength="false" />
+    <Property Name="Tipo_Imovel" Type="Int32" />
+    <Property Name="Obs" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Canc_Lote" Type="Int32" />
+    <Property Name="Canc_Lote_Dta" Type="DateTime" Precision="3" />
+    <Property Name="Canc_Lote_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Canc_Lote_Proc_Ok" Type="Boolean" Nullable="false" />
+    <Property Name="Canc_Lote_Processando" Type="Boolean" Nullable="false" />
+    <Property Name="DataDebito" Type="DateTime" Precision="3" />
+    <Property Name="Nivel1_Enviar" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel1_Enviado" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel1_Enviado_Data" Type="DateTime" Precision="3" />
+    <Property Name="Nivel1_Emitido" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel2_Emitido_Data" Type="DateTime" Precision="3" />
+    <Property Name="Nivel1_Ok" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel1_Enviado_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel1_Cancelado_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel1_Obs" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel1_Ok_Data" Type="DateTime" Precision="3" />
+    <Property Name="Nivel1_Ok_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel3_Enviado" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel3_Enviado_Data" Type="DateTime" Precision="3" />
+    <Property Name="Nivel3_Enviado_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel3_Ok" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel3_Ok_Data" Type="DateTime" Precision="3" />
+    <Property Name="Nivel3_Ok_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel2_Ok" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel2_Ok_Data" Type="DateTime" Precision="3" />
+    <Property Name="Nivel2_Ok_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel2_Emitido" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel2_Obs" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="CCred_TFC_Proc_NOK_Obs" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Oferta_CodId_Plano" Type="Int32" />
+    <Property Name="Venda_CodId_Plano" Type="Int32" />
+    <Property Name="Venda_Liberado" Type="Boolean" Nullable="false" />
+    <Property Name="Inibido" Type="Boolean" Nullable="false" />
+    <Property Name="Inibido_Data" Type="DateTime" Precision="3" />
+    <Property Name="N_Inibido" Type="Boolean" Nullable="false" />
+    <Property Name="N_Inibido_Data" Type="DateTime" Precision="3" />
+    <Property Name="PE" Type="Boolean" Nullable="false" />
+    <Property Name="PE_Marcar" Type="Boolean" Nullable="false" />
+    <Property Name="PE_ExportadoVC90" Type="Boolean" Nullable="false" />
+    <Property Name="PE_Exportado_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PE_Exportado_Data" Type="DateTime" Precision="3" />
+    <Property Name="PE_VC90_OK" Type="Boolean" Nullable="false" />
+    <Property Name="PE_VC90_OK_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PE_VC90_OK_Data" Type="DateTime" Precision="3" />
+    <Property Name="PE_Status_Rector" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Oferta_Marcar" Type="Boolean" Nullable="false" />
+    <Property Name="Oferta_Ferrari_Exp" Type="Boolean" Nullable="false" />
+    <Property Name="Oferta_Ferrari_Exp_Data" Type="DateTime" Precision="3" />
+    <Property Name="Oferta_Ferrari_Exp_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PE_VC" Type="Boolean" Nullable="false" />
+    <Property Name="DDD2" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Celular" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Canc_Nok_Obs" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Enviar" Type="Boolean" Nullable="false" />
+    <Property Name="Canc_OK_Manual_Obs" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Canc_OK_Manual_Login" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="N_Inibido_Encontrado" Type="Boolean" Nullable="false" />
+    <Property Name="N_Inibido_N_Encontrado" Type="Boolean" Nullable="false" />
+    <Property Name="N_Inibido_Encontrado_VCAL_Enviar" Type="Boolean" Nullable="false" />
+    <Property Name="N_Inibido_Encontrado_VCAL" Type="Boolean" Nullable="false" />
+    <Property Name="N_Inibido_Encontrado_VCAL_Data" Type="DateTime" Precision="3" />
+    <Property Name="N_Inibido_Encontrado_VCAL_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NCorrentista_OP" Type="Boolean" Nullable="false" />
+    <Property Name="NCorrentista_DOC" Type="Boolean" Nullable="false" />
+    <Property Name="Protocolo_Off" Type="Int64" />
+    <Property Name="ChEsp" Type="Boolean" />
+    <Property Name="ChEsp_Ok" Type="Boolean" />
+    <Property Name="ChEsp_Nok" Type="Boolean" />
+    <Property Name="ChEsp_Enviar_Robo" Type="Boolean" />
+    <Property Name="ChEsp_Enviar_Robo_Data" Type="DateTime" Precision="3" />
+    <Property Name="ChEsp_Enviar_Robo_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ChEsp_Proc_Robo_Data" Type="DateTime" Precision="3" />
+    <Property Name="ChEsp_Proc_Robo_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Num_Protocolo_SAC" Type="Int64" />
+    <Property Name="Email" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel3_Obs" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel3_Enviado_Nivel2" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel3_Enviado_Nivel2_Data" Type="DateTime" Precision="3" />
+    <Property Name="Nivel3_Enviado_Nivel2_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel2_SolFinal" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel2_SolFinal_Obs" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel2_SolFinal_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel2_SolFinal_Data" Type="DateTime" Precision="3" />
+    <Property Name="Canc_Status_Rector" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Canc_Status_Rector_Data" Type="DateTime" Precision="3" />
+    <Property Name="Canc_Status_Rector_Ok" Type="Boolean" Nullable="false" />
+    <Property Name="Canc_VC_OK" Type="Boolean" />
+    <Property Name="Canc_VC_OK_Devolucao" Type="Boolean" />
+    <Property Name="Connect_Exp" Type="Boolean" Nullable="false" />
+    <Property Name="Connect_aExp" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Atendimento_Expurgo">
+    <Key>
+      <PropertyRef Name="CodId_Atend_Pk" />
+      <PropertyRef Name="NCorrentista" />
+      <PropertyRef Name="Argumentacao" />
+      <PropertyRef Name="Cancelamento" />
+      <PropertyRef Name="Retido" />
+      <PropertyRef Name="Canc_OK" />
+      <PropertyRef Name="Canc_Nok" />
+      <PropertyRef Name="Nivel2_Enviar" />
+      <PropertyRef Name="Nivel2_Enviado" />
+      <PropertyRef Name="Nivel2_Cancelado" />
+      <PropertyRef Name="Canc_Enviar_Robo" />
+      <PropertyRef Name="Canc_Nok_Alcada" />
+      <PropertyRef Name="Alcada" />
+      <PropertyRef Name="CM_Enviado" />
+      <PropertyRef Name="CM_Calc_VC" />
+      <PropertyRef Name="CM_Enviar" />
+      <PropertyRef Name="ATM" />
+      <PropertyRef Name="SMS" />
+      <PropertyRef Name="N_Emitido" />
+      <PropertyRef Name="ClienteAgencia" />
+      <PropertyRef Name="Atrito_VendaNRec" />
+      <PropertyRef Name="Atrito_CancNEfetuado" />
+      <PropertyRef Name="Oferta" />
+      <PropertyRef Name="Oferta_Proc_OK" />
+      <PropertyRef Name="Oferta_Proc_NOK" />
+      <PropertyRef Name="Endosso" />
+      <PropertyRef Name="Endosso_Proc_OK" />
+      <PropertyRef Name="Endosso_Proc_NOK" />
+      <PropertyRef Name="Endosso_Enviar_Robo" />
+      <PropertyRef Name="Endosso_Liberado" />
+      <PropertyRef Name="Venda" />
+      <PropertyRef Name="Venda_Proc_OK" />
+      <PropertyRef Name="Venda_Proc_NOK" />
+      <PropertyRef Name="Venda_Enviar_Robo" />
+      <PropertyRef Name="CCred_TFC" />
+      <PropertyRef Name="CCred_TFC_Proc_OK" />
+      <PropertyRef Name="CCred_TFC_Proc_NOK" />
+      <PropertyRef Name="CCred_TFC_Enviar_Robo" />
+      <PropertyRef Name="CCred_TFC_Liberado" />
+      <PropertyRef Name="Canc_Lote_Proc_Ok" />
+      <PropertyRef Name="Canc_Lote_Processando" />
+      <PropertyRef Name="Nivel1_Enviar" />
+      <PropertyRef Name="Nivel1_Enviado" />
+      <PropertyRef Name="Nivel1_Emitido" />
+      <PropertyRef Name="Nivel1_Ok" />
+      <PropertyRef Name="Nivel3_Enviado" />
+      <PropertyRef Name="Nivel3_Ok" />
+      <PropertyRef Name="Nivel2_Ok" />
+      <PropertyRef Name="Nivel2_Emitido" />
+      <PropertyRef Name="Venda_Liberado" />
+      <PropertyRef Name="Inibido" />
+      <PropertyRef Name="N_Inibido" />
+      <PropertyRef Name="PE" />
+      <PropertyRef Name="PE_Marcar" />
+      <PropertyRef Name="PE_ExportadoVC90" />
+      <PropertyRef Name="PE_VC90_OK" />
+      <PropertyRef Name="Oferta_Marcar" />
+      <PropertyRef Name="Oferta_Ferrari_Exp" />
+      <PropertyRef Name="PE_VC" />
+      <PropertyRef Name="Enviar" />
+      <PropertyRef Name="N_Inibido_Encontrado" />
+      <PropertyRef Name="N_Inibido_N_Encontrado" />
+      <PropertyRef Name="N_Inibido_Encontrado_VCAL_Enviar" />
+      <PropertyRef Name="N_Inibido_Encontrado_VCAL" />
+      <PropertyRef Name="NCorrentista_OP" />
+      <PropertyRef Name="NCorrentista_DOC" />
+      <PropertyRef Name="Nivel3_Enviado_Nivel2" />
+      <PropertyRef Name="Nivel2_SolFinal" />
+      <PropertyRef Name="Canc_Status_Rector_Ok" />
+      <PropertyRef Name="Connect_Exp" />
+      <PropertyRef Name="Connect_aExp" />
+    </Key>
+    <Property Name="CodId_Atend_Pk" Type="Int64" Nullable="false" />
+    <Property Name="Origem" Type="Int32" />
+    <Property Name="LigacaoData" Type="DateTime" Precision="3" />
+    <Property Name="LigacaoMesref" Type="Int32" />
+    <Property Name="Cnpj" Type="Int64" />
+    <Property Name="RazaoSocial" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Cpf" Type="Int64" />
+    <Property Name="Nome" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="DDD" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Fone" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Ramal" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="NCorrentista" Type="Boolean" Nullable="false" />
+    <Property Name="Banco" Type="Int32" />
+    <Property Name="Agencia" Type="Int32" />
+    <Property Name="ContaCorrente" Type="Int32" />
+    <Property Name="DG" Type="Int32" />
+    <Property Name="CodId_Segmento_Fk" Type="Int32" />
+    <Property Name="DataNasc" Type="DateTime" Precision="3" />
+    <Property Name="Idade" Type="Int32" />
+    <Property Name="CodProduto_Rector" Type="Int32" />
+    <Property Name="CodProduto_VC" Type="Int32" />
+    <Property Name="CodId_Prod_Grupo_Fk" Type="Int32" />
+    <Property Name="DataIniVig" Type="DateTime" Precision="3" />
+    <Property Name="DataFimVig" Type="DateTime" Precision="3" />
+    <Property Name="Proposta" Type="Int64" />
+    <Property Name="Apolice" Type="Int64" />
+    <Property Name="Certificado" Type="Int64" />
+    <Property Name="CodId_Categoria_Fk" Type="Int32" />
+    <Property Name="Premio" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ImpSegurada" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Argumentacao" Type="Boolean" Nullable="false" />
+    <Property Name="Cancelamento" Type="Boolean" Nullable="false" />
+    <Property Name="Retido" Type="Boolean" Nullable="false" />
+    <Property Name="CodId_Motivo" Type="Int32" />
+    <Property Name="Canc_Local" Type="Int32" />
+    <Property Name="Canc_Data" Type="Int32" />
+    <Property Name="Canc_Codigo" Type="Int32" />
+    <Property Name="Canc_OK" Type="Boolean" Nullable="false" />
+    <Property Name="Canc_Valor_Devolucao" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Canc_Ok_Data" Type="DateTime" Precision="3" />
+    <Property Name="Canc_Nok" Type="Boolean" Nullable="false" />
+    <Property Name="Canc_Nok_Data" Type="DateTime" Precision="3" />
+    <Property Name="Canc_Nok_Motivo" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel2_Enviar" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel2_Enviado" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel2_Enviado_Data" Type="DateTime" Precision="3" />
+    <Property Name="Nivel2_Cancelado" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel2_Cancelado_Data" Type="DateTime" Precision="3" />
+    <Property Name="Login_Operador" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Canc_Enviar_Robo" Type="Boolean" Nullable="false" />
+    <Property Name="Canc_Enviar_Robo_Data" Type="DateTime" Precision="3" />
+    <Property Name="Canc_Enviar_Robo_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Canc_Processamento_Data" Type="DateTime" Precision="3" />
+    <Property Name="Canc_Valor_Alcada" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Canc_Dias_Alcada" Type="Int32" />
+    <Property Name="Canc_Nok_Alcada" Type="Boolean" Nullable="false" />
+    <Property Name="Alcada" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel2_Enviado_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel2_Cancelado_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CM_Enviado" Type="Boolean" Nullable="false" />
+    <Property Name="CM_Enviado_Data" Type="DateTime" Precision="3" />
+    <Property Name="CM_Enviado_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CM_Calc_VC" Type="Boolean" Nullable="false" />
+    <Property Name="CM_Enviar" Type="Boolean" Nullable="false" />
+    <Property Name="ATM" Type="Boolean" Nullable="false" />
+    <Property Name="SMS" Type="Boolean" Nullable="false" />
+    <Property Name="N_Emitido" Type="Boolean" Nullable="false" />
+    <Property Name="Qtde_Parcelas" Type="Int32" />
+    <Property Name="ClienteAgencia" Type="Boolean" Nullable="false" />
+    <Property Name="MatriculaGerente" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CodId_Motivo2" Type="Int32" />
+    <Property Name="Atrito_VendaNRec" Type="Boolean" Nullable="false" />
+    <Property Name="Atrito_VendaNRec_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Atrito_VendaNRec_Data" Type="DateTime" Precision="3" />
+    <Property Name="Atrito_CancNEfetuado" Type="Boolean" Nullable="false" />
+    <Property Name="Atrito_CancNEfetuado_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Atrito_CancNEfetuado_Data" Type="DateTime" Precision="3" />
+    <Property Name="CodId_Cargo_Fk" Type="Int32" />
+    <Property Name="Atrito_CodId_Procedente" Type="Int32" />
+    <Property Name="Oferta" Type="Boolean" Nullable="false" />
+    <Property Name="Oferta_Proc_OK" Type="Boolean" Nullable="false" />
+    <Property Name="Oferta_Proc_NOK" Type="Boolean" Nullable="false" />
+    <Property Name="Oferta_Proc_NOK_Motivo" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Oferta_Proc_Data" Type="DateTime" Precision="3" />
+    <Property Name="Oferta_Produto_VC" Type="Int32" />
+    <Property Name="Oferta_Produto_Grupo" Type="Int32" />
+    <Property Name="Oferta_Cod_Ferrari" Type="Int32" />
+    <Property Name="Oferta_ImpSeg" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Oferta_Premio" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Endosso" Type="Boolean" Nullable="false" />
+    <Property Name="Endosso_Proc_OK" Type="Boolean" Nullable="false" />
+    <Property Name="Endosso_Proc_NOK" Type="Boolean" Nullable="false" />
+    <Property Name="Endosso_Proc_NOK_Motivo" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Endosso_Proc_NOK_Obs" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Endosso_Proc_Data" Type="DateTime" Precision="3" />
+    <Property Name="Endosso_ImpSeg" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Endosso_Premio" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Endosso_Enviar_Robo" Type="Boolean" Nullable="false" />
+    <Property Name="Endosso_Enviar_Robo_Data" Type="DateTime" Precision="3" />
+    <Property Name="Endosso_Enviar_Robo_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Endosso_Proposta" Type="Int64" />
+    <Property Name="Endosso_Liberado" Type="Boolean" Nullable="false" />
+    <Property Name="Venda" Type="Boolean" Nullable="false" />
+    <Property Name="Venda_Proc_OK" Type="Boolean" Nullable="false" />
+    <Property Name="Venda_Proc_NOK" Type="Boolean" Nullable="false" />
+    <Property Name="Venda_Proc_NOK_Motivo" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Venda_Proc_NOK_Obs" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Venda_Proc_Data" Type="DateTime" Precision="3" />
+    <Property Name="Venda_Produto_VC" Type="Int32" />
+    <Property Name="Venda_ImpSeg" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Venda_Premio" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Venda_Enviar_Robo" Type="Boolean" Nullable="false" />
+    <Property Name="Venda_Enviar_Robo_Data" Type="DateTime" Precision="3" />
+    <Property Name="Venda_Enviar_Robo_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Venda_Proposta" Type="Int64" />
+    <Property Name="CCred_TFC" Type="Boolean" Nullable="false" />
+    <Property Name="CCred_TFC_Bandeira" Type="Int32" />
+    <Property Name="CCred_TFC_Numero" Type="Int32" />
+    <Property Name="CCred_TFC_Proc_OK" Type="Boolean" Nullable="false" />
+    <Property Name="CCred_TFC_Proc_NOK" Type="Boolean" Nullable="false" />
+    <Property Name="CCred_TFC_Proc_NOK_Motivo" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="CCred_TFC_Proc_Data" Type="DateTime" Precision="3" />
+    <Property Name="CCred_TFC_Enviar_Robo" Type="Boolean" Nullable="false" />
+    <Property Name="CCred_TFC_Enviar_Robo_Data" Type="DateTime" Precision="3" />
+    <Property Name="CCred_TFC_Enviar_Robo_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CCred_TFC_Proposta" Type="Int64" />
+    <Property Name="CCred_TFC_Liberado" Type="Boolean" Nullable="false" />
+    <Property Name="Logradouro" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Numero" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Complemento" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Bairro" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Cidade" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="UF" Type="String" MaxLength="2" Unicode="true" FixedLength="false" />
+    <Property Name="CEP" Type="String" MaxLength="8" Unicode="true" FixedLength="false" />
+    <Property Name="Tipo_Imovel" Type="Int32" />
+    <Property Name="Obs" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Canc_Lote" Type="Int32" />
+    <Property Name="Canc_Lote_Dta" Type="DateTime" Precision="3" />
+    <Property Name="Canc_Lote_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Canc_Lote_Proc_Ok" Type="Boolean" Nullable="false" />
+    <Property Name="Canc_Lote_Processando" Type="Boolean" Nullable="false" />
+    <Property Name="DataDebito" Type="DateTime" Precision="3" />
+    <Property Name="Nivel1_Enviar" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel1_Enviado" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel1_Enviado_Data" Type="DateTime" Precision="3" />
+    <Property Name="Nivel1_Emitido" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel2_Emitido_Data" Type="DateTime" Precision="3" />
+    <Property Name="Nivel1_Ok" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel1_Enviado_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel1_Cancelado_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel1_Obs" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel1_Ok_Data" Type="DateTime" Precision="3" />
+    <Property Name="Nivel1_Ok_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel3_Enviado" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel3_Enviado_Data" Type="DateTime" Precision="3" />
+    <Property Name="Nivel3_Enviado_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel3_Ok" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel3_Ok_Data" Type="DateTime" Precision="3" />
+    <Property Name="Nivel3_Ok_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel2_Ok" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel2_Ok_Data" Type="DateTime" Precision="3" />
+    <Property Name="Nivel2_Ok_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel2_Emitido" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel2_Obs" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="CCred_TFC_Proc_NOK_Obs" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Oferta_CodId_Plano" Type="Int32" />
+    <Property Name="Venda_CodId_Plano" Type="Int32" />
+    <Property Name="Venda_Liberado" Type="Boolean" Nullable="false" />
+    <Property Name="Inibido" Type="Boolean" Nullable="false" />
+    <Property Name="Inibido_Data" Type="DateTime" Precision="3" />
+    <Property Name="N_Inibido" Type="Boolean" Nullable="false" />
+    <Property Name="N_Inibido_Data" Type="DateTime" Precision="3" />
+    <Property Name="PE" Type="Boolean" Nullable="false" />
+    <Property Name="PE_Marcar" Type="Boolean" Nullable="false" />
+    <Property Name="PE_ExportadoVC90" Type="Boolean" Nullable="false" />
+    <Property Name="PE_Exportado_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PE_Exportado_Data" Type="DateTime" Precision="3" />
+    <Property Name="PE_VC90_OK" Type="Boolean" Nullable="false" />
+    <Property Name="PE_VC90_OK_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PE_VC90_OK_Data" Type="DateTime" Precision="3" />
+    <Property Name="PE_Status_Rector" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Oferta_Marcar" Type="Boolean" Nullable="false" />
+    <Property Name="Oferta_Ferrari_Exp" Type="Boolean" Nullable="false" />
+    <Property Name="Oferta_Ferrari_Exp_Data" Type="DateTime" Precision="3" />
+    <Property Name="Oferta_Ferrari_Exp_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PE_VC" Type="Boolean" Nullable="false" />
+    <Property Name="DDD2" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Celular" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Canc_Nok_Obs" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Enviar" Type="Boolean" Nullable="false" />
+    <Property Name="Canc_OK_Manual_Obs" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Canc_OK_Manual_Login" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="N_Inibido_Encontrado" Type="Boolean" Nullable="false" />
+    <Property Name="N_Inibido_N_Encontrado" Type="Boolean" Nullable="false" />
+    <Property Name="N_Inibido_Encontrado_VCAL_Enviar" Type="Boolean" Nullable="false" />
+    <Property Name="N_Inibido_Encontrado_VCAL" Type="Boolean" Nullable="false" />
+    <Property Name="N_Inibido_Encontrado_VCAL_Data" Type="DateTime" Precision="3" />
+    <Property Name="N_Inibido_Encontrado_VCAL_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NCorrentista_OP" Type="Boolean" Nullable="false" />
+    <Property Name="NCorrentista_DOC" Type="Boolean" Nullable="false" />
+    <Property Name="Protocolo_Off" Type="Int64" />
+    <Property Name="ChEsp" Type="Boolean" />
+    <Property Name="ChEsp_Ok" Type="Boolean" />
+    <Property Name="ChEsp_Nok" Type="Boolean" />
+    <Property Name="ChEsp_Enviar_Robo" Type="Boolean" />
+    <Property Name="ChEsp_Enviar_Robo_Data" Type="DateTime" Precision="3" />
+    <Property Name="ChEsp_Enviar_Robo_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ChEsp_Proc_Robo_Data" Type="DateTime" Precision="3" />
+    <Property Name="ChEsp_Proc_Robo_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Num_Protocolo_SAC" Type="Int64" />
+    <Property Name="Email" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel3_Obs" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel3_Enviado_Nivel2" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel3_Enviado_Nivel2_Data" Type="DateTime" Precision="3" />
+    <Property Name="Nivel3_Enviado_Nivel2_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel2_SolFinal" Type="Boolean" Nullable="false" />
+    <Property Name="Nivel2_SolFinal_Obs" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel2_SolFinal_Login" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Nivel2_SolFinal_Data" Type="DateTime" Precision="3" />
+    <Property Name="Canc_Status_Rector" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Canc_Status_Rector_Data" Type="DateTime" Precision="3" />
+    <Property Name="Canc_Status_Rector_Ok" Type="Boolean" Nullable="false" />
+    <Property Name="Canc_VC_OK" Type="Boolean" />
+    <Property Name="Canc_VC_OK_Devolucao" Type="Boolean" />
+    <Property Name="Connect_Exp" Type="Boolean" Nullable="false" />
+    <Property Name="Connect_aExp" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Bancos">
+    <Key>
+      <PropertyRef Name="Cod_Banco" />
+    </Key>
+    <Property Name="Cod_Banco" Type="Int32" Nullable="false" />
+    <Property Name="Banco" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Site" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_Canc_Alcada">
+    <Key>
+      <PropertyRef Name="CodId_Alcada_Pk" />
+    </Key>
+    <Property Name="CodId_Alcada_Pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodId_Prod_Grupo_Fk" Type="Int32" />
+    <Property Name="Valor" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Dias" Type="Int32" />
+    <Property Name="Data_Inicio" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_Canc_Codigo">
+    <Key>
+      <PropertyRef Name="CodId_CCod_Pk" />
+    </Key>
+    <Property Name="CodId_CCod_Pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodId_CLocal_Fk" Type="Int32" />
+    <Property Name="Cod_Cancelamento" Type="Int32" />
+    <Property Name="Descricao" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_Canc_Data">
+    <Key>
+      <PropertyRef Name="CodId_CData_Pk" />
+    </Key>
+    <Property Name="CodId_CData_Pk" Type="Int32" Nullable="false" />
+    <Property Name="Data_Cancelamento" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Obs" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_Canc_Local">
+    <Key>
+      <PropertyRef Name="CodId_CLocal_Pk" />
+    </Key>
+    <Property Name="CodId_CLocal_Pk" Type="Int32" Nullable="false" />
+    <Property Name="Local_Cancelamento" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_Canc_Lote_ID">
+    <Key>
+      <PropertyRef Name="CodId" />
+    </Key>
+    <Property Name="CodId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Canc_Motivo">
+    <Key>
+      <PropertyRef Name="CodId_CMotivo_Pk" />
+    </Key>
+    <Property Name="CodId_CMotivo_Pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Motivo" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Retido" Type="Boolean" Nullable="false" />
+    <Property Name="Inelegivel" Type="Boolean" Nullable="false" />
+    <Property Name="CodId_GCA" Type="Int32" />
+    <Property Name="Inativo" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Canc_Motivo2">
+    <Key>
+      <PropertyRef Name="CodId_CMotivo2_Pk" />
+    </Key>
+    <Property Name="CodId_CMotivo2_Pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodId_CMotivo_Fk" Type="Int32" Nullable="false" />
+    <Property Name="Motivo" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Retido" Type="Boolean" Nullable="false" />
+    <Property Name="Inelegivel" Type="Boolean" Nullable="false" />
+    <Property Name="CodId_GCA" Type="Int32" />
+    <Property Name="Inativo" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Canc_Tipo">
+    <Key>
+      <PropertyRef Name="CodId_CTipo_Pk" />
+    </Key>
+    <Property Name="CodId_CTipo_Pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tipo_Cancelamento" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Obs" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_Cargo">
+    <Key>
+      <PropertyRef Name="CodId_Cargo_Pk" />
+    </Key>
+    <Property Name="CodId_Cargo_Pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cargo" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Inativo" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_ChEps_Situacoes_Robo">
+    <Key>
+      <PropertyRef Name="Cod_Situacao" />
+    </Key>
+    <Property Name="Cod_Situacao" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Desc_Situacao" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Status_OK" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tbl_Dash_Template">
+    <Key>
+      <PropertyRef Name="CodId_Dash" />
+    </Key>
+    <Property Name="CodId_Dash" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Proc_Dash" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Body" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="BodyVar_Loop" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="BodyVarSet_Loop" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="Body2" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="Body_Loop" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="From_Where" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_Desfecho">
+    <Key>
+      <PropertyRef Name="CodId_Desfecho" />
+    </Key>
+    <Property Name="CodId_Desfecho" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodId_Prod_Grupo_Fk" Type="Int32" />
+    <Property Name="CodId_TipoRet_Fk" Type="Int32" />
+    <Property Name="CodId_CMotivo_Fk" Type="Int32" />
+    <Property Name="CodId_CLocal_Fk" Type="Int32" />
+    <Property Name="Cod_Cancelamento" Type="Int32" />
+    <Property Name="CodId_CData_Fk" Type="Int32" />
+    <Property Name="CodId_CTipo_Fk" Type="Int32" />
+    <Property Name="Inativo" Type="Boolean" Nullable="false" />
+    <Property Name="Retido" Type="Boolean" Nullable="false" />
+    <Property Name="Alcada" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Eps">
+    <Key>
+      <PropertyRef Name="CodId_Eps_Pk" />
+    </Key>
+    <Property Name="CodId_Eps_Pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Eps" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Inativo" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Plano">
+    <Key>
+      <PropertyRef Name="CodId_Plano" />
+    </Key>
+    <Property Name="CodId_Plano" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodProduto" Type="Int32" />
+    <Property Name="Segmento" Type="Int32" />
+    <Property Name="Categoria" Type="Int32" />
+    <Property Name="Tipo_Res" Type="Int32" />
+    <Property Name="ImpSeg" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Premio" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Inativo" Type="Boolean" Nullable="false" />
+    <Property Name="OfertaDif" Type="Boolean" Nullable="false" />
+    <Property Name="Venda" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Procedente">
+    <Key>
+      <PropertyRef Name="CodId_Procedente" />
+    </Key>
+    <Property Name="CodId_Procedente" Type="Int32" Nullable="false" />
+    <Property Name="Descricao" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_Produto">
+    <Key>
+      <PropertyRef Name="CodProduto" />
+    </Key>
+    <Property Name="CodProduto" Type="Int32" Nullable="false" />
+    <Property Name="CodProduto_Rector" Type="Int32" />
+    <Property Name="Cod_GCA" Type="Int32" />
+    <Property Name="CodId_Grupo_Fk" Type="Int32" />
+    <Property Name="Apolice" Type="Int32" />
+    <Property Name="Ramo" Type="Int32" />
+    <Property Name="NomeProduto" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Segmento" Type="Boolean" />
+    <Property Name="TipoRetencao_Fk" Type="Int32" />
+    <Property Name="Inativo" Type="Boolean" Nullable="false" />
+    <Property Name="Limite_Idade" Type="Int32" />
+    <Property Name="Classe" Type="Int32" />
+    <Property Name="Ch_Esp" Type="Boolean" />
+    <Property Name="Cia" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_Produto_Categoria">
+    <Key>
+      <PropertyRef Name="CodId_Categoria" />
+    </Key>
+    <Property Name="CodId_Categoria" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Categoria" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Inativo" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Produto_Classe">
+    <Key>
+      <PropertyRef Name="CodId_ProdClass_Pk" />
+    </Key>
+    <Property Name="CodId_ProdClass_Pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Classe" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_Produto_Grupo">
+    <Key>
+      <PropertyRef Name="CodId_Prod_Grupo_Pk" />
+    </Key>
+    <Property Name="CodId_Prod_Grupo_Pk" Type="Int32" Nullable="false" />
+    <Property Name="Ramo" Type="Int32" />
+    <Property Name="Produto_Grupo" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CodId_CLocal_Fk" Type="Int32" />
+    <Property Name="Cia" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_Produto_Segmento">
+    <Key>
+      <PropertyRef Name="CodId_Segmento" />
+    </Key>
+    <Property Name="CodId_Segmento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Segmento" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Inativo" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_PzCurto_Percentual_Calc">
+    <Key>
+      <PropertyRef Name="Id_Percentual_Calc" />
+    </Key>
+    <Property Name="Id_Percentual_Calc" Type="Int32" Nullable="false" />
+    <Property Name="Percent_Prazo_Segurado" Type="Double" />
+    <Property Name="Percent_Premio_Retido" Type="Double" />
+    <Property Name="Percent_Premio_Devolucao" Type="Double" />
+  </EntityType>
+  <EntityType Name="tbl_Retencao_Meta">
+    <Key>
+      <PropertyRef Name="Mesref" />
+    </Key>
+    <Property Name="Mesref" Type="Int32" Nullable="false" />
+    <Property Name="Meta_Open" Type="Double" />
+    <Property Name="Meta_Related" Type="Double" />
+  </EntityType>
+  <EntityType Name="tbl_Retencao_Meta_PJ">
+    <Key>
+      <PropertyRef Name="Mesref" />
+    </Key>
+    <Property Name="Mesref" Type="Int32" Nullable="false" />
+    <Property Name="Meta_Open" Type="Double" />
+    <Property Name="Meta_Related" Type="Double" />
+  </EntityType>
+  <EntityType Name="tbl_Tipo_Retencao">
+    <Key>
+      <PropertyRef Name="CodId_TipoRet_Pk" />
+    </Key>
+    <Property Name="CodId_TipoRet_Pk" Type="Int32" Nullable="false" />
+    <Property Name="TipoRetencao" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_Usuario">
+    <Key>
+      <PropertyRef Name="CodId_Usuario" />
+    </Key>
+    <Property Name="Login" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NomeUsuario" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Site" Type="Int32" />
+    <Property Name="PerfilUsuario" Type="Int32" />
+    <Property Name="Supervisor" Type="Int32" />
+    <Property Name="Inativo" Type="Boolean" Nullable="false" />
+    <Property Name="Perfil_Old" Type="Int32" />
+    <Property Name="CodId_Usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="tbl_Usuario_Perfil">
+    <Key>
+      <PropertyRef Name="CodId_Perfil_Pk" />
+    </Key>
+    <Property Name="CodId_Perfil_Pk" Type="Int32" Nullable="false" />
+    <Property Name="PerfilUsuario" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Inativo" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tsys_Parametro">
+    <Key>
+      <PropertyRef Name="CodParametro" />
+    </Key>
+    <Property Name="CodParametro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NomeParametro" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ValorParametro" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="TipoDados" Type="Int32" />
+    <Property Name="Descricao" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="strBackup" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Permit" Type="Boolean" />
+  </EntityType>
+</Schema>

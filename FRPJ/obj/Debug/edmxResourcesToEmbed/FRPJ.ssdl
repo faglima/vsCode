@@ -1,0 +1,1340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="efFRPJ.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="efFRPJStoreContainer">
+    <EntitySet Name="tbl_AgCc_Valida" EntityType="efFRPJ.Store.tbl_AgCc_Valida" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Agencias" EntityType="efFRPJ.Store.tbl_Agencias" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Atendimento" EntityType="efFRPJ.Store.tbl_Atendimento" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Atendimento_Expurgo" EntityType="efFRPJ.Store.tbl_Atendimento_Expurgo" store:Type="Tables" store:Schema="dbo" store:Name="tbl_Atendimento_Expurgo">
+      <DefiningQuery>SELECT 
+      [tbl_Atendimento_Expurgo].[CodId_Atend_Pk] AS [CodId_Atend_Pk], 
+      [tbl_Atendimento_Expurgo].[Origem] AS [Origem], 
+      [tbl_Atendimento_Expurgo].[LigacaoData] AS [LigacaoData], 
+      [tbl_Atendimento_Expurgo].[LigacaoMesref] AS [LigacaoMesref], 
+      [tbl_Atendimento_Expurgo].[Cnpj] AS [Cnpj], 
+      [tbl_Atendimento_Expurgo].[RazaoSocial] AS [RazaoSocial], 
+      [tbl_Atendimento_Expurgo].[Cpf] AS [Cpf], 
+      [tbl_Atendimento_Expurgo].[Nome] AS [Nome], 
+      [tbl_Atendimento_Expurgo].[DDD] AS [DDD], 
+      [tbl_Atendimento_Expurgo].[Fone] AS [Fone], 
+      [tbl_Atendimento_Expurgo].[Ramal] AS [Ramal], 
+      [tbl_Atendimento_Expurgo].[NCorrentista] AS [NCorrentista], 
+      [tbl_Atendimento_Expurgo].[Banco] AS [Banco], 
+      [tbl_Atendimento_Expurgo].[Agencia] AS [Agencia], 
+      [tbl_Atendimento_Expurgo].[ContaCorrente] AS [ContaCorrente], 
+      [tbl_Atendimento_Expurgo].[DG] AS [DG], 
+      [tbl_Atendimento_Expurgo].[CodId_Segmento_Fk] AS [CodId_Segmento_Fk], 
+      [tbl_Atendimento_Expurgo].[DataNasc] AS [DataNasc], 
+      [tbl_Atendimento_Expurgo].[Idade] AS [Idade], 
+      [tbl_Atendimento_Expurgo].[CodProduto_Rector] AS [CodProduto_Rector], 
+      [tbl_Atendimento_Expurgo].[CodProduto_VC] AS [CodProduto_VC], 
+      [tbl_Atendimento_Expurgo].[CodId_Prod_Grupo_Fk] AS [CodId_Prod_Grupo_Fk], 
+      [tbl_Atendimento_Expurgo].[DataIniVig] AS [DataIniVig], 
+      [tbl_Atendimento_Expurgo].[DataFimVig] AS [DataFimVig], 
+      [tbl_Atendimento_Expurgo].[Proposta] AS [Proposta], 
+      [tbl_Atendimento_Expurgo].[Apolice] AS [Apolice], 
+      [tbl_Atendimento_Expurgo].[Certificado] AS [Certificado], 
+      [tbl_Atendimento_Expurgo].[CodId_Categoria_Fk] AS [CodId_Categoria_Fk], 
+      [tbl_Atendimento_Expurgo].[Premio] AS [Premio], 
+      [tbl_Atendimento_Expurgo].[ImpSegurada] AS [ImpSegurada], 
+      [tbl_Atendimento_Expurgo].[Argumentacao] AS [Argumentacao], 
+      [tbl_Atendimento_Expurgo].[Cancelamento] AS [Cancelamento], 
+      [tbl_Atendimento_Expurgo].[Retido] AS [Retido], 
+      [tbl_Atendimento_Expurgo].[CodId_Motivo] AS [CodId_Motivo], 
+      [tbl_Atendimento_Expurgo].[Canc_Local] AS [Canc_Local], 
+      [tbl_Atendimento_Expurgo].[Canc_Data] AS [Canc_Data], 
+      [tbl_Atendimento_Expurgo].[Canc_Codigo] AS [Canc_Codigo], 
+      [tbl_Atendimento_Expurgo].[Canc_OK] AS [Canc_OK], 
+      [tbl_Atendimento_Expurgo].[Canc_Valor_Devolucao] AS [Canc_Valor_Devolucao], 
+      [tbl_Atendimento_Expurgo].[Canc_Ok_Data] AS [Canc_Ok_Data], 
+      [tbl_Atendimento_Expurgo].[Canc_Nok] AS [Canc_Nok], 
+      [tbl_Atendimento_Expurgo].[Canc_Nok_Data] AS [Canc_Nok_Data], 
+      [tbl_Atendimento_Expurgo].[Canc_Nok_Motivo] AS [Canc_Nok_Motivo], 
+      [tbl_Atendimento_Expurgo].[Nivel2_Enviar] AS [Nivel2_Enviar], 
+      [tbl_Atendimento_Expurgo].[Nivel2_Enviado] AS [Nivel2_Enviado], 
+      [tbl_Atendimento_Expurgo].[Nivel2_Enviado_Data] AS [Nivel2_Enviado_Data], 
+      [tbl_Atendimento_Expurgo].[Nivel2_Cancelado] AS [Nivel2_Cancelado], 
+      [tbl_Atendimento_Expurgo].[Nivel2_Cancelado_Data] AS [Nivel2_Cancelado_Data], 
+      [tbl_Atendimento_Expurgo].[Login_Operador] AS [Login_Operador], 
+      [tbl_Atendimento_Expurgo].[Canc_Enviar_Robo] AS [Canc_Enviar_Robo], 
+      [tbl_Atendimento_Expurgo].[Canc_Enviar_Robo_Data] AS [Canc_Enviar_Robo_Data], 
+      [tbl_Atendimento_Expurgo].[Canc_Enviar_Robo_Login] AS [Canc_Enviar_Robo_Login], 
+      [tbl_Atendimento_Expurgo].[Canc_Processamento_Data] AS [Canc_Processamento_Data], 
+      [tbl_Atendimento_Expurgo].[Canc_Valor_Alcada] AS [Canc_Valor_Alcada], 
+      [tbl_Atendimento_Expurgo].[Canc_Dias_Alcada] AS [Canc_Dias_Alcada], 
+      [tbl_Atendimento_Expurgo].[Canc_Nok_Alcada] AS [Canc_Nok_Alcada], 
+      [tbl_Atendimento_Expurgo].[Alcada] AS [Alcada], 
+      [tbl_Atendimento_Expurgo].[Nivel2_Enviado_Login] AS [Nivel2_Enviado_Login], 
+      [tbl_Atendimento_Expurgo].[Nivel2_Cancelado_Login] AS [Nivel2_Cancelado_Login], 
+      [tbl_Atendimento_Expurgo].[CM_Enviado] AS [CM_Enviado], 
+      [tbl_Atendimento_Expurgo].[CM_Enviado_Data] AS [CM_Enviado_Data], 
+      [tbl_Atendimento_Expurgo].[CM_Enviado_Login] AS [CM_Enviado_Login], 
+      [tbl_Atendimento_Expurgo].[CM_Calc_VC] AS [CM_Calc_VC], 
+      [tbl_Atendimento_Expurgo].[CM_Enviar] AS [CM_Enviar], 
+      [tbl_Atendimento_Expurgo].[ATM] AS [ATM], 
+      [tbl_Atendimento_Expurgo].[SMS] AS [SMS], 
+      [tbl_Atendimento_Expurgo].[N_Emitido] AS [N_Emitido], 
+      [tbl_Atendimento_Expurgo].[Qtde_Parcelas] AS [Qtde_Parcelas], 
+      [tbl_Atendimento_Expurgo].[ClienteAgencia] AS [ClienteAgencia], 
+      [tbl_Atendimento_Expurgo].[MatriculaGerente] AS [MatriculaGerente], 
+      [tbl_Atendimento_Expurgo].[CodId_Motivo2] AS [CodId_Motivo2], 
+      [tbl_Atendimento_Expurgo].[Atrito_VendaNRec] AS [Atrito_VendaNRec], 
+      [tbl_Atendimento_Expurgo].[Atrito_VendaNRec_Login] AS [Atrito_VendaNRec_Login], 
+      [tbl_Atendimento_Expurgo].[Atrito_VendaNRec_Data] AS [Atrito_VendaNRec_Data], 
+      [tbl_Atendimento_Expurgo].[Atrito_CancNEfetuado] AS [Atrito_CancNEfetuado], 
+      [tbl_Atendimento_Expurgo].[Atrito_CancNEfetuado_Login] AS [Atrito_CancNEfetuado_Login], 
+      [tbl_Atendimento_Expurgo].[Atrito_CancNEfetuado_Data] AS [Atrito_CancNEfetuado_Data], 
+      [tbl_Atendimento_Expurgo].[CodId_Cargo_Fk] AS [CodId_Cargo_Fk], 
+      [tbl_Atendimento_Expurgo].[Atrito_CodId_Procedente] AS [Atrito_CodId_Procedente], 
+      [tbl_Atendimento_Expurgo].[Oferta] AS [Oferta], 
+      [tbl_Atendimento_Expurgo].[Oferta_Proc_OK] AS [Oferta_Proc_OK], 
+      [tbl_Atendimento_Expurgo].[Oferta_Proc_NOK] AS [Oferta_Proc_NOK], 
+      [tbl_Atendimento_Expurgo].[Oferta_Proc_NOK_Motivo] AS [Oferta_Proc_NOK_Motivo], 
+      [tbl_Atendimento_Expurgo].[Oferta_Proc_Data] AS [Oferta_Proc_Data], 
+      [tbl_Atendimento_Expurgo].[Oferta_Produto_VC] AS [Oferta_Produto_VC], 
+      [tbl_Atendimento_Expurgo].[Oferta_Produto_Grupo] AS [Oferta_Produto_Grupo], 
+      [tbl_Atendimento_Expurgo].[Oferta_Cod_Ferrari] AS [Oferta_Cod_Ferrari], 
+      [tbl_Atendimento_Expurgo].[Oferta_ImpSeg] AS [Oferta_ImpSeg], 
+      [tbl_Atendimento_Expurgo].[Oferta_Premio] AS [Oferta_Premio], 
+      [tbl_Atendimento_Expurgo].[Endosso] AS [Endosso], 
+      [tbl_Atendimento_Expurgo].[Endosso_Proc_OK] AS [Endosso_Proc_OK], 
+      [tbl_Atendimento_Expurgo].[Endosso_Proc_NOK] AS [Endosso_Proc_NOK], 
+      [tbl_Atendimento_Expurgo].[Endosso_Proc_NOK_Motivo] AS [Endosso_Proc_NOK_Motivo], 
+      [tbl_Atendimento_Expurgo].[Endosso_Proc_NOK_Obs] AS [Endosso_Proc_NOK_Obs], 
+      [tbl_Atendimento_Expurgo].[Endosso_Proc_Data] AS [Endosso_Proc_Data], 
+      [tbl_Atendimento_Expurgo].[Endosso_ImpSeg] AS [Endosso_ImpSeg], 
+      [tbl_Atendimento_Expurgo].[Endosso_Premio] AS [Endosso_Premio], 
+      [tbl_Atendimento_Expurgo].[Endosso_Enviar_Robo] AS [Endosso_Enviar_Robo], 
+      [tbl_Atendimento_Expurgo].[Endosso_Enviar_Robo_Data] AS [Endosso_Enviar_Robo_Data], 
+      [tbl_Atendimento_Expurgo].[Endosso_Enviar_Robo_Login] AS [Endosso_Enviar_Robo_Login], 
+      [tbl_Atendimento_Expurgo].[Endosso_Proposta] AS [Endosso_Proposta], 
+      [tbl_Atendimento_Expurgo].[Endosso_Liberado] AS [Endosso_Liberado], 
+      [tbl_Atendimento_Expurgo].[Venda] AS [Venda], 
+      [tbl_Atendimento_Expurgo].[Venda_Proc_OK] AS [Venda_Proc_OK], 
+      [tbl_Atendimento_Expurgo].[Venda_Proc_NOK] AS [Venda_Proc_NOK], 
+      [tbl_Atendimento_Expurgo].[Venda_Proc_NOK_Motivo] AS [Venda_Proc_NOK_Motivo], 
+      [tbl_Atendimento_Expurgo].[Venda_Proc_NOK_Obs] AS [Venda_Proc_NOK_Obs], 
+      [tbl_Atendimento_Expurgo].[Venda_Proc_Data] AS [Venda_Proc_Data], 
+      [tbl_Atendimento_Expurgo].[Venda_Produto_VC] AS [Venda_Produto_VC], 
+      [tbl_Atendimento_Expurgo].[Venda_ImpSeg] AS [Venda_ImpSeg], 
+      [tbl_Atendimento_Expurgo].[Venda_Premio] AS [Venda_Premio], 
+      [tbl_Atendimento_Expurgo].[Venda_Enviar_Robo] AS [Venda_Enviar_Robo], 
+      [tbl_Atendimento_Expurgo].[Venda_Enviar_Robo_Data] AS [Venda_Enviar_Robo_Data], 
+      [tbl_Atendimento_Expurgo].[Venda_Enviar_Robo_Login] AS [Venda_Enviar_Robo_Login], 
+      [tbl_Atendimento_Expurgo].[Venda_Proposta] AS [Venda_Proposta], 
+      [tbl_Atendimento_Expurgo].[CCred_TFC] AS [CCred_TFC], 
+      [tbl_Atendimento_Expurgo].[CCred_TFC_Bandeira] AS [CCred_TFC_Bandeira], 
+      [tbl_Atendimento_Expurgo].[CCred_TFC_Numero] AS [CCred_TFC_Numero], 
+      [tbl_Atendimento_Expurgo].[CCred_TFC_Proc_OK] AS [CCred_TFC_Proc_OK], 
+      [tbl_Atendimento_Expurgo].[CCred_TFC_Proc_NOK] AS [CCred_TFC_Proc_NOK], 
+      [tbl_Atendimento_Expurgo].[CCred_TFC_Proc_NOK_Motivo] AS [CCred_TFC_Proc_NOK_Motivo], 
+      [tbl_Atendimento_Expurgo].[CCred_TFC_Proc_Data] AS [CCred_TFC_Proc_Data], 
+      [tbl_Atendimento_Expurgo].[CCred_TFC_Enviar_Robo] AS [CCred_TFC_Enviar_Robo], 
+      [tbl_Atendimento_Expurgo].[CCred_TFC_Enviar_Robo_Data] AS [CCred_TFC_Enviar_Robo_Data], 
+      [tbl_Atendimento_Expurgo].[CCred_TFC_Enviar_Robo_Login] AS [CCred_TFC_Enviar_Robo_Login], 
+      [tbl_Atendimento_Expurgo].[CCred_TFC_Proposta] AS [CCred_TFC_Proposta], 
+      [tbl_Atendimento_Expurgo].[CCred_TFC_Liberado] AS [CCred_TFC_Liberado], 
+      [tbl_Atendimento_Expurgo].[Logradouro] AS [Logradouro], 
+      [tbl_Atendimento_Expurgo].[Numero] AS [Numero], 
+      [tbl_Atendimento_Expurgo].[Complemento] AS [Complemento], 
+      [tbl_Atendimento_Expurgo].[Bairro] AS [Bairro], 
+      [tbl_Atendimento_Expurgo].[Cidade] AS [Cidade], 
+      [tbl_Atendimento_Expurgo].[UF] AS [UF], 
+      [tbl_Atendimento_Expurgo].[CEP] AS [CEP], 
+      [tbl_Atendimento_Expurgo].[Tipo_Imovel] AS [Tipo_Imovel], 
+      [tbl_Atendimento_Expurgo].[Obs] AS [Obs], 
+      [tbl_Atendimento_Expurgo].[Canc_Lote] AS [Canc_Lote], 
+      [tbl_Atendimento_Expurgo].[Canc_Lote_Dta] AS [Canc_Lote_Dta], 
+      [tbl_Atendimento_Expurgo].[Canc_Lote_Login] AS [Canc_Lote_Login], 
+      [tbl_Atendimento_Expurgo].[Canc_Lote_Proc_Ok] AS [Canc_Lote_Proc_Ok], 
+      [tbl_Atendimento_Expurgo].[Canc_Lote_Processando] AS [Canc_Lote_Processando], 
+      [tbl_Atendimento_Expurgo].[DataDebito] AS [DataDebito], 
+      [tbl_Atendimento_Expurgo].[Nivel1_Enviar] AS [Nivel1_Enviar], 
+      [tbl_Atendimento_Expurgo].[Nivel1_Enviado] AS [Nivel1_Enviado], 
+      [tbl_Atendimento_Expurgo].[Nivel1_Enviado_Data] AS [Nivel1_Enviado_Data], 
+      [tbl_Atendimento_Expurgo].[Nivel1_Emitido] AS [Nivel1_Emitido], 
+      [tbl_Atendimento_Expurgo].[Nivel2_Emitido_Data] AS [Nivel2_Emitido_Data], 
+      [tbl_Atendimento_Expurgo].[Nivel1_Ok] AS [Nivel1_Ok], 
+      [tbl_Atendimento_Expurgo].[Nivel1_Enviado_Login] AS [Nivel1_Enviado_Login], 
+      [tbl_Atendimento_Expurgo].[Nivel1_Cancelado_Login] AS [Nivel1_Cancelado_Login], 
+      [tbl_Atendimento_Expurgo].[Nivel1_Obs] AS [Nivel1_Obs], 
+      [tbl_Atendimento_Expurgo].[Nivel1_Ok_Data] AS [Nivel1_Ok_Data], 
+      [tbl_Atendimento_Expurgo].[Nivel1_Ok_Login] AS [Nivel1_Ok_Login], 
+      [tbl_Atendimento_Expurgo].[Nivel3_Enviado] AS [Nivel3_Enviado], 
+      [tbl_Atendimento_Expurgo].[Nivel3_Enviado_Data] AS [Nivel3_Enviado_Data], 
+      [tbl_Atendimento_Expurgo].[Nivel3_Enviado_Login] AS [Nivel3_Enviado_Login], 
+      [tbl_Atendimento_Expurgo].[Nivel3_Ok] AS [Nivel3_Ok], 
+      [tbl_Atendimento_Expurgo].[Nivel3_Ok_Data] AS [Nivel3_Ok_Data], 
+      [tbl_Atendimento_Expurgo].[Nivel3_Ok_Login] AS [Nivel3_Ok_Login], 
+      [tbl_Atendimento_Expurgo].[Nivel2_Ok] AS [Nivel2_Ok], 
+      [tbl_Atendimento_Expurgo].[Nivel2_Ok_Data] AS [Nivel2_Ok_Data], 
+      [tbl_Atendimento_Expurgo].[Nivel2_Ok_Login] AS [Nivel2_Ok_Login], 
+      [tbl_Atendimento_Expurgo].[Nivel2_Emitido] AS [Nivel2_Emitido], 
+      [tbl_Atendimento_Expurgo].[Nivel2_Obs] AS [Nivel2_Obs], 
+      [tbl_Atendimento_Expurgo].[CCred_TFC_Proc_NOK_Obs] AS [CCred_TFC_Proc_NOK_Obs], 
+      [tbl_Atendimento_Expurgo].[Oferta_CodId_Plano] AS [Oferta_CodId_Plano], 
+      [tbl_Atendimento_Expurgo].[Venda_CodId_Plano] AS [Venda_CodId_Plano], 
+      [tbl_Atendimento_Expurgo].[Venda_Liberado] AS [Venda_Liberado], 
+      [tbl_Atendimento_Expurgo].[Inibido] AS [Inibido], 
+      [tbl_Atendimento_Expurgo].[Inibido_Data] AS [Inibido_Data], 
+      [tbl_Atendimento_Expurgo].[N_Inibido] AS [N_Inibido], 
+      [tbl_Atendimento_Expurgo].[N_Inibido_Data] AS [N_Inibido_Data], 
+      [tbl_Atendimento_Expurgo].[PE] AS [PE], 
+      [tbl_Atendimento_Expurgo].[PE_Marcar] AS [PE_Marcar], 
+      [tbl_Atendimento_Expurgo].[PE_ExportadoVC90] AS [PE_ExportadoVC90], 
+      [tbl_Atendimento_Expurgo].[PE_Exportado_Login] AS [PE_Exportado_Login], 
+      [tbl_Atendimento_Expurgo].[PE_Exportado_Data] AS [PE_Exportado_Data], 
+      [tbl_Atendimento_Expurgo].[PE_VC90_OK] AS [PE_VC90_OK], 
+      [tbl_Atendimento_Expurgo].[PE_VC90_OK_Login] AS [PE_VC90_OK_Login], 
+      [tbl_Atendimento_Expurgo].[PE_VC90_OK_Data] AS [PE_VC90_OK_Data], 
+      [tbl_Atendimento_Expurgo].[PE_Status_Rector] AS [PE_Status_Rector], 
+      [tbl_Atendimento_Expurgo].[Oferta_Marcar] AS [Oferta_Marcar], 
+      [tbl_Atendimento_Expurgo].[Oferta_Ferrari_Exp] AS [Oferta_Ferrari_Exp], 
+      [tbl_Atendimento_Expurgo].[Oferta_Ferrari_Exp_Data] AS [Oferta_Ferrari_Exp_Data], 
+      [tbl_Atendimento_Expurgo].[Oferta_Ferrari_Exp_Login] AS [Oferta_Ferrari_Exp_Login], 
+      [tbl_Atendimento_Expurgo].[PE_VC] AS [PE_VC], 
+      [tbl_Atendimento_Expurgo].[DDD2] AS [DDD2], 
+      [tbl_Atendimento_Expurgo].[Celular] AS [Celular], 
+      [tbl_Atendimento_Expurgo].[Canc_Nok_Obs] AS [Canc_Nok_Obs], 
+      [tbl_Atendimento_Expurgo].[Enviar] AS [Enviar], 
+      [tbl_Atendimento_Expurgo].[Canc_OK_Manual_Obs] AS [Canc_OK_Manual_Obs], 
+      [tbl_Atendimento_Expurgo].[Canc_OK_Manual_Login] AS [Canc_OK_Manual_Login], 
+      [tbl_Atendimento_Expurgo].[N_Inibido_Encontrado] AS [N_Inibido_Encontrado], 
+      [tbl_Atendimento_Expurgo].[N_Inibido_N_Encontrado] AS [N_Inibido_N_Encontrado], 
+      [tbl_Atendimento_Expurgo].[N_Inibido_Encontrado_VCAL_Enviar] AS [N_Inibido_Encontrado_VCAL_Enviar], 
+      [tbl_Atendimento_Expurgo].[N_Inibido_Encontrado_VCAL] AS [N_Inibido_Encontrado_VCAL], 
+      [tbl_Atendimento_Expurgo].[N_Inibido_Encontrado_VCAL_Data] AS [N_Inibido_Encontrado_VCAL_Data], 
+      [tbl_Atendimento_Expurgo].[N_Inibido_Encontrado_VCAL_Login] AS [N_Inibido_Encontrado_VCAL_Login], 
+      [tbl_Atendimento_Expurgo].[NCorrentista_OP] AS [NCorrentista_OP], 
+      [tbl_Atendimento_Expurgo].[NCorrentista_DOC] AS [NCorrentista_DOC], 
+      [tbl_Atendimento_Expurgo].[Protocolo_Off] AS [Protocolo_Off], 
+      [tbl_Atendimento_Expurgo].[ChEsp] AS [ChEsp], 
+      [tbl_Atendimento_Expurgo].[ChEsp_Ok] AS [ChEsp_Ok], 
+      [tbl_Atendimento_Expurgo].[ChEsp_Nok] AS [ChEsp_Nok], 
+      [tbl_Atendimento_Expurgo].[ChEsp_Enviar_Robo] AS [ChEsp_Enviar_Robo], 
+      [tbl_Atendimento_Expurgo].[ChEsp_Enviar_Robo_Data] AS [ChEsp_Enviar_Robo_Data], 
+      [tbl_Atendimento_Expurgo].[ChEsp_Enviar_Robo_Login] AS [ChEsp_Enviar_Robo_Login], 
+      [tbl_Atendimento_Expurgo].[ChEsp_Proc_Robo_Data] AS [ChEsp_Proc_Robo_Data], 
+      [tbl_Atendimento_Expurgo].[ChEsp_Proc_Robo_Login] AS [ChEsp_Proc_Robo_Login], 
+      [tbl_Atendimento_Expurgo].[Num_Protocolo_SAC] AS [Num_Protocolo_SAC], 
+      [tbl_Atendimento_Expurgo].[Email] AS [Email], 
+      [tbl_Atendimento_Expurgo].[Nivel3_Obs] AS [Nivel3_Obs], 
+      [tbl_Atendimento_Expurgo].[Nivel3_Enviado_Nivel2] AS [Nivel3_Enviado_Nivel2], 
+      [tbl_Atendimento_Expurgo].[Nivel3_Enviado_Nivel2_Data] AS [Nivel3_Enviado_Nivel2_Data], 
+      [tbl_Atendimento_Expurgo].[Nivel3_Enviado_Nivel2_Login] AS [Nivel3_Enviado_Nivel2_Login], 
+      [tbl_Atendimento_Expurgo].[Nivel2_SolFinal] AS [Nivel2_SolFinal], 
+      [tbl_Atendimento_Expurgo].[Nivel2_SolFinal_Obs] AS [Nivel2_SolFinal_Obs], 
+      [tbl_Atendimento_Expurgo].[Nivel2_SolFinal_Login] AS [Nivel2_SolFinal_Login], 
+      [tbl_Atendimento_Expurgo].[Nivel2_SolFinal_Data] AS [Nivel2_SolFinal_Data], 
+      [tbl_Atendimento_Expurgo].[Canc_Status_Rector] AS [Canc_Status_Rector], 
+      [tbl_Atendimento_Expurgo].[Canc_Status_Rector_Data] AS [Canc_Status_Rector_Data], 
+      [tbl_Atendimento_Expurgo].[Canc_Status_Rector_Ok] AS [Canc_Status_Rector_Ok], 
+      [tbl_Atendimento_Expurgo].[Canc_VC_OK] AS [Canc_VC_OK], 
+      [tbl_Atendimento_Expurgo].[Canc_VC_OK_Devolucao] AS [Canc_VC_OK_Devolucao], 
+      [tbl_Atendimento_Expurgo].[Connect_Exp] AS [Connect_Exp], 
+      [tbl_Atendimento_Expurgo].[Connect_aExp] AS [Connect_aExp]
+      FROM [dbo].[tbl_Atendimento_Expurgo] AS [tbl_Atendimento_Expurgo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tbl_Bancos" EntityType="efFRPJ.Store.tbl_Bancos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Canc_Alcada" EntityType="efFRPJ.Store.tbl_Canc_Alcada" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Canc_Codigo" EntityType="efFRPJ.Store.tbl_Canc_Codigo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Canc_Data" EntityType="efFRPJ.Store.tbl_Canc_Data" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Canc_Local" EntityType="efFRPJ.Store.tbl_Canc_Local" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Canc_Lote_ID" EntityType="efFRPJ.Store.tbl_Canc_Lote_ID" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Canc_Motivo" EntityType="efFRPJ.Store.tbl_Canc_Motivo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Canc_Motivo2" EntityType="efFRPJ.Store.tbl_Canc_Motivo2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Canc_Tipo" EntityType="efFRPJ.Store.tbl_Canc_Tipo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Cargo" EntityType="efFRPJ.Store.tbl_Cargo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_ChEps_Situacoes_Robo" EntityType="efFRPJ.Store.tbl_ChEps_Situacoes_Robo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Dash_Template" EntityType="efFRPJ.Store.tbl_Dash_Template" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Desfecho" EntityType="efFRPJ.Store.tbl_Desfecho" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Eps" EntityType="efFRPJ.Store.tbl_Eps" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Plano" EntityType="efFRPJ.Store.tbl_Plano" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Procedente" EntityType="efFRPJ.Store.tbl_Procedente" store:Type="Tables" store:Schema="dbo" store:Name="tbl_Procedente">
+      <DefiningQuery>SELECT 
+      [tbl_Procedente].[CodId_Procedente] AS [CodId_Procedente], 
+      [tbl_Procedente].[Descricao] AS [Descricao]
+      FROM [dbo].[tbl_Procedente] AS [tbl_Procedente]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tbl_Produto" EntityType="efFRPJ.Store.tbl_Produto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Produto_Categoria" EntityType="efFRPJ.Store.tbl_Produto_Categoria" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Produto_Classe" EntityType="efFRPJ.Store.tbl_Produto_Classe" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Produto_Grupo" EntityType="efFRPJ.Store.tbl_Produto_Grupo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Produto_Segmento" EntityType="efFRPJ.Store.tbl_Produto_Segmento" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_PzCurto_Percentual_Calc" EntityType="efFRPJ.Store.tbl_PzCurto_Percentual_Calc" store:Type="Tables" store:Schema="dbo" store:Name="tbl_PzCurto_Percentual_Calc">
+      <DefiningQuery>SELECT 
+      [tbl_PzCurto_Percentual_Calc].[Id_Percentual_Calc] AS [Id_Percentual_Calc], 
+      [tbl_PzCurto_Percentual_Calc].[Percent_Prazo_Segurado] AS [Percent_Prazo_Segurado], 
+      [tbl_PzCurto_Percentual_Calc].[Percent_Premio_Retido] AS [Percent_Premio_Retido], 
+      [tbl_PzCurto_Percentual_Calc].[Percent_Premio_Devolucao] AS [Percent_Premio_Devolucao]
+      FROM [dbo].[tbl_PzCurto_Percentual_Calc] AS [tbl_PzCurto_Percentual_Calc]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tbl_Retencao_Meta" EntityType="efFRPJ.Store.tbl_Retencao_Meta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Retencao_Meta_PJ" EntityType="efFRPJ.Store.tbl_Retencao_Meta_PJ" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Tipo_Retencao" EntityType="efFRPJ.Store.tbl_Tipo_Retencao" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Usuario" EntityType="efFRPJ.Store.tbl_Usuario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_Usuario_Perfil" EntityType="efFRPJ.Store.tbl_Usuario_Perfil" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tsys_Parametro" EntityType="efFRPJ.Store.tsys_Parametro" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="tbl_AgCc_Valida">
+    <Key>
+      <PropertyRef Name="CodId_Ag_PK" />
+    </Key>
+    <Property Name="CodId_Ag_PK" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Banco" Type="int" />
+    <Property Name="Agencia" Type="int" />
+    <Property Name="Conta" Type="int" />
+    <Property Name="Ativo" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_Agencias">
+    <Key>
+      <PropertyRef Name="Cod_Agencia" />
+    </Key>
+    <Property Name="Cod_Agencia" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Atendimento">
+    <Key>
+      <PropertyRef Name="CodId_Atend_Pk" />
+    </Key>
+    <Property Name="CodId_Atend_Pk" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Origem" Type="int" />
+    <Property Name="LigacaoData" Type="datetime" />
+    <Property Name="LigacaoMesref" Type="int" />
+    <Property Name="Cnpj" Type="bigint" />
+    <Property Name="RazaoSocial" Type="nvarchar" MaxLength="200" />
+    <Property Name="Cpf" Type="bigint" />
+    <Property Name="Nome" Type="nvarchar" MaxLength="200" />
+    <Property Name="DDD" Type="nvarchar" MaxLength="20" />
+    <Property Name="Fone" Type="nvarchar" MaxLength="20" />
+    <Property Name="Ramal" Type="nvarchar" MaxLength="20" />
+    <Property Name="NCorrentista" Type="bit" Nullable="false" />
+    <Property Name="Banco" Type="int" />
+    <Property Name="Agencia" Type="int" />
+    <Property Name="ContaCorrente" Type="int" />
+    <Property Name="DG" Type="int" />
+    <Property Name="CodId_Segmento_Fk" Type="int" />
+    <Property Name="DataNasc" Type="datetime" />
+    <Property Name="Idade" Type="int" />
+    <Property Name="CodProduto_Rector" Type="int" />
+    <Property Name="CodProduto_VC" Type="int" />
+    <Property Name="CodId_Prod_Grupo_Fk" Type="int" />
+    <Property Name="DataIniVig" Type="datetime" />
+    <Property Name="DataFimVig" Type="datetime" />
+    <Property Name="Proposta" Type="bigint" />
+    <Property Name="Apolice" Type="bigint" />
+    <Property Name="Certificado" Type="bigint" />
+    <Property Name="CodId_Categoria_Fk" Type="int" />
+    <Property Name="Premio" Type="money" />
+    <Property Name="ImpSegurada" Type="money" />
+    <Property Name="Argumentacao" Type="bit" Nullable="false" />
+    <Property Name="Cancelamento" Type="bit" Nullable="false" />
+    <Property Name="Retido" Type="bit" Nullable="false" />
+    <Property Name="CodId_Motivo" Type="int" />
+    <Property Name="Canc_Local" Type="int" />
+    <Property Name="Canc_Data" Type="int" />
+    <Property Name="Canc_Codigo" Type="int" />
+    <Property Name="Canc_OK" Type="bit" Nullable="false" />
+    <Property Name="Canc_Valor_Devolucao" Type="money" />
+    <Property Name="Canc_Ok_Data" Type="datetime" />
+    <Property Name="Canc_Nok" Type="bit" Nullable="false" />
+    <Property Name="Canc_Nok_Data" Type="datetime" />
+    <Property Name="Canc_Nok_Motivo" Type="nvarchar" MaxLength="200" />
+    <Property Name="Nivel2_Enviar" Type="bit" Nullable="false" />
+    <Property Name="Nivel2_Enviado" Type="bit" Nullable="false" />
+    <Property Name="Nivel2_Enviado_Data" Type="datetime" />
+    <Property Name="Nivel2_Cancelado" Type="bit" Nullable="false" />
+    <Property Name="Nivel2_Cancelado_Data" Type="datetime" />
+    <Property Name="Login_Operador" Type="nvarchar" MaxLength="50" />
+    <Property Name="Canc_Enviar_Robo" Type="bit" Nullable="false" />
+    <Property Name="Canc_Enviar_Robo_Data" Type="datetime" />
+    <Property Name="Canc_Enviar_Robo_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Canc_Processamento_Data" Type="datetime" />
+    <Property Name="Canc_Valor_Alcada" Type="money" />
+    <Property Name="Canc_Dias_Alcada" Type="int" />
+    <Property Name="Canc_Nok_Alcada" Type="bit" Nullable="false" />
+    <Property Name="Alcada" Type="bit" Nullable="false" />
+    <Property Name="Nivel2_Enviado_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nivel2_Cancelado_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="CM_Enviado" Type="bit" Nullable="false" />
+    <Property Name="CM_Enviado_Data" Type="datetime" />
+    <Property Name="CM_Enviado_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="CM_Calc_VC" Type="bit" Nullable="false" />
+    <Property Name="CM_Enviar" Type="bit" Nullable="false" />
+    <Property Name="ATM" Type="bit" Nullable="false" />
+    <Property Name="SMS" Type="bit" Nullable="false" />
+    <Property Name="N_Emitido" Type="bit" Nullable="false" />
+    <Property Name="Qtde_Parcelas" Type="int" />
+    <Property Name="ClienteAgencia" Type="bit" Nullable="false" />
+    <Property Name="MatriculaGerente" Type="nvarchar" MaxLength="50" />
+    <Property Name="CodId_Motivo2" Type="int" />
+    <Property Name="Atrito_VendaNRec" Type="bit" Nullable="false" />
+    <Property Name="Atrito_VendaNRec_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Atrito_VendaNRec_Data" Type="datetime" />
+    <Property Name="Atrito_CancNEfetuado" Type="bit" Nullable="false" />
+    <Property Name="Atrito_CancNEfetuado_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Atrito_CancNEfetuado_Data" Type="datetime" />
+    <Property Name="CodId_Cargo_Fk" Type="int" />
+    <Property Name="Atrito_CodId_Procedente" Type="int" />
+    <Property Name="Oferta" Type="bit" Nullable="false" />
+    <Property Name="Oferta_Proc_OK" Type="bit" Nullable="false" />
+    <Property Name="Oferta_Proc_NOK" Type="bit" Nullable="false" />
+    <Property Name="Oferta_Proc_NOK_Motivo" Type="nvarchar" MaxLength="200" />
+    <Property Name="Oferta_Proc_Data" Type="datetime" />
+    <Property Name="Oferta_Produto_VC" Type="int" />
+    <Property Name="Oferta_Produto_Grupo" Type="int" />
+    <Property Name="Oferta_Cod_Ferrari" Type="int" />
+    <Property Name="Oferta_ImpSeg" Type="money" />
+    <Property Name="Oferta_Premio" Type="money" />
+    <Property Name="Endosso" Type="bit" Nullable="false" />
+    <Property Name="Endosso_Proc_OK" Type="bit" Nullable="false" />
+    <Property Name="Endosso_Proc_NOK" Type="bit" Nullable="false" />
+    <Property Name="Endosso_Proc_NOK_Motivo" Type="nvarchar" MaxLength="200" />
+    <Property Name="Endosso_Proc_NOK_Obs" Type="nvarchar" MaxLength="200" />
+    <Property Name="Endosso_Proc_Data" Type="datetime" />
+    <Property Name="Endosso_ImpSeg" Type="money" />
+    <Property Name="Endosso_Premio" Type="money" />
+    <Property Name="Endosso_Enviar_Robo" Type="bit" Nullable="false" />
+    <Property Name="Endosso_Enviar_Robo_Data" Type="datetime" />
+    <Property Name="Endosso_Enviar_Robo_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Endosso_Proposta" Type="bigint" />
+    <Property Name="Endosso_Liberado" Type="bit" Nullable="false" />
+    <Property Name="Venda" Type="bit" Nullable="false" />
+    <Property Name="Venda_Proc_OK" Type="bit" Nullable="false" />
+    <Property Name="Venda_Proc_NOK" Type="bit" Nullable="false" />
+    <Property Name="Venda_Proc_NOK_Motivo" Type="nvarchar" MaxLength="200" />
+    <Property Name="Venda_Proc_NOK_Obs" Type="nvarchar" MaxLength="200" />
+    <Property Name="Venda_Proc_Data" Type="datetime" />
+    <Property Name="Venda_Produto_VC" Type="int" />
+    <Property Name="Venda_ImpSeg" Type="money" />
+    <Property Name="Venda_Premio" Type="money" />
+    <Property Name="Venda_Enviar_Robo" Type="bit" Nullable="false" />
+    <Property Name="Venda_Enviar_Robo_Data" Type="datetime" />
+    <Property Name="Venda_Enviar_Robo_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Venda_Proposta" Type="bigint" />
+    <Property Name="CCred_TFC" Type="bit" Nullable="false" />
+    <Property Name="CCred_TFC_Bandeira" Type="int" />
+    <Property Name="CCred_TFC_Numero" Type="int" />
+    <Property Name="CCred_TFC_Proc_OK" Type="bit" Nullable="false" />
+    <Property Name="CCred_TFC_Proc_NOK" Type="bit" Nullable="false" />
+    <Property Name="CCred_TFC_Proc_NOK_Motivo" Type="nvarchar" MaxLength="200" />
+    <Property Name="CCred_TFC_Proc_Data" Type="datetime" />
+    <Property Name="CCred_TFC_Enviar_Robo" Type="bit" Nullable="false" />
+    <Property Name="CCred_TFC_Enviar_Robo_Data" Type="datetime" />
+    <Property Name="CCred_TFC_Enviar_Robo_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="CCred_TFC_Proposta" Type="bigint" />
+    <Property Name="CCred_TFC_Liberado" Type="bit" Nullable="false" />
+    <Property Name="Logradouro" Type="nvarchar" MaxLength="200" />
+    <Property Name="Numero" Type="nvarchar" MaxLength="50" />
+    <Property Name="Complemento" Type="nvarchar" MaxLength="100" />
+    <Property Name="Bairro" Type="nvarchar" MaxLength="100" />
+    <Property Name="Cidade" Type="nvarchar" MaxLength="100" />
+    <Property Name="UF" Type="nvarchar" MaxLength="2" />
+    <Property Name="CEP" Type="nvarchar" MaxLength="8" />
+    <Property Name="Tipo_Imovel" Type="int" />
+    <Property Name="Obs" Type="nvarchar" MaxLength="200" />
+    <Property Name="Canc_Lote" Type="int" />
+    <Property Name="Canc_Lote_Dta" Type="datetime" />
+    <Property Name="Canc_Lote_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Canc_Lote_Proc_Ok" Type="bit" Nullable="false" />
+    <Property Name="Canc_Lote_Processando" Type="bit" Nullable="false" />
+    <Property Name="DataDebito" Type="datetime" />
+    <Property Name="Nivel1_Enviar" Type="bit" Nullable="false" />
+    <Property Name="Nivel1_Enviado" Type="bit" Nullable="false" />
+    <Property Name="Nivel1_Enviado_Data" Type="datetime" />
+    <Property Name="Nivel1_Emitido" Type="bit" Nullable="false" />
+    <Property Name="Nivel2_Emitido_Data" Type="datetime" />
+    <Property Name="Nivel1_Ok" Type="bit" Nullable="false" />
+    <Property Name="Nivel1_Enviado_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nivel1_Cancelado_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nivel1_Obs" Type="nvarchar" MaxLength="200" />
+    <Property Name="Nivel1_Ok_Data" Type="datetime" />
+    <Property Name="Nivel1_Ok_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nivel3_Enviado" Type="bit" Nullable="false" />
+    <Property Name="Nivel3_Enviado_Data" Type="datetime" />
+    <Property Name="Nivel3_Enviado_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nivel3_Ok" Type="bit" Nullable="false" />
+    <Property Name="Nivel3_Ok_Data" Type="datetime" />
+    <Property Name="Nivel3_Ok_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nivel2_Ok" Type="bit" Nullable="false" />
+    <Property Name="Nivel2_Ok_Data" Type="datetime" />
+    <Property Name="Nivel2_Ok_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nivel2_Emitido" Type="bit" Nullable="false" />
+    <Property Name="Nivel2_Obs" Type="nvarchar" MaxLength="200" />
+    <Property Name="CCred_TFC_Proc_NOK_Obs" Type="nvarchar" MaxLength="200" />
+    <Property Name="Oferta_CodId_Plano" Type="int" />
+    <Property Name="Venda_CodId_Plano" Type="int" />
+    <Property Name="Venda_Liberado" Type="bit" Nullable="false" />
+    <Property Name="Inibido" Type="bit" Nullable="false" />
+    <Property Name="Inibido_Data" Type="datetime" />
+    <Property Name="N_Inibido" Type="bit" Nullable="false" />
+    <Property Name="N_Inibido_Data" Type="datetime" />
+    <Property Name="PE" Type="bit" Nullable="false" />
+    <Property Name="PE_Marcar" Type="bit" Nullable="false" />
+    <Property Name="PE_ExportadoVC90" Type="bit" Nullable="false" />
+    <Property Name="PE_Exportado_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="PE_Exportado_Data" Type="datetime" />
+    <Property Name="PE_VC90_OK" Type="bit" Nullable="false" />
+    <Property Name="PE_VC90_OK_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="PE_VC90_OK_Data" Type="datetime" />
+    <Property Name="PE_Status_Rector" Type="nvarchar" MaxLength="200" />
+    <Property Name="Oferta_Marcar" Type="bit" Nullable="false" />
+    <Property Name="Oferta_Ferrari_Exp" Type="bit" Nullable="false" />
+    <Property Name="Oferta_Ferrari_Exp_Data" Type="datetime" />
+    <Property Name="Oferta_Ferrari_Exp_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="PE_VC" Type="bit" Nullable="false" />
+    <Property Name="DDD2" Type="nvarchar" MaxLength="20" />
+    <Property Name="Celular" Type="nvarchar" MaxLength="20" />
+    <Property Name="Canc_Nok_Obs" Type="nvarchar" MaxLength="200" />
+    <Property Name="Enviar" Type="bit" Nullable="false" />
+    <Property Name="Canc_OK_Manual_Obs" Type="nvarchar" MaxLength="100" />
+    <Property Name="Canc_OK_Manual_Login" Type="nvarchar" MaxLength="100" />
+    <Property Name="N_Inibido_Encontrado" Type="bit" Nullable="false" />
+    <Property Name="N_Inibido_N_Encontrado" Type="bit" Nullable="false" />
+    <Property Name="N_Inibido_Encontrado_VCAL_Enviar" Type="bit" Nullable="false" />
+    <Property Name="N_Inibido_Encontrado_VCAL" Type="bit" Nullable="false" />
+    <Property Name="N_Inibido_Encontrado_VCAL_Data" Type="datetime" />
+    <Property Name="N_Inibido_Encontrado_VCAL_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="NCorrentista_OP" Type="bit" Nullable="false" />
+    <Property Name="NCorrentista_DOC" Type="bit" Nullable="false" />
+    <Property Name="Protocolo_Off" Type="bigint" />
+    <Property Name="ChEsp" Type="bit" />
+    <Property Name="ChEsp_Ok" Type="bit" />
+    <Property Name="ChEsp_Nok" Type="bit" />
+    <Property Name="ChEsp_Enviar_Robo" Type="bit" />
+    <Property Name="ChEsp_Enviar_Robo_Data" Type="datetime" />
+    <Property Name="ChEsp_Enviar_Robo_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="ChEsp_Proc_Robo_Data" Type="datetime" />
+    <Property Name="ChEsp_Proc_Robo_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Num_Protocolo_SAC" Type="bigint" />
+    <Property Name="Email" Type="nvarchar" MaxLength="150" />
+    <Property Name="Nivel3_Obs" Type="nvarchar" MaxLength="200" />
+    <Property Name="Nivel3_Enviado_Nivel2" Type="bit" Nullable="false" />
+    <Property Name="Nivel3_Enviado_Nivel2_Data" Type="datetime" />
+    <Property Name="Nivel3_Enviado_Nivel2_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nivel2_SolFinal" Type="bit" Nullable="false" />
+    <Property Name="Nivel2_SolFinal_Obs" Type="nvarchar" MaxLength="200" />
+    <Property Name="Nivel2_SolFinal_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nivel2_SolFinal_Data" Type="datetime" />
+    <Property Name="Canc_Status_Rector" Type="nvarchar" MaxLength="100" />
+    <Property Name="Canc_Status_Rector_Data" Type="datetime" />
+    <Property Name="Canc_Status_Rector_Ok" Type="bit" Nullable="false" />
+    <Property Name="Canc_VC_OK" Type="bit" />
+    <Property Name="Canc_VC_OK_Devolucao" Type="bit" />
+    <Property Name="Connect_Exp" Type="bit" Nullable="false" />
+    <Property Name="Connect_aExp" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'DB_FRPJ.dbo.tbl_Atendimento_Expurgo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="tbl_Atendimento_Expurgo">
+    <Key>
+      <PropertyRef Name="CodId_Atend_Pk" />
+      <PropertyRef Name="NCorrentista" />
+      <PropertyRef Name="Argumentacao" />
+      <PropertyRef Name="Cancelamento" />
+      <PropertyRef Name="Retido" />
+      <PropertyRef Name="Canc_OK" />
+      <PropertyRef Name="Canc_Nok" />
+      <PropertyRef Name="Nivel2_Enviar" />
+      <PropertyRef Name="Nivel2_Enviado" />
+      <PropertyRef Name="Nivel2_Cancelado" />
+      <PropertyRef Name="Canc_Enviar_Robo" />
+      <PropertyRef Name="Canc_Nok_Alcada" />
+      <PropertyRef Name="Alcada" />
+      <PropertyRef Name="CM_Enviado" />
+      <PropertyRef Name="CM_Calc_VC" />
+      <PropertyRef Name="CM_Enviar" />
+      <PropertyRef Name="ATM" />
+      <PropertyRef Name="SMS" />
+      <PropertyRef Name="N_Emitido" />
+      <PropertyRef Name="ClienteAgencia" />
+      <PropertyRef Name="Atrito_VendaNRec" />
+      <PropertyRef Name="Atrito_CancNEfetuado" />
+      <PropertyRef Name="Oferta" />
+      <PropertyRef Name="Oferta_Proc_OK" />
+      <PropertyRef Name="Oferta_Proc_NOK" />
+      <PropertyRef Name="Endosso" />
+      <PropertyRef Name="Endosso_Proc_OK" />
+      <PropertyRef Name="Endosso_Proc_NOK" />
+      <PropertyRef Name="Endosso_Enviar_Robo" />
+      <PropertyRef Name="Endosso_Liberado" />
+      <PropertyRef Name="Venda" />
+      <PropertyRef Name="Venda_Proc_OK" />
+      <PropertyRef Name="Venda_Proc_NOK" />
+      <PropertyRef Name="Venda_Enviar_Robo" />
+      <PropertyRef Name="CCred_TFC" />
+      <PropertyRef Name="CCred_TFC_Proc_OK" />
+      <PropertyRef Name="CCred_TFC_Proc_NOK" />
+      <PropertyRef Name="CCred_TFC_Enviar_Robo" />
+      <PropertyRef Name="CCred_TFC_Liberado" />
+      <PropertyRef Name="Canc_Lote_Proc_Ok" />
+      <PropertyRef Name="Canc_Lote_Processando" />
+      <PropertyRef Name="Nivel1_Enviar" />
+      <PropertyRef Name="Nivel1_Enviado" />
+      <PropertyRef Name="Nivel1_Emitido" />
+      <PropertyRef Name="Nivel1_Ok" />
+      <PropertyRef Name="Nivel3_Enviado" />
+      <PropertyRef Name="Nivel3_Ok" />
+      <PropertyRef Name="Nivel2_Ok" />
+      <PropertyRef Name="Nivel2_Emitido" />
+      <PropertyRef Name="Venda_Liberado" />
+      <PropertyRef Name="Inibido" />
+      <PropertyRef Name="N_Inibido" />
+      <PropertyRef Name="PE" />
+      <PropertyRef Name="PE_Marcar" />
+      <PropertyRef Name="PE_ExportadoVC90" />
+      <PropertyRef Name="PE_VC90_OK" />
+      <PropertyRef Name="Oferta_Marcar" />
+      <PropertyRef Name="Oferta_Ferrari_Exp" />
+      <PropertyRef Name="PE_VC" />
+      <PropertyRef Name="Enviar" />
+      <PropertyRef Name="N_Inibido_Encontrado" />
+      <PropertyRef Name="N_Inibido_N_Encontrado" />
+      <PropertyRef Name="N_Inibido_Encontrado_VCAL_Enviar" />
+      <PropertyRef Name="N_Inibido_Encontrado_VCAL" />
+      <PropertyRef Name="NCorrentista_OP" />
+      <PropertyRef Name="NCorrentista_DOC" />
+      <PropertyRef Name="Nivel3_Enviado_Nivel2" />
+      <PropertyRef Name="Nivel2_SolFinal" />
+      <PropertyRef Name="Canc_Status_Rector_Ok" />
+      <PropertyRef Name="Connect_Exp" />
+      <PropertyRef Name="Connect_aExp" />
+    </Key>
+    <Property Name="CodId_Atend_Pk" Type="bigint" Nullable="false" />
+    <Property Name="Origem" Type="int" />
+    <Property Name="LigacaoData" Type="datetime" />
+    <Property Name="LigacaoMesref" Type="int" />
+    <Property Name="Cnpj" Type="bigint" />
+    <Property Name="RazaoSocial" Type="nvarchar" MaxLength="200" />
+    <Property Name="Cpf" Type="bigint" />
+    <Property Name="Nome" Type="nvarchar" MaxLength="200" />
+    <Property Name="DDD" Type="nvarchar" MaxLength="20" />
+    <Property Name="Fone" Type="nvarchar" MaxLength="20" />
+    <Property Name="Ramal" Type="nvarchar" MaxLength="20" />
+    <Property Name="NCorrentista" Type="bit" Nullable="false" />
+    <Property Name="Banco" Type="int" />
+    <Property Name="Agencia" Type="int" />
+    <Property Name="ContaCorrente" Type="int" />
+    <Property Name="DG" Type="int" />
+    <Property Name="CodId_Segmento_Fk" Type="int" />
+    <Property Name="DataNasc" Type="datetime" />
+    <Property Name="Idade" Type="int" />
+    <Property Name="CodProduto_Rector" Type="int" />
+    <Property Name="CodProduto_VC" Type="int" />
+    <Property Name="CodId_Prod_Grupo_Fk" Type="int" />
+    <Property Name="DataIniVig" Type="datetime" />
+    <Property Name="DataFimVig" Type="datetime" />
+    <Property Name="Proposta" Type="bigint" />
+    <Property Name="Apolice" Type="bigint" />
+    <Property Name="Certificado" Type="bigint" />
+    <Property Name="CodId_Categoria_Fk" Type="int" />
+    <Property Name="Premio" Type="money" />
+    <Property Name="ImpSegurada" Type="money" />
+    <Property Name="Argumentacao" Type="bit" Nullable="false" />
+    <Property Name="Cancelamento" Type="bit" Nullable="false" />
+    <Property Name="Retido" Type="bit" Nullable="false" />
+    <Property Name="CodId_Motivo" Type="int" />
+    <Property Name="Canc_Local" Type="int" />
+    <Property Name="Canc_Data" Type="int" />
+    <Property Name="Canc_Codigo" Type="int" />
+    <Property Name="Canc_OK" Type="bit" Nullable="false" />
+    <Property Name="Canc_Valor_Devolucao" Type="money" />
+    <Property Name="Canc_Ok_Data" Type="datetime" />
+    <Property Name="Canc_Nok" Type="bit" Nullable="false" />
+    <Property Name="Canc_Nok_Data" Type="datetime" />
+    <Property Name="Canc_Nok_Motivo" Type="nvarchar" MaxLength="200" />
+    <Property Name="Nivel2_Enviar" Type="bit" Nullable="false" />
+    <Property Name="Nivel2_Enviado" Type="bit" Nullable="false" />
+    <Property Name="Nivel2_Enviado_Data" Type="datetime" />
+    <Property Name="Nivel2_Cancelado" Type="bit" Nullable="false" />
+    <Property Name="Nivel2_Cancelado_Data" Type="datetime" />
+    <Property Name="Login_Operador" Type="nvarchar" MaxLength="50" />
+    <Property Name="Canc_Enviar_Robo" Type="bit" Nullable="false" />
+    <Property Name="Canc_Enviar_Robo_Data" Type="datetime" />
+    <Property Name="Canc_Enviar_Robo_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Canc_Processamento_Data" Type="datetime" />
+    <Property Name="Canc_Valor_Alcada" Type="money" />
+    <Property Name="Canc_Dias_Alcada" Type="int" />
+    <Property Name="Canc_Nok_Alcada" Type="bit" Nullable="false" />
+    <Property Name="Alcada" Type="bit" Nullable="false" />
+    <Property Name="Nivel2_Enviado_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nivel2_Cancelado_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="CM_Enviado" Type="bit" Nullable="false" />
+    <Property Name="CM_Enviado_Data" Type="datetime" />
+    <Property Name="CM_Enviado_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="CM_Calc_VC" Type="bit" Nullable="false" />
+    <Property Name="CM_Enviar" Type="bit" Nullable="false" />
+    <Property Name="ATM" Type="bit" Nullable="false" />
+    <Property Name="SMS" Type="bit" Nullable="false" />
+    <Property Name="N_Emitido" Type="bit" Nullable="false" />
+    <Property Name="Qtde_Parcelas" Type="int" />
+    <Property Name="ClienteAgencia" Type="bit" Nullable="false" />
+    <Property Name="MatriculaGerente" Type="nvarchar" MaxLength="50" />
+    <Property Name="CodId_Motivo2" Type="int" />
+    <Property Name="Atrito_VendaNRec" Type="bit" Nullable="false" />
+    <Property Name="Atrito_VendaNRec_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Atrito_VendaNRec_Data" Type="datetime" />
+    <Property Name="Atrito_CancNEfetuado" Type="bit" Nullable="false" />
+    <Property Name="Atrito_CancNEfetuado_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Atrito_CancNEfetuado_Data" Type="datetime" />
+    <Property Name="CodId_Cargo_Fk" Type="int" />
+    <Property Name="Atrito_CodId_Procedente" Type="int" />
+    <Property Name="Oferta" Type="bit" Nullable="false" />
+    <Property Name="Oferta_Proc_OK" Type="bit" Nullable="false" />
+    <Property Name="Oferta_Proc_NOK" Type="bit" Nullable="false" />
+    <Property Name="Oferta_Proc_NOK_Motivo" Type="nvarchar" MaxLength="200" />
+    <Property Name="Oferta_Proc_Data" Type="datetime" />
+    <Property Name="Oferta_Produto_VC" Type="int" />
+    <Property Name="Oferta_Produto_Grupo" Type="int" />
+    <Property Name="Oferta_Cod_Ferrari" Type="int" />
+    <Property Name="Oferta_ImpSeg" Type="money" />
+    <Property Name="Oferta_Premio" Type="money" />
+    <Property Name="Endosso" Type="bit" Nullable="false" />
+    <Property Name="Endosso_Proc_OK" Type="bit" Nullable="false" />
+    <Property Name="Endosso_Proc_NOK" Type="bit" Nullable="false" />
+    <Property Name="Endosso_Proc_NOK_Motivo" Type="nvarchar" MaxLength="200" />
+    <Property Name="Endosso_Proc_NOK_Obs" Type="nvarchar" MaxLength="200" />
+    <Property Name="Endosso_Proc_Data" Type="datetime" />
+    <Property Name="Endosso_ImpSeg" Type="money" />
+    <Property Name="Endosso_Premio" Type="money" />
+    <Property Name="Endosso_Enviar_Robo" Type="bit" Nullable="false" />
+    <Property Name="Endosso_Enviar_Robo_Data" Type="datetime" />
+    <Property Name="Endosso_Enviar_Robo_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Endosso_Proposta" Type="bigint" />
+    <Property Name="Endosso_Liberado" Type="bit" Nullable="false" />
+    <Property Name="Venda" Type="bit" Nullable="false" />
+    <Property Name="Venda_Proc_OK" Type="bit" Nullable="false" />
+    <Property Name="Venda_Proc_NOK" Type="bit" Nullable="false" />
+    <Property Name="Venda_Proc_NOK_Motivo" Type="nvarchar" MaxLength="200" />
+    <Property Name="Venda_Proc_NOK_Obs" Type="nvarchar" MaxLength="200" />
+    <Property Name="Venda_Proc_Data" Type="datetime" />
+    <Property Name="Venda_Produto_VC" Type="int" />
+    <Property Name="Venda_ImpSeg" Type="money" />
+    <Property Name="Venda_Premio" Type="money" />
+    <Property Name="Venda_Enviar_Robo" Type="bit" Nullable="false" />
+    <Property Name="Venda_Enviar_Robo_Data" Type="datetime" />
+    <Property Name="Venda_Enviar_Robo_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Venda_Proposta" Type="bigint" />
+    <Property Name="CCred_TFC" Type="bit" Nullable="false" />
+    <Property Name="CCred_TFC_Bandeira" Type="int" />
+    <Property Name="CCred_TFC_Numero" Type="int" />
+    <Property Name="CCred_TFC_Proc_OK" Type="bit" Nullable="false" />
+    <Property Name="CCred_TFC_Proc_NOK" Type="bit" Nullable="false" />
+    <Property Name="CCred_TFC_Proc_NOK_Motivo" Type="nvarchar" MaxLength="200" />
+    <Property Name="CCred_TFC_Proc_Data" Type="datetime" />
+    <Property Name="CCred_TFC_Enviar_Robo" Type="bit" Nullable="false" />
+    <Property Name="CCred_TFC_Enviar_Robo_Data" Type="datetime" />
+    <Property Name="CCred_TFC_Enviar_Robo_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="CCred_TFC_Proposta" Type="bigint" />
+    <Property Name="CCred_TFC_Liberado" Type="bit" Nullable="false" />
+    <Property Name="Logradouro" Type="nvarchar" MaxLength="200" />
+    <Property Name="Numero" Type="nvarchar" MaxLength="50" />
+    <Property Name="Complemento" Type="nvarchar" MaxLength="100" />
+    <Property Name="Bairro" Type="nvarchar" MaxLength="100" />
+    <Property Name="Cidade" Type="nvarchar" MaxLength="100" />
+    <Property Name="UF" Type="nvarchar" MaxLength="2" />
+    <Property Name="CEP" Type="nvarchar" MaxLength="8" />
+    <Property Name="Tipo_Imovel" Type="int" />
+    <Property Name="Obs" Type="nvarchar" MaxLength="200" />
+    <Property Name="Canc_Lote" Type="int" />
+    <Property Name="Canc_Lote_Dta" Type="datetime" />
+    <Property Name="Canc_Lote_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Canc_Lote_Proc_Ok" Type="bit" Nullable="false" />
+    <Property Name="Canc_Lote_Processando" Type="bit" Nullable="false" />
+    <Property Name="DataDebito" Type="datetime" />
+    <Property Name="Nivel1_Enviar" Type="bit" Nullable="false" />
+    <Property Name="Nivel1_Enviado" Type="bit" Nullable="false" />
+    <Property Name="Nivel1_Enviado_Data" Type="datetime" />
+    <Property Name="Nivel1_Emitido" Type="bit" Nullable="false" />
+    <Property Name="Nivel2_Emitido_Data" Type="datetime" />
+    <Property Name="Nivel1_Ok" Type="bit" Nullable="false" />
+    <Property Name="Nivel1_Enviado_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nivel1_Cancelado_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nivel1_Obs" Type="nvarchar" MaxLength="200" />
+    <Property Name="Nivel1_Ok_Data" Type="datetime" />
+    <Property Name="Nivel1_Ok_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nivel3_Enviado" Type="bit" Nullable="false" />
+    <Property Name="Nivel3_Enviado_Data" Type="datetime" />
+    <Property Name="Nivel3_Enviado_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nivel3_Ok" Type="bit" Nullable="false" />
+    <Property Name="Nivel3_Ok_Data" Type="datetime" />
+    <Property Name="Nivel3_Ok_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nivel2_Ok" Type="bit" Nullable="false" />
+    <Property Name="Nivel2_Ok_Data" Type="datetime" />
+    <Property Name="Nivel2_Ok_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nivel2_Emitido" Type="bit" Nullable="false" />
+    <Property Name="Nivel2_Obs" Type="nvarchar" MaxLength="200" />
+    <Property Name="CCred_TFC_Proc_NOK_Obs" Type="nvarchar" MaxLength="200" />
+    <Property Name="Oferta_CodId_Plano" Type="int" />
+    <Property Name="Venda_CodId_Plano" Type="int" />
+    <Property Name="Venda_Liberado" Type="bit" Nullable="false" />
+    <Property Name="Inibido" Type="bit" Nullable="false" />
+    <Property Name="Inibido_Data" Type="datetime" />
+    <Property Name="N_Inibido" Type="bit" Nullable="false" />
+    <Property Name="N_Inibido_Data" Type="datetime" />
+    <Property Name="PE" Type="bit" Nullable="false" />
+    <Property Name="PE_Marcar" Type="bit" Nullable="false" />
+    <Property Name="PE_ExportadoVC90" Type="bit" Nullable="false" />
+    <Property Name="PE_Exportado_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="PE_Exportado_Data" Type="datetime" />
+    <Property Name="PE_VC90_OK" Type="bit" Nullable="false" />
+    <Property Name="PE_VC90_OK_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="PE_VC90_OK_Data" Type="datetime" />
+    <Property Name="PE_Status_Rector" Type="nvarchar" MaxLength="200" />
+    <Property Name="Oferta_Marcar" Type="bit" Nullable="false" />
+    <Property Name="Oferta_Ferrari_Exp" Type="bit" Nullable="false" />
+    <Property Name="Oferta_Ferrari_Exp_Data" Type="datetime" />
+    <Property Name="Oferta_Ferrari_Exp_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="PE_VC" Type="bit" Nullable="false" />
+    <Property Name="DDD2" Type="nvarchar" MaxLength="20" />
+    <Property Name="Celular" Type="nvarchar" MaxLength="20" />
+    <Property Name="Canc_Nok_Obs" Type="nvarchar" MaxLength="200" />
+    <Property Name="Enviar" Type="bit" Nullable="false" />
+    <Property Name="Canc_OK_Manual_Obs" Type="nvarchar" MaxLength="100" />
+    <Property Name="Canc_OK_Manual_Login" Type="nvarchar" MaxLength="100" />
+    <Property Name="N_Inibido_Encontrado" Type="bit" Nullable="false" />
+    <Property Name="N_Inibido_N_Encontrado" Type="bit" Nullable="false" />
+    <Property Name="N_Inibido_Encontrado_VCAL_Enviar" Type="bit" Nullable="false" />
+    <Property Name="N_Inibido_Encontrado_VCAL" Type="bit" Nullable="false" />
+    <Property Name="N_Inibido_Encontrado_VCAL_Data" Type="datetime" />
+    <Property Name="N_Inibido_Encontrado_VCAL_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="NCorrentista_OP" Type="bit" Nullable="false" />
+    <Property Name="NCorrentista_DOC" Type="bit" Nullable="false" />
+    <Property Name="Protocolo_Off" Type="bigint" />
+    <Property Name="ChEsp" Type="bit" />
+    <Property Name="ChEsp_Ok" Type="bit" />
+    <Property Name="ChEsp_Nok" Type="bit" />
+    <Property Name="ChEsp_Enviar_Robo" Type="bit" />
+    <Property Name="ChEsp_Enviar_Robo_Data" Type="datetime" />
+    <Property Name="ChEsp_Enviar_Robo_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="ChEsp_Proc_Robo_Data" Type="datetime" />
+    <Property Name="ChEsp_Proc_Robo_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Num_Protocolo_SAC" Type="bigint" />
+    <Property Name="Email" Type="nvarchar" MaxLength="150" />
+    <Property Name="Nivel3_Obs" Type="nvarchar" MaxLength="200" />
+    <Property Name="Nivel3_Enviado_Nivel2" Type="bit" Nullable="false" />
+    <Property Name="Nivel3_Enviado_Nivel2_Data" Type="datetime" />
+    <Property Name="Nivel3_Enviado_Nivel2_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nivel2_SolFinal" Type="bit" Nullable="false" />
+    <Property Name="Nivel2_SolFinal_Obs" Type="nvarchar" MaxLength="200" />
+    <Property Name="Nivel2_SolFinal_Login" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nivel2_SolFinal_Data" Type="datetime" />
+    <Property Name="Canc_Status_Rector" Type="nvarchar" MaxLength="100" />
+    <Property Name="Canc_Status_Rector_Data" Type="datetime" />
+    <Property Name="Canc_Status_Rector_Ok" Type="bit" Nullable="false" />
+    <Property Name="Canc_VC_OK" Type="bit" />
+    <Property Name="Canc_VC_OK_Devolucao" Type="bit" />
+    <Property Name="Connect_Exp" Type="bit" Nullable="false" />
+    <Property Name="Connect_aExp" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Bancos">
+    <Key>
+      <PropertyRef Name="Cod_Banco" />
+    </Key>
+    <Property Name="Cod_Banco" Type="int" Nullable="false" />
+    <Property Name="Banco" Type="nvarchar" MaxLength="255" />
+    <Property Name="Site" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="tbl_Canc_Alcada">
+    <Key>
+      <PropertyRef Name="CodId_Alcada_Pk" />
+    </Key>
+    <Property Name="CodId_Alcada_Pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CodId_Prod_Grupo_Fk" Type="int" />
+    <Property Name="Valor" Type="money" />
+    <Property Name="Dias" Type="int" />
+    <Property Name="Data_Inicio" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Canc_Codigo">
+    <Key>
+      <PropertyRef Name="CodId_CCod_Pk" />
+    </Key>
+    <Property Name="CodId_CCod_Pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CodId_CLocal_Fk" Type="int" />
+    <Property Name="Cod_Cancelamento" Type="int" />
+    <Property Name="Descricao" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_Canc_Data">
+    <Key>
+      <PropertyRef Name="CodId_CData_Pk" />
+    </Key>
+    <Property Name="CodId_CData_Pk" Type="int" Nullable="false" />
+    <Property Name="Data_Cancelamento" Type="nvarchar" MaxLength="50" />
+    <Property Name="Obs" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="tbl_Canc_Local">
+    <Key>
+      <PropertyRef Name="CodId_CLocal_Pk" />
+    </Key>
+    <Property Name="CodId_CLocal_Pk" Type="int" Nullable="false" />
+    <Property Name="Local_Cancelamento" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Canc_Lote_ID">
+    <Key>
+      <PropertyRef Name="CodId" />
+    </Key>
+    <Property Name="CodId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Canc_Motivo">
+    <Key>
+      <PropertyRef Name="CodId_CMotivo_Pk" />
+    </Key>
+    <Property Name="CodId_CMotivo_Pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Motivo" Type="nvarchar" MaxLength="100" />
+    <Property Name="Retido" Type="bit" Nullable="false" />
+    <Property Name="Inelegivel" Type="bit" Nullable="false" />
+    <Property Name="CodId_GCA" Type="int" />
+    <Property Name="Inativo" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Canc_Motivo2">
+    <Key>
+      <PropertyRef Name="CodId_CMotivo2_Pk" />
+    </Key>
+    <Property Name="CodId_CMotivo2_Pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CodId_CMotivo_Fk" Type="int" Nullable="false" />
+    <Property Name="Motivo" Type="nvarchar" MaxLength="100" />
+    <Property Name="Retido" Type="bit" Nullable="false" />
+    <Property Name="Inelegivel" Type="bit" Nullable="false" />
+    <Property Name="CodId_GCA" Type="int" />
+    <Property Name="Inativo" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Canc_Tipo">
+    <Key>
+      <PropertyRef Name="CodId_CTipo_Pk" />
+    </Key>
+    <Property Name="CodId_CTipo_Pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Tipo_Cancelamento" Type="nvarchar" MaxLength="50" />
+    <Property Name="Obs" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="tbl_Cargo">
+    <Key>
+      <PropertyRef Name="CodId_Cargo_Pk" />
+    </Key>
+    <Property Name="CodId_Cargo_Pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Cargo" Type="nvarchar" MaxLength="100" />
+    <Property Name="Inativo" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_ChEps_Situacoes_Robo">
+    <Key>
+      <PropertyRef Name="Cod_Situacao" />
+    </Key>
+    <Property Name="Cod_Situacao" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Desc_Situacao" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="Status_OK" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_Dash_Template">
+    <Key>
+      <PropertyRef Name="CodId_Dash" />
+    </Key>
+    <Property Name="CodId_Dash" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Proc_Dash" Type="nvarchar" MaxLength="50" />
+    <Property Name="Body" Type="nvarchar" MaxLength="1000" />
+    <Property Name="BodyVar_Loop" Type="nvarchar" MaxLength="1000" />
+    <Property Name="BodyVarSet_Loop" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Body2" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Body_Loop" Type="nvarchar" MaxLength="1000" />
+    <Property Name="From_Where" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="tbl_Desfecho">
+    <Key>
+      <PropertyRef Name="CodId_Desfecho" />
+    </Key>
+    <Property Name="CodId_Desfecho" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CodId_Prod_Grupo_Fk" Type="int" />
+    <Property Name="CodId_TipoRet_Fk" Type="int" />
+    <Property Name="CodId_CMotivo_Fk" Type="int" />
+    <Property Name="CodId_CLocal_Fk" Type="int" />
+    <Property Name="Cod_Cancelamento" Type="int" />
+    <Property Name="CodId_CData_Fk" Type="int" />
+    <Property Name="CodId_CTipo_Fk" Type="int" />
+    <Property Name="Inativo" Type="bit" Nullable="false" />
+    <Property Name="Retido" Type="bit" Nullable="false" />
+    <Property Name="Alcada" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Eps">
+    <Key>
+      <PropertyRef Name="CodId_Eps_Pk" />
+    </Key>
+    <Property Name="CodId_Eps_Pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Eps" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inativo" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Plano">
+    <Key>
+      <PropertyRef Name="CodId_Plano" />
+    </Key>
+    <Property Name="CodId_Plano" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CodProduto" Type="int" />
+    <Property Name="Segmento" Type="int" />
+    <Property Name="Categoria" Type="int" />
+    <Property Name="Tipo_Res" Type="int" />
+    <Property Name="ImpSeg" Type="money" />
+    <Property Name="Premio" Type="money" />
+    <Property Name="Inativo" Type="bit" Nullable="false" />
+    <Property Name="OfertaDif" Type="bit" Nullable="false" />
+    <Property Name="Venda" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'DB_FRPJ.dbo.tbl_Procedente' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="tbl_Procedente">
+    <Key>
+      <PropertyRef Name="CodId_Procedente" />
+    </Key>
+    <Property Name="CodId_Procedente" Type="int" Nullable="false" />
+    <Property Name="Descricao" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Produto">
+    <Key>
+      <PropertyRef Name="CodProduto" />
+    </Key>
+    <Property Name="CodProduto" Type="int" Nullable="false" />
+    <Property Name="CodProduto_Rector" Type="int" />
+    <Property Name="Cod_GCA" Type="int" />
+    <Property Name="CodId_Grupo_Fk" Type="int" />
+    <Property Name="Apolice" Type="int" />
+    <Property Name="Ramo" Type="int" />
+    <Property Name="NomeProduto" Type="nvarchar" MaxLength="50" />
+    <Property Name="Segmento" Type="bit" />
+    <Property Name="TipoRetencao_Fk" Type="int" />
+    <Property Name="Inativo" Type="bit" Nullable="false" />
+    <Property Name="Limite_Idade" Type="int" />
+    <Property Name="Classe" Type="int" />
+    <Property Name="Ch_Esp" Type="bit" />
+    <Property Name="Cia" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_Produto_Categoria">
+    <Key>
+      <PropertyRef Name="CodId_Categoria" />
+    </Key>
+    <Property Name="CodId_Categoria" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Categoria" Type="nvarchar" MaxLength="100" />
+    <Property Name="Inativo" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Produto_Classe">
+    <Key>
+      <PropertyRef Name="CodId_ProdClass_Pk" />
+    </Key>
+    <Property Name="CodId_ProdClass_Pk" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Classe" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Produto_Grupo">
+    <Key>
+      <PropertyRef Name="CodId_Prod_Grupo_Pk" />
+    </Key>
+    <Property Name="CodId_Prod_Grupo_Pk" Type="int" Nullable="false" />
+    <Property Name="Ramo" Type="int" />
+    <Property Name="Produto_Grupo" Type="nvarchar" MaxLength="50" />
+    <Property Name="CodId_CLocal_Fk" Type="int" />
+    <Property Name="Cia" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_Produto_Segmento">
+    <Key>
+      <PropertyRef Name="CodId_Segmento" />
+    </Key>
+    <Property Name="CodId_Segmento" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Segmento" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Inativo" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'DB_FRPJ.dbo.tbl_PzCurto_Percentual_Calc' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="tbl_PzCurto_Percentual_Calc">
+    <Key>
+      <PropertyRef Name="Id_Percentual_Calc" />
+    </Key>
+    <Property Name="Id_Percentual_Calc" Type="int" Nullable="false" />
+    <Property Name="Percent_Prazo_Segurado" Type="float" />
+    <Property Name="Percent_Premio_Retido" Type="float" />
+    <Property Name="Percent_Premio_Devolucao" Type="float" />
+  </EntityType>
+  <EntityType Name="tbl_Retencao_Meta">
+    <Key>
+      <PropertyRef Name="Mesref" />
+    </Key>
+    <Property Name="Mesref" Type="int" Nullable="false" />
+    <Property Name="Meta_Open" Type="float" />
+    <Property Name="Meta_Related" Type="float" />
+  </EntityType>
+  <EntityType Name="tbl_Retencao_Meta_PJ">
+    <Key>
+      <PropertyRef Name="Mesref" />
+    </Key>
+    <Property Name="Mesref" Type="int" Nullable="false" />
+    <Property Name="Meta_Open" Type="float" />
+    <Property Name="Meta_Related" Type="float" />
+  </EntityType>
+  <EntityType Name="tbl_Tipo_Retencao">
+    <Key>
+      <PropertyRef Name="CodId_TipoRet_Pk" />
+    </Key>
+    <Property Name="CodId_TipoRet_Pk" Type="int" Nullable="false" />
+    <Property Name="TipoRetencao" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Usuario">
+    <Key>
+      <PropertyRef Name="CodId_Usuario" />
+    </Key>
+    <Property Name="Login" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NomeUsuario" Type="nvarchar" MaxLength="50" />
+    <Property Name="Site" Type="int" />
+    <Property Name="PerfilUsuario" Type="int" />
+    <Property Name="Supervisor" Type="int" />
+    <Property Name="Inativo" Type="bit" Nullable="false" />
+    <Property Name="Perfil_Old" Type="int" />
+    <Property Name="CodId_Usuario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="tbl_Usuario_Perfil">
+    <Key>
+      <PropertyRef Name="CodId_Perfil_Pk" />
+    </Key>
+    <Property Name="CodId_Perfil_Pk" Type="int" Nullable="false" />
+    <Property Name="PerfilUsuario" Type="nvarchar" MaxLength="50" />
+    <Property Name="Inativo" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tsys_Parametro">
+    <Key>
+      <PropertyRef Name="CodParametro" />
+    </Key>
+    <Property Name="CodParametro" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NomeParametro" Type="nvarchar" MaxLength="50" />
+    <Property Name="ValorParametro" Type="nvarchar" MaxLength="255" />
+    <Property Name="TipoDados" Type="int" />
+    <Property Name="Descricao" Type="nvarchar" MaxLength="255" />
+    <Property Name="strBackup" Type="nvarchar" MaxLength="255" />
+    <Property Name="Permit" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6013: The table/view 'DB_FRPJ.dbo.tbl_Alerta' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="tbl_Alerta">
+        <Property Name="Cpf_Cnpj" Type="bigint" />
+        <Property Name="Mensagem" Type="nvarchar" MaxLength="500" />
+        <Property Name="Fim_Vigencia" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'DB_FRPJ.dbo.tbl_ATM_2N' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="tbl_ATM_2N">
+        <Property Name="CodId_Atend_Pk" Type="float" />
+        <Property Name="Proposta" Type="float" />
+        <Property Name="Apolice" Type="float" />
+        <Property Name="Certificado" Type="float" />
+        <Property Name="Status" Type="nvarchar" MaxLength="255" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'DB_FRPJ.dbo.tbl_Cliente_Segmento' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="tbl_Cliente_Segmento">
+        <Property Name="CPF" Type="bigint" />
+        <Property Name="CodId_Segmento_FK" Type="int" />
+        <Property Name="Estrela" Type="int" />
+        <Property Name="Farol" Type="int" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'DB_FRPJ.dbo.tbl_Release' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="tbl_Release">
+        <Property Name="Release" Type="int" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'DB_FRPJ.dbo.tbl_Release_Host' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="tbl_Release_Host">
+        <Property Name="HostName" Type="nvarchar" MaxLength="50" />
+        <Property Name="Release" Type="int" />
+        <Property Name="Release_Data" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'DB_FRPJ.dbo.tbl_txt_Agencias' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="tbl_txt_Agencias">
+        <Property Name="Cod_Agencia" Type="int" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'DB_FRPJ.dbo.tbl_txt_Atendimento_PF' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="tbl_txt_Atendimento_PF">
+        <Property Name="Cod_Atendimento" Type="bigint" />
+        <Property Name="DDD" Type="varchar" MaxLength="20" />
+        <Property Name="Fone" Type="varchar" MaxLength="20" />
+        <Property Name="Ramal" Type="varchar" MaxLength="20" />
+        <Property Name="DDD2" Type="varchar" MaxLength="20" />
+        <Property Name="Cel" Type="varchar" MaxLength="20" />
+        <Property Name="NCorrentista" Type="bit" />
+        <Property Name="Banco" Type="int" />
+        <Property Name="Agencia" Type="int" />
+        <Property Name="ContaCorrente" Type="int" />
+        <Property Name="DG" Type="int" />
+        <Property Name="CodId_Segmento_Fk" Type="int" />
+        <Property Name="Cpf" Type="bigint" />
+        <Property Name="Nome" Type="varchar" MaxLength="200" />
+        <Property Name="Email" Type="varchar" MaxLength="150" />
+        <Property Name="Num_Protocolo_SAC" Type="bigint" />
+        <Property Name="CodId_Cargo_Fk" Type="int" />
+        <Property Name="DataNasc" Type="datetime" />
+        <Property Name="Idade" Type="int" />
+        <Property Name="CodProduto_Rector" Type="int" />
+        <Property Name="CodProduto_VC" Type="int" />
+        <Property Name="CodId_Prod_Grupo_Fk" Type="int" />
+        <Property Name="DataIniVig" Type="datetime" />
+        <Property Name="DataFimVig" Type="datetime" />
+        <Property Name="Proposta" Type="bigint" />
+        <Property Name="Apolice" Type="bigint" />
+        <Property Name="Certificado" Type="bigint" />
+        <Property Name="CodId_Categoria_Fk" Type="int" />
+        <Property Name="Premio" Type="money" />
+        <Property Name="ImpSegurada" Type="money" />
+        <Property Name="Argumentacao" Type="bit" />
+        <Property Name="Cancelamento" Type="bit" />
+        <Property Name="Endosso" Type="bit" />
+        <Property Name="Retido" Type="bit" />
+        <Property Name="CodId_Motivo" Type="int" />
+        <Property Name="Canc_Local" Type="int" />
+        <Property Name="Canc_Data" Type="int" />
+        <Property Name="Canc_Codigo" Type="int" />
+        <Property Name="Login" Type="varchar" MaxLength="50" />
+        <Property Name="Alcada" Type="bit" />
+        <Property Name="Alcada_Valor" Type="money" />
+        <Property Name="Alcada_Dias" Type="int" />
+        <Property Name="Endosso_ImpSeg" Type="money" />
+        <Property Name="Endosso_Premio" Type="money" />
+        <Property Name="Venda" Type="bit" />
+        <Property Name="Venda_Produto_VC" Type="int" />
+        <Property Name="Venda_ImpSeg" Type="money" />
+        <Property Name="Venda_Premio" Type="money" />
+        <Property Name="CCred_TFC" Type="bit" />
+        <Property Name="CCred_TFC_Bandeira" Type="int" />
+        <Property Name="CCred_TFC_Numero" Type="int" />
+        <Property Name="Oferta" Type="bit" />
+        <Property Name="Oferta_Cod_Ferrari" Type="int" />
+        <Property Name="Oferta_ImpSeg" Type="money" />
+        <Property Name="Oferta_Premio" Type="money" />
+        <Property Name="N_Emitido" Type="bit" />
+        <Property Name="Qtde_Parcelas" Type="int" />
+        <Property Name="ATM" Type="bit" />
+        <Property Name="SMS" Type="bit" />
+        <Property Name="ClienteAgencia" Type="bit" />
+        <Property Name="MatriculaGerente" Type="varchar" MaxLength="50" />
+        <Property Name="CodId_Motivo2" Type="int" />
+        <Property Name="Atrito_VendaNRec" Type="bit" />
+        <Property Name="Atrito_CancNEfetuado" Type="bit" />
+        <Property Name="Logradouro" Type="varchar" MaxLength="200" />
+        <Property Name="Numero" Type="varchar" MaxLength="50" />
+        <Property Name="Complemento" Type="varchar" MaxLength="100" />
+        <Property Name="Bairro" Type="varchar" MaxLength="100" />
+        <Property Name="Cidade" Type="varchar" MaxLength="100" />
+        <Property Name="UF" Type="varchar" MaxLength="2" />
+        <Property Name="CEP" Type="varchar" MaxLength="8" />
+        <Property Name="Tipo_Imovel" Type="int" />
+        <Property Name="Obs" Type="varchar" MaxLength="200" />
+        <Property Name="Oferta_Produto_VC" Type="int" />
+        <Property Name="DataDebito" Type="datetime" />
+        <Property Name="Oferta_CodId_Plano" Type="int" />
+        <Property Name="Venda_CodId_Plano" Type="int" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'DB_FRPJ.dbo.tbl_txt_Atendimento_PJ' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="tbl_txt_Atendimento_PJ">
+        <Property Name="Cod_Atendimento" Type="bigint" />
+        <Property Name="Cnpj" Type="bigint" />
+        <Property Name="RazaoSocial" Type="varchar" MaxLength="200" />
+        <Property Name="DDD" Type="varchar" MaxLength="20" />
+        <Property Name="Fone" Type="varchar" MaxLength="20" />
+        <Property Name="Ramal" Type="varchar" MaxLength="20" />
+        <Property Name="DDD2" Type="varchar" MaxLength="20" />
+        <Property Name="Cel" Type="varchar" MaxLength="20" />
+        <Property Name="NCorrentista" Type="bit" />
+        <Property Name="Banco" Type="int" />
+        <Property Name="Agencia" Type="int" />
+        <Property Name="ContaCorrente" Type="int" />
+        <Property Name="DG" Type="int" />
+        <Property Name="CodId_Segmento_Fk" Type="int" />
+        <Property Name="Cpf" Type="bigint" />
+        <Property Name="Nome" Type="varchar" MaxLength="200" />
+        <Property Name="Email" Type="varchar" MaxLength="150" />
+        <Property Name="Num_Protocolo_SAC" Type="bigint" />
+        <Property Name="CodId_Cargo_Fk" Type="int" />
+        <Property Name="DataNasc" Type="datetime" />
+        <Property Name="Idade" Type="int" />
+        <Property Name="CodProduto_Rector" Type="int" />
+        <Property Name="CodProduto_VC" Type="int" />
+        <Property Name="CodId_Prod_Grupo_Fk" Type="int" />
+        <Property Name="DataIniVig" Type="datetime" />
+        <Property Name="DataFimVig" Type="datetime" />
+        <Property Name="Proposta" Type="bigint" />
+        <Property Name="Apolice" Type="bigint" />
+        <Property Name="Certificado" Type="bigint" />
+        <Property Name="CodId_Categoria_Fk" Type="int" />
+        <Property Name="Premio" Type="money" />
+        <Property Name="ImpSegurada" Type="money" />
+        <Property Name="Argumentacao" Type="bit" />
+        <Property Name="Cancelamento" Type="bit" />
+        <Property Name="Endosso" Type="bit" />
+        <Property Name="Retido" Type="bit" />
+        <Property Name="CodId_Motivo" Type="int" />
+        <Property Name="Canc_Local" Type="int" />
+        <Property Name="Canc_Data" Type="int" />
+        <Property Name="Canc_Codigo" Type="int" />
+        <Property Name="Login" Type="varchar" MaxLength="50" />
+        <Property Name="Alcada" Type="bit" />
+        <Property Name="Alcada_Valor" Type="money" />
+        <Property Name="Alcada_Dias" Type="int" />
+        <Property Name="Qtde_Parcelas" Type="int" />
+        <Property Name="CodId_Motivo2" Type="int" />
+        <Property Name="ClienteAgencia" Type="bit" />
+        <Property Name="MatriculaGerente" Type="varchar" MaxLength="50" />
+        <Property Name="Obs" Type="varchar" MaxLength="200" />
+        <Property Name="Atrito_VendaNRec" Type="bit" />
+        <Property Name="Atrito_CancNEfetuado" Type="bit" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'DB_FRPJ.dbo.tbl_txt_Cliente_Segmento' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="tbl_txt_Cliente_Segmento">
+        <Property Name="CPF" Type="nvarchar" MaxLength="255" />
+        <Property Name="Segmento" Type="nvarchar" MaxLength="255" />
+        <Property Name="Estrela" Type="nvarchar" MaxLength="255" />
+        <Property Name="Farol" Type="nvarchar" MaxLength="255" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'DB_FRPJ.dbo.Tbl_txt_Connect_Canc_NOK' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="Tbl_txt_Connect_Canc_NOK">
+        <Property Name="CodId_Ligacao" Type="bigint" />
+        <Property Name="Mensagem_Inconsistencia" Type="nvarchar" MaxLength="300" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'DB_FRPJ.dbo.Tbl_txt_Connect_Canc_OK' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="Tbl_txt_Connect_Canc_OK">
+        <Property Name="CodId_Ligacao" Type="bigint" />
+        <Property Name="Data_Cancelamento" Type="varchar" MaxLength="10" />
+        <Property Name="Premio" Type="money" />
+        <Property Name="Correcao_Monetaria" Type="money" />
+        <Property Name="Valor_Total" Type="money" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'DB_FRPJ.dbo.tbl_VC90_Rector' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="tbl_VC90_Rector">
+        <Property Name="PROPOSTA" Type="bigint" />
+        <Property Name="TIPO_PROP" Type="nvarchar" MaxLength="50" />
+        <Property Name="GR" Type="nvarchar" MaxLength="10" />
+        <Property Name="FINANC" Type="nvarchar" MaxLength="10" />
+        <Property Name="DPS" Type="nvarchar" MaxLength="10" />
+        <Property Name="STATUS_ENDOSSO" Type="nvarchar" MaxLength="100" />
+        <Property Name="DT_STATUS" Type="nvarchar" MaxLength="50" />
+        <Property Name="DT_CONTRATACAO" Type="nvarchar" MaxLength="50" />
+        <Property Name="DT_EMISSAO" Type="nvarchar" MaxLength="50" />
+        <Property Name="DT_EXPIRA" Type="nvarchar" MaxLength="50" />
+        <Property Name="SUC" Type="nvarchar" MaxLength="50" />
+        <Property Name="RAMO" Type="nvarchar" MaxLength="50" />
+        <Property Name="APOL" Type="nvarchar" MaxLength="50" />
+        <Property Name="CERTIF" Type="nvarchar" MaxLength="50" />
+        <Property Name="ENDOSSO" Type="nvarchar" MaxLength="50" />
+        <Property Name="STATUS_CERTIF" Type="nvarchar" MaxLength="100" />
+        <Property Name="TIPO_ENDOSSO" Type="nvarchar" MaxLength="50" />
+        <Property Name="PRODUTO" Type="nvarchar" MaxLength="50" />
+      </EntityType>-->
+</Schema>

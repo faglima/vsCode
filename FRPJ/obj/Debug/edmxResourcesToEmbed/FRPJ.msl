@@ -1,0 +1,786 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="efFRPJStoreContainer" CdmEntityContainer="eDB_FRPJ">
+    <EntitySetMapping Name="tbl_AgCc_Valida">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_AgCc_Valida">
+        <MappingFragment StoreEntitySet="tbl_AgCc_Valida">
+          <ScalarProperty Name="CodId_Ag_PK" ColumnName="CodId_Ag_PK" />
+          <ScalarProperty Name="Banco" ColumnName="Banco" />
+          <ScalarProperty Name="Agencia" ColumnName="Agencia" />
+          <ScalarProperty Name="Conta" ColumnName="Conta" />
+          <ScalarProperty Name="Ativo" ColumnName="Ativo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Agencias">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Agencias">
+        <MappingFragment StoreEntitySet="tbl_Agencias">
+          <ScalarProperty Name="Cod_Agencia" ColumnName="Cod_Agencia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Atendimento">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Atendimento">
+        <MappingFragment StoreEntitySet="tbl_Atendimento">
+          <ScalarProperty Name="CodId_Atend_Pk" ColumnName="CodId_Atend_Pk" />
+          <ScalarProperty Name="Origem" ColumnName="Origem" />
+          <ScalarProperty Name="LigacaoData" ColumnName="LigacaoData" />
+          <ScalarProperty Name="LigacaoMesref" ColumnName="LigacaoMesref" />
+          <ScalarProperty Name="Cnpj" ColumnName="Cnpj" />
+          <ScalarProperty Name="RazaoSocial" ColumnName="RazaoSocial" />
+          <ScalarProperty Name="Cpf" ColumnName="Cpf" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="DDD" ColumnName="DDD" />
+          <ScalarProperty Name="Fone" ColumnName="Fone" />
+          <ScalarProperty Name="Ramal" ColumnName="Ramal" />
+          <ScalarProperty Name="NCorrentista" ColumnName="NCorrentista" />
+          <ScalarProperty Name="Banco" ColumnName="Banco" />
+          <ScalarProperty Name="Agencia" ColumnName="Agencia" />
+          <ScalarProperty Name="ContaCorrente" ColumnName="ContaCorrente" />
+          <ScalarProperty Name="DG" ColumnName="DG" />
+          <ScalarProperty Name="CodId_Segmento_Fk" ColumnName="CodId_Segmento_Fk" />
+          <ScalarProperty Name="DataNasc" ColumnName="DataNasc" />
+          <ScalarProperty Name="Idade" ColumnName="Idade" />
+          <ScalarProperty Name="CodProduto_Rector" ColumnName="CodProduto_Rector" />
+          <ScalarProperty Name="CodProduto_VC" ColumnName="CodProduto_VC" />
+          <ScalarProperty Name="CodId_Prod_Grupo_Fk" ColumnName="CodId_Prod_Grupo_Fk" />
+          <ScalarProperty Name="DataIniVig" ColumnName="DataIniVig" />
+          <ScalarProperty Name="DataFimVig" ColumnName="DataFimVig" />
+          <ScalarProperty Name="Proposta" ColumnName="Proposta" />
+          <ScalarProperty Name="Apolice" ColumnName="Apolice" />
+          <ScalarProperty Name="Certificado" ColumnName="Certificado" />
+          <ScalarProperty Name="CodId_Categoria_Fk" ColumnName="CodId_Categoria_Fk" />
+          <ScalarProperty Name="Premio" ColumnName="Premio" />
+          <ScalarProperty Name="ImpSegurada" ColumnName="ImpSegurada" />
+          <ScalarProperty Name="Argumentacao" ColumnName="Argumentacao" />
+          <ScalarProperty Name="Cancelamento" ColumnName="Cancelamento" />
+          <ScalarProperty Name="Retido" ColumnName="Retido" />
+          <ScalarProperty Name="CodId_Motivo" ColumnName="CodId_Motivo" />
+          <ScalarProperty Name="Canc_Local" ColumnName="Canc_Local" />
+          <ScalarProperty Name="Canc_Data" ColumnName="Canc_Data" />
+          <ScalarProperty Name="Canc_Codigo" ColumnName="Canc_Codigo" />
+          <ScalarProperty Name="Canc_OK" ColumnName="Canc_OK" />
+          <ScalarProperty Name="Canc_Valor_Devolucao" ColumnName="Canc_Valor_Devolucao" />
+          <ScalarProperty Name="Canc_Ok_Data" ColumnName="Canc_Ok_Data" />
+          <ScalarProperty Name="Canc_Nok" ColumnName="Canc_Nok" />
+          <ScalarProperty Name="Canc_Nok_Data" ColumnName="Canc_Nok_Data" />
+          <ScalarProperty Name="Canc_Nok_Motivo" ColumnName="Canc_Nok_Motivo" />
+          <ScalarProperty Name="Nivel2_Enviar" ColumnName="Nivel2_Enviar" />
+          <ScalarProperty Name="Nivel2_Enviado" ColumnName="Nivel2_Enviado" />
+          <ScalarProperty Name="Nivel2_Enviado_Data" ColumnName="Nivel2_Enviado_Data" />
+          <ScalarProperty Name="Nivel2_Cancelado" ColumnName="Nivel2_Cancelado" />
+          <ScalarProperty Name="Nivel2_Cancelado_Data" ColumnName="Nivel2_Cancelado_Data" />
+          <ScalarProperty Name="Login_Operador" ColumnName="Login_Operador" />
+          <ScalarProperty Name="Canc_Enviar_Robo" ColumnName="Canc_Enviar_Robo" />
+          <ScalarProperty Name="Canc_Enviar_Robo_Data" ColumnName="Canc_Enviar_Robo_Data" />
+          <ScalarProperty Name="Canc_Enviar_Robo_Login" ColumnName="Canc_Enviar_Robo_Login" />
+          <ScalarProperty Name="Canc_Processamento_Data" ColumnName="Canc_Processamento_Data" />
+          <ScalarProperty Name="Canc_Valor_Alcada" ColumnName="Canc_Valor_Alcada" />
+          <ScalarProperty Name="Canc_Dias_Alcada" ColumnName="Canc_Dias_Alcada" />
+          <ScalarProperty Name="Canc_Nok_Alcada" ColumnName="Canc_Nok_Alcada" />
+          <ScalarProperty Name="Alcada" ColumnName="Alcada" />
+          <ScalarProperty Name="Nivel2_Enviado_Login" ColumnName="Nivel2_Enviado_Login" />
+          <ScalarProperty Name="Nivel2_Cancelado_Login" ColumnName="Nivel2_Cancelado_Login" />
+          <ScalarProperty Name="CM_Enviado" ColumnName="CM_Enviado" />
+          <ScalarProperty Name="CM_Enviado_Data" ColumnName="CM_Enviado_Data" />
+          <ScalarProperty Name="CM_Enviado_Login" ColumnName="CM_Enviado_Login" />
+          <ScalarProperty Name="CM_Calc_VC" ColumnName="CM_Calc_VC" />
+          <ScalarProperty Name="CM_Enviar" ColumnName="CM_Enviar" />
+          <ScalarProperty Name="ATM" ColumnName="ATM" />
+          <ScalarProperty Name="SMS" ColumnName="SMS" />
+          <ScalarProperty Name="N_Emitido" ColumnName="N_Emitido" />
+          <ScalarProperty Name="Qtde_Parcelas" ColumnName="Qtde_Parcelas" />
+          <ScalarProperty Name="ClienteAgencia" ColumnName="ClienteAgencia" />
+          <ScalarProperty Name="MatriculaGerente" ColumnName="MatriculaGerente" />
+          <ScalarProperty Name="CodId_Motivo2" ColumnName="CodId_Motivo2" />
+          <ScalarProperty Name="Atrito_VendaNRec" ColumnName="Atrito_VendaNRec" />
+          <ScalarProperty Name="Atrito_VendaNRec_Login" ColumnName="Atrito_VendaNRec_Login" />
+          <ScalarProperty Name="Atrito_VendaNRec_Data" ColumnName="Atrito_VendaNRec_Data" />
+          <ScalarProperty Name="Atrito_CancNEfetuado" ColumnName="Atrito_CancNEfetuado" />
+          <ScalarProperty Name="Atrito_CancNEfetuado_Login" ColumnName="Atrito_CancNEfetuado_Login" />
+          <ScalarProperty Name="Atrito_CancNEfetuado_Data" ColumnName="Atrito_CancNEfetuado_Data" />
+          <ScalarProperty Name="CodId_Cargo_Fk" ColumnName="CodId_Cargo_Fk" />
+          <ScalarProperty Name="Atrito_CodId_Procedente" ColumnName="Atrito_CodId_Procedente" />
+          <ScalarProperty Name="Oferta" ColumnName="Oferta" />
+          <ScalarProperty Name="Oferta_Proc_OK" ColumnName="Oferta_Proc_OK" />
+          <ScalarProperty Name="Oferta_Proc_NOK" ColumnName="Oferta_Proc_NOK" />
+          <ScalarProperty Name="Oferta_Proc_NOK_Motivo" ColumnName="Oferta_Proc_NOK_Motivo" />
+          <ScalarProperty Name="Oferta_Proc_Data" ColumnName="Oferta_Proc_Data" />
+          <ScalarProperty Name="Oferta_Produto_VC" ColumnName="Oferta_Produto_VC" />
+          <ScalarProperty Name="Oferta_Produto_Grupo" ColumnName="Oferta_Produto_Grupo" />
+          <ScalarProperty Name="Oferta_Cod_Ferrari" ColumnName="Oferta_Cod_Ferrari" />
+          <ScalarProperty Name="Oferta_ImpSeg" ColumnName="Oferta_ImpSeg" />
+          <ScalarProperty Name="Oferta_Premio" ColumnName="Oferta_Premio" />
+          <ScalarProperty Name="Endosso" ColumnName="Endosso" />
+          <ScalarProperty Name="Endosso_Proc_OK" ColumnName="Endosso_Proc_OK" />
+          <ScalarProperty Name="Endosso_Proc_NOK" ColumnName="Endosso_Proc_NOK" />
+          <ScalarProperty Name="Endosso_Proc_NOK_Motivo" ColumnName="Endosso_Proc_NOK_Motivo" />
+          <ScalarProperty Name="Endosso_Proc_NOK_Obs" ColumnName="Endosso_Proc_NOK_Obs" />
+          <ScalarProperty Name="Endosso_Proc_Data" ColumnName="Endosso_Proc_Data" />
+          <ScalarProperty Name="Endosso_ImpSeg" ColumnName="Endosso_ImpSeg" />
+          <ScalarProperty Name="Endosso_Premio" ColumnName="Endosso_Premio" />
+          <ScalarProperty Name="Endosso_Enviar_Robo" ColumnName="Endosso_Enviar_Robo" />
+          <ScalarProperty Name="Endosso_Enviar_Robo_Data" ColumnName="Endosso_Enviar_Robo_Data" />
+          <ScalarProperty Name="Endosso_Enviar_Robo_Login" ColumnName="Endosso_Enviar_Robo_Login" />
+          <ScalarProperty Name="Endosso_Proposta" ColumnName="Endosso_Proposta" />
+          <ScalarProperty Name="Endosso_Liberado" ColumnName="Endosso_Liberado" />
+          <ScalarProperty Name="Venda" ColumnName="Venda" />
+          <ScalarProperty Name="Venda_Proc_OK" ColumnName="Venda_Proc_OK" />
+          <ScalarProperty Name="Venda_Proc_NOK" ColumnName="Venda_Proc_NOK" />
+          <ScalarProperty Name="Venda_Proc_NOK_Motivo" ColumnName="Venda_Proc_NOK_Motivo" />
+          <ScalarProperty Name="Venda_Proc_NOK_Obs" ColumnName="Venda_Proc_NOK_Obs" />
+          <ScalarProperty Name="Venda_Proc_Data" ColumnName="Venda_Proc_Data" />
+          <ScalarProperty Name="Venda_Produto_VC" ColumnName="Venda_Produto_VC" />
+          <ScalarProperty Name="Venda_ImpSeg" ColumnName="Venda_ImpSeg" />
+          <ScalarProperty Name="Venda_Premio" ColumnName="Venda_Premio" />
+          <ScalarProperty Name="Venda_Enviar_Robo" ColumnName="Venda_Enviar_Robo" />
+          <ScalarProperty Name="Venda_Enviar_Robo_Data" ColumnName="Venda_Enviar_Robo_Data" />
+          <ScalarProperty Name="Venda_Enviar_Robo_Login" ColumnName="Venda_Enviar_Robo_Login" />
+          <ScalarProperty Name="Venda_Proposta" ColumnName="Venda_Proposta" />
+          <ScalarProperty Name="CCred_TFC" ColumnName="CCred_TFC" />
+          <ScalarProperty Name="CCred_TFC_Bandeira" ColumnName="CCred_TFC_Bandeira" />
+          <ScalarProperty Name="CCred_TFC_Numero" ColumnName="CCred_TFC_Numero" />
+          <ScalarProperty Name="CCred_TFC_Proc_OK" ColumnName="CCred_TFC_Proc_OK" />
+          <ScalarProperty Name="CCred_TFC_Proc_NOK" ColumnName="CCred_TFC_Proc_NOK" />
+          <ScalarProperty Name="CCred_TFC_Proc_NOK_Motivo" ColumnName="CCred_TFC_Proc_NOK_Motivo" />
+          <ScalarProperty Name="CCred_TFC_Proc_Data" ColumnName="CCred_TFC_Proc_Data" />
+          <ScalarProperty Name="CCred_TFC_Enviar_Robo" ColumnName="CCred_TFC_Enviar_Robo" />
+          <ScalarProperty Name="CCred_TFC_Enviar_Robo_Data" ColumnName="CCred_TFC_Enviar_Robo_Data" />
+          <ScalarProperty Name="CCred_TFC_Enviar_Robo_Login" ColumnName="CCred_TFC_Enviar_Robo_Login" />
+          <ScalarProperty Name="CCred_TFC_Proposta" ColumnName="CCred_TFC_Proposta" />
+          <ScalarProperty Name="CCred_TFC_Liberado" ColumnName="CCred_TFC_Liberado" />
+          <ScalarProperty Name="Logradouro" ColumnName="Logradouro" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Complemento" ColumnName="Complemento" />
+          <ScalarProperty Name="Bairro" ColumnName="Bairro" />
+          <ScalarProperty Name="Cidade" ColumnName="Cidade" />
+          <ScalarProperty Name="UF" ColumnName="UF" />
+          <ScalarProperty Name="CEP" ColumnName="CEP" />
+          <ScalarProperty Name="Tipo_Imovel" ColumnName="Tipo_Imovel" />
+          <ScalarProperty Name="Obs" ColumnName="Obs" />
+          <ScalarProperty Name="Canc_Lote" ColumnName="Canc_Lote" />
+          <ScalarProperty Name="Canc_Lote_Dta" ColumnName="Canc_Lote_Dta" />
+          <ScalarProperty Name="Canc_Lote_Login" ColumnName="Canc_Lote_Login" />
+          <ScalarProperty Name="Canc_Lote_Proc_Ok" ColumnName="Canc_Lote_Proc_Ok" />
+          <ScalarProperty Name="Canc_Lote_Processando" ColumnName="Canc_Lote_Processando" />
+          <ScalarProperty Name="DataDebito" ColumnName="DataDebito" />
+          <ScalarProperty Name="Nivel1_Enviar" ColumnName="Nivel1_Enviar" />
+          <ScalarProperty Name="Nivel1_Enviado" ColumnName="Nivel1_Enviado" />
+          <ScalarProperty Name="Nivel1_Enviado_Data" ColumnName="Nivel1_Enviado_Data" />
+          <ScalarProperty Name="Nivel1_Emitido" ColumnName="Nivel1_Emitido" />
+          <ScalarProperty Name="Nivel2_Emitido_Data" ColumnName="Nivel2_Emitido_Data" />
+          <ScalarProperty Name="Nivel1_Ok" ColumnName="Nivel1_Ok" />
+          <ScalarProperty Name="Nivel1_Enviado_Login" ColumnName="Nivel1_Enviado_Login" />
+          <ScalarProperty Name="Nivel1_Cancelado_Login" ColumnName="Nivel1_Cancelado_Login" />
+          <ScalarProperty Name="Nivel1_Obs" ColumnName="Nivel1_Obs" />
+          <ScalarProperty Name="Nivel1_Ok_Data" ColumnName="Nivel1_Ok_Data" />
+          <ScalarProperty Name="Nivel1_Ok_Login" ColumnName="Nivel1_Ok_Login" />
+          <ScalarProperty Name="Nivel3_Enviado" ColumnName="Nivel3_Enviado" />
+          <ScalarProperty Name="Nivel3_Enviado_Data" ColumnName="Nivel3_Enviado_Data" />
+          <ScalarProperty Name="Nivel3_Enviado_Login" ColumnName="Nivel3_Enviado_Login" />
+          <ScalarProperty Name="Nivel3_Ok" ColumnName="Nivel3_Ok" />
+          <ScalarProperty Name="Nivel3_Ok_Data" ColumnName="Nivel3_Ok_Data" />
+          <ScalarProperty Name="Nivel3_Ok_Login" ColumnName="Nivel3_Ok_Login" />
+          <ScalarProperty Name="Nivel2_Ok" ColumnName="Nivel2_Ok" />
+          <ScalarProperty Name="Nivel2_Ok_Data" ColumnName="Nivel2_Ok_Data" />
+          <ScalarProperty Name="Nivel2_Ok_Login" ColumnName="Nivel2_Ok_Login" />
+          <ScalarProperty Name="Nivel2_Emitido" ColumnName="Nivel2_Emitido" />
+          <ScalarProperty Name="Nivel2_Obs" ColumnName="Nivel2_Obs" />
+          <ScalarProperty Name="CCred_TFC_Proc_NOK_Obs" ColumnName="CCred_TFC_Proc_NOK_Obs" />
+          <ScalarProperty Name="Oferta_CodId_Plano" ColumnName="Oferta_CodId_Plano" />
+          <ScalarProperty Name="Venda_CodId_Plano" ColumnName="Venda_CodId_Plano" />
+          <ScalarProperty Name="Venda_Liberado" ColumnName="Venda_Liberado" />
+          <ScalarProperty Name="Inibido" ColumnName="Inibido" />
+          <ScalarProperty Name="Inibido_Data" ColumnName="Inibido_Data" />
+          <ScalarProperty Name="N_Inibido" ColumnName="N_Inibido" />
+          <ScalarProperty Name="N_Inibido_Data" ColumnName="N_Inibido_Data" />
+          <ScalarProperty Name="PE" ColumnName="PE" />
+          <ScalarProperty Name="PE_Marcar" ColumnName="PE_Marcar" />
+          <ScalarProperty Name="PE_ExportadoVC90" ColumnName="PE_ExportadoVC90" />
+          <ScalarProperty Name="PE_Exportado_Login" ColumnName="PE_Exportado_Login" />
+          <ScalarProperty Name="PE_Exportado_Data" ColumnName="PE_Exportado_Data" />
+          <ScalarProperty Name="PE_VC90_OK" ColumnName="PE_VC90_OK" />
+          <ScalarProperty Name="PE_VC90_OK_Login" ColumnName="PE_VC90_OK_Login" />
+          <ScalarProperty Name="PE_VC90_OK_Data" ColumnName="PE_VC90_OK_Data" />
+          <ScalarProperty Name="PE_Status_Rector" ColumnName="PE_Status_Rector" />
+          <ScalarProperty Name="Oferta_Marcar" ColumnName="Oferta_Marcar" />
+          <ScalarProperty Name="Oferta_Ferrari_Exp" ColumnName="Oferta_Ferrari_Exp" />
+          <ScalarProperty Name="Oferta_Ferrari_Exp_Data" ColumnName="Oferta_Ferrari_Exp_Data" />
+          <ScalarProperty Name="Oferta_Ferrari_Exp_Login" ColumnName="Oferta_Ferrari_Exp_Login" />
+          <ScalarProperty Name="PE_VC" ColumnName="PE_VC" />
+          <ScalarProperty Name="DDD2" ColumnName="DDD2" />
+          <ScalarProperty Name="Celular" ColumnName="Celular" />
+          <ScalarProperty Name="Canc_Nok_Obs" ColumnName="Canc_Nok_Obs" />
+          <ScalarProperty Name="Enviar" ColumnName="Enviar" />
+          <ScalarProperty Name="Canc_OK_Manual_Obs" ColumnName="Canc_OK_Manual_Obs" />
+          <ScalarProperty Name="Canc_OK_Manual_Login" ColumnName="Canc_OK_Manual_Login" />
+          <ScalarProperty Name="N_Inibido_Encontrado" ColumnName="N_Inibido_Encontrado" />
+          <ScalarProperty Name="N_Inibido_N_Encontrado" ColumnName="N_Inibido_N_Encontrado" />
+          <ScalarProperty Name="N_Inibido_Encontrado_VCAL_Enviar" ColumnName="N_Inibido_Encontrado_VCAL_Enviar" />
+          <ScalarProperty Name="N_Inibido_Encontrado_VCAL" ColumnName="N_Inibido_Encontrado_VCAL" />
+          <ScalarProperty Name="N_Inibido_Encontrado_VCAL_Data" ColumnName="N_Inibido_Encontrado_VCAL_Data" />
+          <ScalarProperty Name="N_Inibido_Encontrado_VCAL_Login" ColumnName="N_Inibido_Encontrado_VCAL_Login" />
+          <ScalarProperty Name="NCorrentista_OP" ColumnName="NCorrentista_OP" />
+          <ScalarProperty Name="NCorrentista_DOC" ColumnName="NCorrentista_DOC" />
+          <ScalarProperty Name="Protocolo_Off" ColumnName="Protocolo_Off" />
+          <ScalarProperty Name="ChEsp" ColumnName="ChEsp" />
+          <ScalarProperty Name="ChEsp_Ok" ColumnName="ChEsp_Ok" />
+          <ScalarProperty Name="ChEsp_Nok" ColumnName="ChEsp_Nok" />
+          <ScalarProperty Name="ChEsp_Enviar_Robo" ColumnName="ChEsp_Enviar_Robo" />
+          <ScalarProperty Name="ChEsp_Enviar_Robo_Data" ColumnName="ChEsp_Enviar_Robo_Data" />
+          <ScalarProperty Name="ChEsp_Enviar_Robo_Login" ColumnName="ChEsp_Enviar_Robo_Login" />
+          <ScalarProperty Name="ChEsp_Proc_Robo_Data" ColumnName="ChEsp_Proc_Robo_Data" />
+          <ScalarProperty Name="ChEsp_Proc_Robo_Login" ColumnName="ChEsp_Proc_Robo_Login" />
+          <ScalarProperty Name="Num_Protocolo_SAC" ColumnName="Num_Protocolo_SAC" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Nivel3_Obs" ColumnName="Nivel3_Obs" />
+          <ScalarProperty Name="Nivel3_Enviado_Nivel2" ColumnName="Nivel3_Enviado_Nivel2" />
+          <ScalarProperty Name="Nivel3_Enviado_Nivel2_Data" ColumnName="Nivel3_Enviado_Nivel2_Data" />
+          <ScalarProperty Name="Nivel3_Enviado_Nivel2_Login" ColumnName="Nivel3_Enviado_Nivel2_Login" />
+          <ScalarProperty Name="Nivel2_SolFinal" ColumnName="Nivel2_SolFinal" />
+          <ScalarProperty Name="Nivel2_SolFinal_Obs" ColumnName="Nivel2_SolFinal_Obs" />
+          <ScalarProperty Name="Nivel2_SolFinal_Login" ColumnName="Nivel2_SolFinal_Login" />
+          <ScalarProperty Name="Nivel2_SolFinal_Data" ColumnName="Nivel2_SolFinal_Data" />
+          <ScalarProperty Name="Canc_Status_Rector" ColumnName="Canc_Status_Rector" />
+          <ScalarProperty Name="Canc_Status_Rector_Data" ColumnName="Canc_Status_Rector_Data" />
+          <ScalarProperty Name="Canc_Status_Rector_Ok" ColumnName="Canc_Status_Rector_Ok" />
+          <ScalarProperty Name="Canc_VC_OK" ColumnName="Canc_VC_OK" />
+          <ScalarProperty Name="Canc_VC_OK_Devolucao" ColumnName="Canc_VC_OK_Devolucao" />
+          <ScalarProperty Name="Connect_Exp" ColumnName="Connect_Exp" />
+          <ScalarProperty Name="Connect_aExp" ColumnName="Connect_aExp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Atendimento_Expurgo">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Atendimento_Expurgo">
+        <MappingFragment StoreEntitySet="tbl_Atendimento_Expurgo">
+          <ScalarProperty Name="CodId_Atend_Pk" ColumnName="CodId_Atend_Pk" />
+          <ScalarProperty Name="Origem" ColumnName="Origem" />
+          <ScalarProperty Name="LigacaoData" ColumnName="LigacaoData" />
+          <ScalarProperty Name="LigacaoMesref" ColumnName="LigacaoMesref" />
+          <ScalarProperty Name="Cnpj" ColumnName="Cnpj" />
+          <ScalarProperty Name="RazaoSocial" ColumnName="RazaoSocial" />
+          <ScalarProperty Name="Cpf" ColumnName="Cpf" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="DDD" ColumnName="DDD" />
+          <ScalarProperty Name="Fone" ColumnName="Fone" />
+          <ScalarProperty Name="Ramal" ColumnName="Ramal" />
+          <ScalarProperty Name="NCorrentista" ColumnName="NCorrentista" />
+          <ScalarProperty Name="Banco" ColumnName="Banco" />
+          <ScalarProperty Name="Agencia" ColumnName="Agencia" />
+          <ScalarProperty Name="ContaCorrente" ColumnName="ContaCorrente" />
+          <ScalarProperty Name="DG" ColumnName="DG" />
+          <ScalarProperty Name="CodId_Segmento_Fk" ColumnName="CodId_Segmento_Fk" />
+          <ScalarProperty Name="DataNasc" ColumnName="DataNasc" />
+          <ScalarProperty Name="Idade" ColumnName="Idade" />
+          <ScalarProperty Name="CodProduto_Rector" ColumnName="CodProduto_Rector" />
+          <ScalarProperty Name="CodProduto_VC" ColumnName="CodProduto_VC" />
+          <ScalarProperty Name="CodId_Prod_Grupo_Fk" ColumnName="CodId_Prod_Grupo_Fk" />
+          <ScalarProperty Name="DataIniVig" ColumnName="DataIniVig" />
+          <ScalarProperty Name="DataFimVig" ColumnName="DataFimVig" />
+          <ScalarProperty Name="Proposta" ColumnName="Proposta" />
+          <ScalarProperty Name="Apolice" ColumnName="Apolice" />
+          <ScalarProperty Name="Certificado" ColumnName="Certificado" />
+          <ScalarProperty Name="CodId_Categoria_Fk" ColumnName="CodId_Categoria_Fk" />
+          <ScalarProperty Name="Premio" ColumnName="Premio" />
+          <ScalarProperty Name="ImpSegurada" ColumnName="ImpSegurada" />
+          <ScalarProperty Name="Argumentacao" ColumnName="Argumentacao" />
+          <ScalarProperty Name="Cancelamento" ColumnName="Cancelamento" />
+          <ScalarProperty Name="Retido" ColumnName="Retido" />
+          <ScalarProperty Name="CodId_Motivo" ColumnName="CodId_Motivo" />
+          <ScalarProperty Name="Canc_Local" ColumnName="Canc_Local" />
+          <ScalarProperty Name="Canc_Data" ColumnName="Canc_Data" />
+          <ScalarProperty Name="Canc_Codigo" ColumnName="Canc_Codigo" />
+          <ScalarProperty Name="Canc_OK" ColumnName="Canc_OK" />
+          <ScalarProperty Name="Canc_Valor_Devolucao" ColumnName="Canc_Valor_Devolucao" />
+          <ScalarProperty Name="Canc_Ok_Data" ColumnName="Canc_Ok_Data" />
+          <ScalarProperty Name="Canc_Nok" ColumnName="Canc_Nok" />
+          <ScalarProperty Name="Canc_Nok_Data" ColumnName="Canc_Nok_Data" />
+          <ScalarProperty Name="Canc_Nok_Motivo" ColumnName="Canc_Nok_Motivo" />
+          <ScalarProperty Name="Nivel2_Enviar" ColumnName="Nivel2_Enviar" />
+          <ScalarProperty Name="Nivel2_Enviado" ColumnName="Nivel2_Enviado" />
+          <ScalarProperty Name="Nivel2_Enviado_Data" ColumnName="Nivel2_Enviado_Data" />
+          <ScalarProperty Name="Nivel2_Cancelado" ColumnName="Nivel2_Cancelado" />
+          <ScalarProperty Name="Nivel2_Cancelado_Data" ColumnName="Nivel2_Cancelado_Data" />
+          <ScalarProperty Name="Login_Operador" ColumnName="Login_Operador" />
+          <ScalarProperty Name="Canc_Enviar_Robo" ColumnName="Canc_Enviar_Robo" />
+          <ScalarProperty Name="Canc_Enviar_Robo_Data" ColumnName="Canc_Enviar_Robo_Data" />
+          <ScalarProperty Name="Canc_Enviar_Robo_Login" ColumnName="Canc_Enviar_Robo_Login" />
+          <ScalarProperty Name="Canc_Processamento_Data" ColumnName="Canc_Processamento_Data" />
+          <ScalarProperty Name="Canc_Valor_Alcada" ColumnName="Canc_Valor_Alcada" />
+          <ScalarProperty Name="Canc_Dias_Alcada" ColumnName="Canc_Dias_Alcada" />
+          <ScalarProperty Name="Canc_Nok_Alcada" ColumnName="Canc_Nok_Alcada" />
+          <ScalarProperty Name="Alcada" ColumnName="Alcada" />
+          <ScalarProperty Name="Nivel2_Enviado_Login" ColumnName="Nivel2_Enviado_Login" />
+          <ScalarProperty Name="Nivel2_Cancelado_Login" ColumnName="Nivel2_Cancelado_Login" />
+          <ScalarProperty Name="CM_Enviado" ColumnName="CM_Enviado" />
+          <ScalarProperty Name="CM_Enviado_Data" ColumnName="CM_Enviado_Data" />
+          <ScalarProperty Name="CM_Enviado_Login" ColumnName="CM_Enviado_Login" />
+          <ScalarProperty Name="CM_Calc_VC" ColumnName="CM_Calc_VC" />
+          <ScalarProperty Name="CM_Enviar" ColumnName="CM_Enviar" />
+          <ScalarProperty Name="ATM" ColumnName="ATM" />
+          <ScalarProperty Name="SMS" ColumnName="SMS" />
+          <ScalarProperty Name="N_Emitido" ColumnName="N_Emitido" />
+          <ScalarProperty Name="Qtde_Parcelas" ColumnName="Qtde_Parcelas" />
+          <ScalarProperty Name="ClienteAgencia" ColumnName="ClienteAgencia" />
+          <ScalarProperty Name="MatriculaGerente" ColumnName="MatriculaGerente" />
+          <ScalarProperty Name="CodId_Motivo2" ColumnName="CodId_Motivo2" />
+          <ScalarProperty Name="Atrito_VendaNRec" ColumnName="Atrito_VendaNRec" />
+          <ScalarProperty Name="Atrito_VendaNRec_Login" ColumnName="Atrito_VendaNRec_Login" />
+          <ScalarProperty Name="Atrito_VendaNRec_Data" ColumnName="Atrito_VendaNRec_Data" />
+          <ScalarProperty Name="Atrito_CancNEfetuado" ColumnName="Atrito_CancNEfetuado" />
+          <ScalarProperty Name="Atrito_CancNEfetuado_Login" ColumnName="Atrito_CancNEfetuado_Login" />
+          <ScalarProperty Name="Atrito_CancNEfetuado_Data" ColumnName="Atrito_CancNEfetuado_Data" />
+          <ScalarProperty Name="CodId_Cargo_Fk" ColumnName="CodId_Cargo_Fk" />
+          <ScalarProperty Name="Atrito_CodId_Procedente" ColumnName="Atrito_CodId_Procedente" />
+          <ScalarProperty Name="Oferta" ColumnName="Oferta" />
+          <ScalarProperty Name="Oferta_Proc_OK" ColumnName="Oferta_Proc_OK" />
+          <ScalarProperty Name="Oferta_Proc_NOK" ColumnName="Oferta_Proc_NOK" />
+          <ScalarProperty Name="Oferta_Proc_NOK_Motivo" ColumnName="Oferta_Proc_NOK_Motivo" />
+          <ScalarProperty Name="Oferta_Proc_Data" ColumnName="Oferta_Proc_Data" />
+          <ScalarProperty Name="Oferta_Produto_VC" ColumnName="Oferta_Produto_VC" />
+          <ScalarProperty Name="Oferta_Produto_Grupo" ColumnName="Oferta_Produto_Grupo" />
+          <ScalarProperty Name="Oferta_Cod_Ferrari" ColumnName="Oferta_Cod_Ferrari" />
+          <ScalarProperty Name="Oferta_ImpSeg" ColumnName="Oferta_ImpSeg" />
+          <ScalarProperty Name="Oferta_Premio" ColumnName="Oferta_Premio" />
+          <ScalarProperty Name="Endosso" ColumnName="Endosso" />
+          <ScalarProperty Name="Endosso_Proc_OK" ColumnName="Endosso_Proc_OK" />
+          <ScalarProperty Name="Endosso_Proc_NOK" ColumnName="Endosso_Proc_NOK" />
+          <ScalarProperty Name="Endosso_Proc_NOK_Motivo" ColumnName="Endosso_Proc_NOK_Motivo" />
+          <ScalarProperty Name="Endosso_Proc_NOK_Obs" ColumnName="Endosso_Proc_NOK_Obs" />
+          <ScalarProperty Name="Endosso_Proc_Data" ColumnName="Endosso_Proc_Data" />
+          <ScalarProperty Name="Endosso_ImpSeg" ColumnName="Endosso_ImpSeg" />
+          <ScalarProperty Name="Endosso_Premio" ColumnName="Endosso_Premio" />
+          <ScalarProperty Name="Endosso_Enviar_Robo" ColumnName="Endosso_Enviar_Robo" />
+          <ScalarProperty Name="Endosso_Enviar_Robo_Data" ColumnName="Endosso_Enviar_Robo_Data" />
+          <ScalarProperty Name="Endosso_Enviar_Robo_Login" ColumnName="Endosso_Enviar_Robo_Login" />
+          <ScalarProperty Name="Endosso_Proposta" ColumnName="Endosso_Proposta" />
+          <ScalarProperty Name="Endosso_Liberado" ColumnName="Endosso_Liberado" />
+          <ScalarProperty Name="Venda" ColumnName="Venda" />
+          <ScalarProperty Name="Venda_Proc_OK" ColumnName="Venda_Proc_OK" />
+          <ScalarProperty Name="Venda_Proc_NOK" ColumnName="Venda_Proc_NOK" />
+          <ScalarProperty Name="Venda_Proc_NOK_Motivo" ColumnName="Venda_Proc_NOK_Motivo" />
+          <ScalarProperty Name="Venda_Proc_NOK_Obs" ColumnName="Venda_Proc_NOK_Obs" />
+          <ScalarProperty Name="Venda_Proc_Data" ColumnName="Venda_Proc_Data" />
+          <ScalarProperty Name="Venda_Produto_VC" ColumnName="Venda_Produto_VC" />
+          <ScalarProperty Name="Venda_ImpSeg" ColumnName="Venda_ImpSeg" />
+          <ScalarProperty Name="Venda_Premio" ColumnName="Venda_Premio" />
+          <ScalarProperty Name="Venda_Enviar_Robo" ColumnName="Venda_Enviar_Robo" />
+          <ScalarProperty Name="Venda_Enviar_Robo_Data" ColumnName="Venda_Enviar_Robo_Data" />
+          <ScalarProperty Name="Venda_Enviar_Robo_Login" ColumnName="Venda_Enviar_Robo_Login" />
+          <ScalarProperty Name="Venda_Proposta" ColumnName="Venda_Proposta" />
+          <ScalarProperty Name="CCred_TFC" ColumnName="CCred_TFC" />
+          <ScalarProperty Name="CCred_TFC_Bandeira" ColumnName="CCred_TFC_Bandeira" />
+          <ScalarProperty Name="CCred_TFC_Numero" ColumnName="CCred_TFC_Numero" />
+          <ScalarProperty Name="CCred_TFC_Proc_OK" ColumnName="CCred_TFC_Proc_OK" />
+          <ScalarProperty Name="CCred_TFC_Proc_NOK" ColumnName="CCred_TFC_Proc_NOK" />
+          <ScalarProperty Name="CCred_TFC_Proc_NOK_Motivo" ColumnName="CCred_TFC_Proc_NOK_Motivo" />
+          <ScalarProperty Name="CCred_TFC_Proc_Data" ColumnName="CCred_TFC_Proc_Data" />
+          <ScalarProperty Name="CCred_TFC_Enviar_Robo" ColumnName="CCred_TFC_Enviar_Robo" />
+          <ScalarProperty Name="CCred_TFC_Enviar_Robo_Data" ColumnName="CCred_TFC_Enviar_Robo_Data" />
+          <ScalarProperty Name="CCred_TFC_Enviar_Robo_Login" ColumnName="CCred_TFC_Enviar_Robo_Login" />
+          <ScalarProperty Name="CCred_TFC_Proposta" ColumnName="CCred_TFC_Proposta" />
+          <ScalarProperty Name="CCred_TFC_Liberado" ColumnName="CCred_TFC_Liberado" />
+          <ScalarProperty Name="Logradouro" ColumnName="Logradouro" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Complemento" ColumnName="Complemento" />
+          <ScalarProperty Name="Bairro" ColumnName="Bairro" />
+          <ScalarProperty Name="Cidade" ColumnName="Cidade" />
+          <ScalarProperty Name="UF" ColumnName="UF" />
+          <ScalarProperty Name="CEP" ColumnName="CEP" />
+          <ScalarProperty Name="Tipo_Imovel" ColumnName="Tipo_Imovel" />
+          <ScalarProperty Name="Obs" ColumnName="Obs" />
+          <ScalarProperty Name="Canc_Lote" ColumnName="Canc_Lote" />
+          <ScalarProperty Name="Canc_Lote_Dta" ColumnName="Canc_Lote_Dta" />
+          <ScalarProperty Name="Canc_Lote_Login" ColumnName="Canc_Lote_Login" />
+          <ScalarProperty Name="Canc_Lote_Proc_Ok" ColumnName="Canc_Lote_Proc_Ok" />
+          <ScalarProperty Name="Canc_Lote_Processando" ColumnName="Canc_Lote_Processando" />
+          <ScalarProperty Name="DataDebito" ColumnName="DataDebito" />
+          <ScalarProperty Name="Nivel1_Enviar" ColumnName="Nivel1_Enviar" />
+          <ScalarProperty Name="Nivel1_Enviado" ColumnName="Nivel1_Enviado" />
+          <ScalarProperty Name="Nivel1_Enviado_Data" ColumnName="Nivel1_Enviado_Data" />
+          <ScalarProperty Name="Nivel1_Emitido" ColumnName="Nivel1_Emitido" />
+          <ScalarProperty Name="Nivel2_Emitido_Data" ColumnName="Nivel2_Emitido_Data" />
+          <ScalarProperty Name="Nivel1_Ok" ColumnName="Nivel1_Ok" />
+          <ScalarProperty Name="Nivel1_Enviado_Login" ColumnName="Nivel1_Enviado_Login" />
+          <ScalarProperty Name="Nivel1_Cancelado_Login" ColumnName="Nivel1_Cancelado_Login" />
+          <ScalarProperty Name="Nivel1_Obs" ColumnName="Nivel1_Obs" />
+          <ScalarProperty Name="Nivel1_Ok_Data" ColumnName="Nivel1_Ok_Data" />
+          <ScalarProperty Name="Nivel1_Ok_Login" ColumnName="Nivel1_Ok_Login" />
+          <ScalarProperty Name="Nivel3_Enviado" ColumnName="Nivel3_Enviado" />
+          <ScalarProperty Name="Nivel3_Enviado_Data" ColumnName="Nivel3_Enviado_Data" />
+          <ScalarProperty Name="Nivel3_Enviado_Login" ColumnName="Nivel3_Enviado_Login" />
+          <ScalarProperty Name="Nivel3_Ok" ColumnName="Nivel3_Ok" />
+          <ScalarProperty Name="Nivel3_Ok_Data" ColumnName="Nivel3_Ok_Data" />
+          <ScalarProperty Name="Nivel3_Ok_Login" ColumnName="Nivel3_Ok_Login" />
+          <ScalarProperty Name="Nivel2_Ok" ColumnName="Nivel2_Ok" />
+          <ScalarProperty Name="Nivel2_Ok_Data" ColumnName="Nivel2_Ok_Data" />
+          <ScalarProperty Name="Nivel2_Ok_Login" ColumnName="Nivel2_Ok_Login" />
+          <ScalarProperty Name="Nivel2_Emitido" ColumnName="Nivel2_Emitido" />
+          <ScalarProperty Name="Nivel2_Obs" ColumnName="Nivel2_Obs" />
+          <ScalarProperty Name="CCred_TFC_Proc_NOK_Obs" ColumnName="CCred_TFC_Proc_NOK_Obs" />
+          <ScalarProperty Name="Oferta_CodId_Plano" ColumnName="Oferta_CodId_Plano" />
+          <ScalarProperty Name="Venda_CodId_Plano" ColumnName="Venda_CodId_Plano" />
+          <ScalarProperty Name="Venda_Liberado" ColumnName="Venda_Liberado" />
+          <ScalarProperty Name="Inibido" ColumnName="Inibido" />
+          <ScalarProperty Name="Inibido_Data" ColumnName="Inibido_Data" />
+          <ScalarProperty Name="N_Inibido" ColumnName="N_Inibido" />
+          <ScalarProperty Name="N_Inibido_Data" ColumnName="N_Inibido_Data" />
+          <ScalarProperty Name="PE" ColumnName="PE" />
+          <ScalarProperty Name="PE_Marcar" ColumnName="PE_Marcar" />
+          <ScalarProperty Name="PE_ExportadoVC90" ColumnName="PE_ExportadoVC90" />
+          <ScalarProperty Name="PE_Exportado_Login" ColumnName="PE_Exportado_Login" />
+          <ScalarProperty Name="PE_Exportado_Data" ColumnName="PE_Exportado_Data" />
+          <ScalarProperty Name="PE_VC90_OK" ColumnName="PE_VC90_OK" />
+          <ScalarProperty Name="PE_VC90_OK_Login" ColumnName="PE_VC90_OK_Login" />
+          <ScalarProperty Name="PE_VC90_OK_Data" ColumnName="PE_VC90_OK_Data" />
+          <ScalarProperty Name="PE_Status_Rector" ColumnName="PE_Status_Rector" />
+          <ScalarProperty Name="Oferta_Marcar" ColumnName="Oferta_Marcar" />
+          <ScalarProperty Name="Oferta_Ferrari_Exp" ColumnName="Oferta_Ferrari_Exp" />
+          <ScalarProperty Name="Oferta_Ferrari_Exp_Data" ColumnName="Oferta_Ferrari_Exp_Data" />
+          <ScalarProperty Name="Oferta_Ferrari_Exp_Login" ColumnName="Oferta_Ferrari_Exp_Login" />
+          <ScalarProperty Name="PE_VC" ColumnName="PE_VC" />
+          <ScalarProperty Name="DDD2" ColumnName="DDD2" />
+          <ScalarProperty Name="Celular" ColumnName="Celular" />
+          <ScalarProperty Name="Canc_Nok_Obs" ColumnName="Canc_Nok_Obs" />
+          <ScalarProperty Name="Enviar" ColumnName="Enviar" />
+          <ScalarProperty Name="Canc_OK_Manual_Obs" ColumnName="Canc_OK_Manual_Obs" />
+          <ScalarProperty Name="Canc_OK_Manual_Login" ColumnName="Canc_OK_Manual_Login" />
+          <ScalarProperty Name="N_Inibido_Encontrado" ColumnName="N_Inibido_Encontrado" />
+          <ScalarProperty Name="N_Inibido_N_Encontrado" ColumnName="N_Inibido_N_Encontrado" />
+          <ScalarProperty Name="N_Inibido_Encontrado_VCAL_Enviar" ColumnName="N_Inibido_Encontrado_VCAL_Enviar" />
+          <ScalarProperty Name="N_Inibido_Encontrado_VCAL" ColumnName="N_Inibido_Encontrado_VCAL" />
+          <ScalarProperty Name="N_Inibido_Encontrado_VCAL_Data" ColumnName="N_Inibido_Encontrado_VCAL_Data" />
+          <ScalarProperty Name="N_Inibido_Encontrado_VCAL_Login" ColumnName="N_Inibido_Encontrado_VCAL_Login" />
+          <ScalarProperty Name="NCorrentista_OP" ColumnName="NCorrentista_OP" />
+          <ScalarProperty Name="NCorrentista_DOC" ColumnName="NCorrentista_DOC" />
+          <ScalarProperty Name="Protocolo_Off" ColumnName="Protocolo_Off" />
+          <ScalarProperty Name="ChEsp" ColumnName="ChEsp" />
+          <ScalarProperty Name="ChEsp_Ok" ColumnName="ChEsp_Ok" />
+          <ScalarProperty Name="ChEsp_Nok" ColumnName="ChEsp_Nok" />
+          <ScalarProperty Name="ChEsp_Enviar_Robo" ColumnName="ChEsp_Enviar_Robo" />
+          <ScalarProperty Name="ChEsp_Enviar_Robo_Data" ColumnName="ChEsp_Enviar_Robo_Data" />
+          <ScalarProperty Name="ChEsp_Enviar_Robo_Login" ColumnName="ChEsp_Enviar_Robo_Login" />
+          <ScalarProperty Name="ChEsp_Proc_Robo_Data" ColumnName="ChEsp_Proc_Robo_Data" />
+          <ScalarProperty Name="ChEsp_Proc_Robo_Login" ColumnName="ChEsp_Proc_Robo_Login" />
+          <ScalarProperty Name="Num_Protocolo_SAC" ColumnName="Num_Protocolo_SAC" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Nivel3_Obs" ColumnName="Nivel3_Obs" />
+          <ScalarProperty Name="Nivel3_Enviado_Nivel2" ColumnName="Nivel3_Enviado_Nivel2" />
+          <ScalarProperty Name="Nivel3_Enviado_Nivel2_Data" ColumnName="Nivel3_Enviado_Nivel2_Data" />
+          <ScalarProperty Name="Nivel3_Enviado_Nivel2_Login" ColumnName="Nivel3_Enviado_Nivel2_Login" />
+          <ScalarProperty Name="Nivel2_SolFinal" ColumnName="Nivel2_SolFinal" />
+          <ScalarProperty Name="Nivel2_SolFinal_Obs" ColumnName="Nivel2_SolFinal_Obs" />
+          <ScalarProperty Name="Nivel2_SolFinal_Login" ColumnName="Nivel2_SolFinal_Login" />
+          <ScalarProperty Name="Nivel2_SolFinal_Data" ColumnName="Nivel2_SolFinal_Data" />
+          <ScalarProperty Name="Canc_Status_Rector" ColumnName="Canc_Status_Rector" />
+          <ScalarProperty Name="Canc_Status_Rector_Data" ColumnName="Canc_Status_Rector_Data" />
+          <ScalarProperty Name="Canc_Status_Rector_Ok" ColumnName="Canc_Status_Rector_Ok" />
+          <ScalarProperty Name="Canc_VC_OK" ColumnName="Canc_VC_OK" />
+          <ScalarProperty Name="Canc_VC_OK_Devolucao" ColumnName="Canc_VC_OK_Devolucao" />
+          <ScalarProperty Name="Connect_Exp" ColumnName="Connect_Exp" />
+          <ScalarProperty Name="Connect_aExp" ColumnName="Connect_aExp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Bancos">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Bancos">
+        <MappingFragment StoreEntitySet="tbl_Bancos">
+          <ScalarProperty Name="Cod_Banco" ColumnName="Cod_Banco" />
+          <ScalarProperty Name="Banco" ColumnName="Banco" />
+          <ScalarProperty Name="Site" ColumnName="Site" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Canc_Alcada">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Canc_Alcada">
+        <MappingFragment StoreEntitySet="tbl_Canc_Alcada">
+          <ScalarProperty Name="CodId_Alcada_Pk" ColumnName="CodId_Alcada_Pk" />
+          <ScalarProperty Name="CodId_Prod_Grupo_Fk" ColumnName="CodId_Prod_Grupo_Fk" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Dias" ColumnName="Dias" />
+          <ScalarProperty Name="Data_Inicio" ColumnName="Data_Inicio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Canc_Codigo">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Canc_Codigo">
+        <MappingFragment StoreEntitySet="tbl_Canc_Codigo">
+          <ScalarProperty Name="CodId_CCod_Pk" ColumnName="CodId_CCod_Pk" />
+          <ScalarProperty Name="CodId_CLocal_Fk" ColumnName="CodId_CLocal_Fk" />
+          <ScalarProperty Name="Cod_Cancelamento" ColumnName="Cod_Cancelamento" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Canc_Data">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Canc_Data">
+        <MappingFragment StoreEntitySet="tbl_Canc_Data">
+          <ScalarProperty Name="CodId_CData_Pk" ColumnName="CodId_CData_Pk" />
+          <ScalarProperty Name="Data_Cancelamento" ColumnName="Data_Cancelamento" />
+          <ScalarProperty Name="Obs" ColumnName="Obs" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Canc_Local">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Canc_Local">
+        <MappingFragment StoreEntitySet="tbl_Canc_Local">
+          <ScalarProperty Name="CodId_CLocal_Pk" ColumnName="CodId_CLocal_Pk" />
+          <ScalarProperty Name="Local_Cancelamento" ColumnName="Local_Cancelamento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Canc_Lote_ID">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Canc_Lote_ID">
+        <MappingFragment StoreEntitySet="tbl_Canc_Lote_ID">
+          <ScalarProperty Name="CodId" ColumnName="CodId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Canc_Motivo">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Canc_Motivo">
+        <MappingFragment StoreEntitySet="tbl_Canc_Motivo">
+          <ScalarProperty Name="CodId_CMotivo_Pk" ColumnName="CodId_CMotivo_Pk" />
+          <ScalarProperty Name="Motivo" ColumnName="Motivo" />
+          <ScalarProperty Name="Retido" ColumnName="Retido" />
+          <ScalarProperty Name="Inelegivel" ColumnName="Inelegivel" />
+          <ScalarProperty Name="CodId_GCA" ColumnName="CodId_GCA" />
+          <ScalarProperty Name="Inativo" ColumnName="Inativo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Canc_Motivo2">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Canc_Motivo2">
+        <MappingFragment StoreEntitySet="tbl_Canc_Motivo2">
+          <ScalarProperty Name="CodId_CMotivo2_Pk" ColumnName="CodId_CMotivo2_Pk" />
+          <ScalarProperty Name="CodId_CMotivo_Fk" ColumnName="CodId_CMotivo_Fk" />
+          <ScalarProperty Name="Motivo" ColumnName="Motivo" />
+          <ScalarProperty Name="Retido" ColumnName="Retido" />
+          <ScalarProperty Name="Inelegivel" ColumnName="Inelegivel" />
+          <ScalarProperty Name="CodId_GCA" ColumnName="CodId_GCA" />
+          <ScalarProperty Name="Inativo" ColumnName="Inativo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Canc_Tipo">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Canc_Tipo">
+        <MappingFragment StoreEntitySet="tbl_Canc_Tipo">
+          <ScalarProperty Name="CodId_CTipo_Pk" ColumnName="CodId_CTipo_Pk" />
+          <ScalarProperty Name="Tipo_Cancelamento" ColumnName="Tipo_Cancelamento" />
+          <ScalarProperty Name="Obs" ColumnName="Obs" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Cargo">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Cargo">
+        <MappingFragment StoreEntitySet="tbl_Cargo">
+          <ScalarProperty Name="CodId_Cargo_Pk" ColumnName="CodId_Cargo_Pk" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="Inativo" ColumnName="Inativo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ChEps_Situacoes_Robo">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_ChEps_Situacoes_Robo">
+        <MappingFragment StoreEntitySet="tbl_ChEps_Situacoes_Robo">
+          <ScalarProperty Name="Cod_Situacao" ColumnName="Cod_Situacao" />
+          <ScalarProperty Name="Desc_Situacao" ColumnName="Desc_Situacao" />
+          <ScalarProperty Name="Status_OK" ColumnName="Status_OK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Dash_Template">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Dash_Template">
+        <MappingFragment StoreEntitySet="tbl_Dash_Template">
+          <ScalarProperty Name="CodId_Dash" ColumnName="CodId_Dash" />
+          <ScalarProperty Name="Proc_Dash" ColumnName="Proc_Dash" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="BodyVar_Loop" ColumnName="BodyVar_Loop" />
+          <ScalarProperty Name="BodyVarSet_Loop" ColumnName="BodyVarSet_Loop" />
+          <ScalarProperty Name="Body2" ColumnName="Body2" />
+          <ScalarProperty Name="Body_Loop" ColumnName="Body_Loop" />
+          <ScalarProperty Name="From_Where" ColumnName="From_Where" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Desfecho">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Desfecho">
+        <MappingFragment StoreEntitySet="tbl_Desfecho">
+          <ScalarProperty Name="CodId_Desfecho" ColumnName="CodId_Desfecho" />
+          <ScalarProperty Name="CodId_Prod_Grupo_Fk" ColumnName="CodId_Prod_Grupo_Fk" />
+          <ScalarProperty Name="CodId_TipoRet_Fk" ColumnName="CodId_TipoRet_Fk" />
+          <ScalarProperty Name="CodId_CMotivo_Fk" ColumnName="CodId_CMotivo_Fk" />
+          <ScalarProperty Name="CodId_CLocal_Fk" ColumnName="CodId_CLocal_Fk" />
+          <ScalarProperty Name="Cod_Cancelamento" ColumnName="Cod_Cancelamento" />
+          <ScalarProperty Name="CodId_CData_Fk" ColumnName="CodId_CData_Fk" />
+          <ScalarProperty Name="CodId_CTipo_Fk" ColumnName="CodId_CTipo_Fk" />
+          <ScalarProperty Name="Inativo" ColumnName="Inativo" />
+          <ScalarProperty Name="Retido" ColumnName="Retido" />
+          <ScalarProperty Name="Alcada" ColumnName="Alcada" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Eps">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Eps">
+        <MappingFragment StoreEntitySet="tbl_Eps">
+          <ScalarProperty Name="CodId_Eps_Pk" ColumnName="CodId_Eps_Pk" />
+          <ScalarProperty Name="Eps" ColumnName="Eps" />
+          <ScalarProperty Name="Inativo" ColumnName="Inativo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Plano">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Plano">
+        <MappingFragment StoreEntitySet="tbl_Plano">
+          <ScalarProperty Name="CodId_Plano" ColumnName="CodId_Plano" />
+          <ScalarProperty Name="CodProduto" ColumnName="CodProduto" />
+          <ScalarProperty Name="Segmento" ColumnName="Segmento" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="Tipo_Res" ColumnName="Tipo_Res" />
+          <ScalarProperty Name="ImpSeg" ColumnName="ImpSeg" />
+          <ScalarProperty Name="Premio" ColumnName="Premio" />
+          <ScalarProperty Name="Inativo" ColumnName="Inativo" />
+          <ScalarProperty Name="OfertaDif" ColumnName="OfertaDif" />
+          <ScalarProperty Name="Venda" ColumnName="Venda" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Procedente">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Procedente">
+        <MappingFragment StoreEntitySet="tbl_Procedente">
+          <ScalarProperty Name="CodId_Procedente" ColumnName="CodId_Procedente" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Produto">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Produto">
+        <MappingFragment StoreEntitySet="tbl_Produto">
+          <ScalarProperty Name="CodProduto" ColumnName="CodProduto" />
+          <ScalarProperty Name="CodProduto_Rector" ColumnName="CodProduto_Rector" />
+          <ScalarProperty Name="Cod_GCA" ColumnName="Cod_GCA" />
+          <ScalarProperty Name="CodId_Grupo_Fk" ColumnName="CodId_Grupo_Fk" />
+          <ScalarProperty Name="Apolice" ColumnName="Apolice" />
+          <ScalarProperty Name="Ramo" ColumnName="Ramo" />
+          <ScalarProperty Name="NomeProduto" ColumnName="NomeProduto" />
+          <ScalarProperty Name="Segmento" ColumnName="Segmento" />
+          <ScalarProperty Name="TipoRetencao_Fk" ColumnName="TipoRetencao_Fk" />
+          <ScalarProperty Name="Inativo" ColumnName="Inativo" />
+          <ScalarProperty Name="Limite_Idade" ColumnName="Limite_Idade" />
+          <ScalarProperty Name="Classe" ColumnName="Classe" />
+          <ScalarProperty Name="Ch_Esp" ColumnName="Ch_Esp" />
+          <ScalarProperty Name="Cia" ColumnName="Cia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Produto_Categoria">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Produto_Categoria">
+        <MappingFragment StoreEntitySet="tbl_Produto_Categoria">
+          <ScalarProperty Name="CodId_Categoria" ColumnName="CodId_Categoria" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="Inativo" ColumnName="Inativo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Produto_Classe">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Produto_Classe">
+        <MappingFragment StoreEntitySet="tbl_Produto_Classe">
+          <ScalarProperty Name="CodId_ProdClass_Pk" ColumnName="CodId_ProdClass_Pk" />
+          <ScalarProperty Name="Classe" ColumnName="Classe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Produto_Grupo">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Produto_Grupo">
+        <MappingFragment StoreEntitySet="tbl_Produto_Grupo">
+          <ScalarProperty Name="CodId_Prod_Grupo_Pk" ColumnName="CodId_Prod_Grupo_Pk" />
+          <ScalarProperty Name="Ramo" ColumnName="Ramo" />
+          <ScalarProperty Name="Produto_Grupo" ColumnName="Produto_Grupo" />
+          <ScalarProperty Name="CodId_CLocal_Fk" ColumnName="CodId_CLocal_Fk" />
+          <ScalarProperty Name="Cia" ColumnName="Cia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Produto_Segmento">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Produto_Segmento">
+        <MappingFragment StoreEntitySet="tbl_Produto_Segmento">
+          <ScalarProperty Name="CodId_Segmento" ColumnName="CodId_Segmento" />
+          <ScalarProperty Name="Segmento" ColumnName="Segmento" />
+          <ScalarProperty Name="Inativo" ColumnName="Inativo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PzCurto_Percentual_Calc">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_PzCurto_Percentual_Calc">
+        <MappingFragment StoreEntitySet="tbl_PzCurto_Percentual_Calc">
+          <ScalarProperty Name="Id_Percentual_Calc" ColumnName="Id_Percentual_Calc" />
+          <ScalarProperty Name="Percent_Prazo_Segurado" ColumnName="Percent_Prazo_Segurado" />
+          <ScalarProperty Name="Percent_Premio_Retido" ColumnName="Percent_Premio_Retido" />
+          <ScalarProperty Name="Percent_Premio_Devolucao" ColumnName="Percent_Premio_Devolucao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Retencao_Meta">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Retencao_Meta">
+        <MappingFragment StoreEntitySet="tbl_Retencao_Meta">
+          <ScalarProperty Name="Mesref" ColumnName="Mesref" />
+          <ScalarProperty Name="Meta_Open" ColumnName="Meta_Open" />
+          <ScalarProperty Name="Meta_Related" ColumnName="Meta_Related" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Retencao_Meta_PJ">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Retencao_Meta_PJ">
+        <MappingFragment StoreEntitySet="tbl_Retencao_Meta_PJ">
+          <ScalarProperty Name="Mesref" ColumnName="Mesref" />
+          <ScalarProperty Name="Meta_Open" ColumnName="Meta_Open" />
+          <ScalarProperty Name="Meta_Related" ColumnName="Meta_Related" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Tipo_Retencao">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Tipo_Retencao">
+        <MappingFragment StoreEntitySet="tbl_Tipo_Retencao">
+          <ScalarProperty Name="CodId_TipoRet_Pk" ColumnName="CodId_TipoRet_Pk" />
+          <ScalarProperty Name="TipoRetencao" ColumnName="TipoRetencao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Usuario">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Usuario">
+        <MappingFragment StoreEntitySet="tbl_Usuario">
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="NomeUsuario" ColumnName="NomeUsuario" />
+          <ScalarProperty Name="Site" ColumnName="Site" />
+          <ScalarProperty Name="PerfilUsuario" ColumnName="PerfilUsuario" />
+          <ScalarProperty Name="Supervisor" ColumnName="Supervisor" />
+          <ScalarProperty Name="Inativo" ColumnName="Inativo" />
+          <ScalarProperty Name="Perfil_Old" ColumnName="Perfil_Old" />
+          <ScalarProperty Name="CodId_Usuario" ColumnName="CodId_Usuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Usuario_Perfil">
+      <EntityTypeMapping TypeName="efFRPJ.tbl_Usuario_Perfil">
+        <MappingFragment StoreEntitySet="tbl_Usuario_Perfil">
+          <ScalarProperty Name="CodId_Perfil_Pk" ColumnName="CodId_Perfil_Pk" />
+          <ScalarProperty Name="PerfilUsuario" ColumnName="PerfilUsuario" />
+          <ScalarProperty Name="Inativo" ColumnName="Inativo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tsys_Parametro">
+      <EntityTypeMapping TypeName="efFRPJ.tsys_Parametro">
+        <MappingFragment StoreEntitySet="tsys_Parametro">
+          <ScalarProperty Name="CodParametro" ColumnName="CodParametro" />
+          <ScalarProperty Name="NomeParametro" ColumnName="NomeParametro" />
+          <ScalarProperty Name="ValorParametro" ColumnName="ValorParametro" />
+          <ScalarProperty Name="TipoDados" ColumnName="TipoDados" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="strBackup" ColumnName="strBackup" />
+          <ScalarProperty Name="Permit" ColumnName="Permit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

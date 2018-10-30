@@ -1,0 +1,404 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FRPJ
+</name>
+</assembly>
+<members>
+<member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_INCONSISTENCIA_DIARIODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_OPERACIONAL_DIARIODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_OPERACIONAL_DIARIO_PFDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_OPERACIONAL_DIARIO_PJDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_OPERACIONAL_MENSALDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_OPERACIONAL_MENSAL_PFDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_OPERACIONAL_MENSAL_PJDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_CANCELAMENTODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_CANCELAMENTO_CORRETORADataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_CANCELAMENTO_CORRETORA_MENSALDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_EMISSAODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_EMISSAO_MENSALDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_ENDOSSODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_ENDOSSO_MENSALDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_N_EMITIDOSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.frpj_SP_RPT_SLA_CancelamentoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.frpj_SP_RPT_SLA_EmissaoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPj_SP_RPT_SLA_ENDOSSODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_INCONSISTENCIA_DIARIORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_OPERACIONAL_DIARIORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_OPERACIONAL_DIARIO_PFRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_OPERACIONAL_DIARIO_PJRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_OPERACIONAL_MENSALRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_OPERACIONAL_MENSAL_PFRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_OPERACIONAL_MENSAL_PJRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_CANCELAMENTORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_CANCELAMENTO_CORRETORARow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_CANCELAMENTO_CORRETORA_MENSALRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_EMISSAORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_EMISSAO_MENSALRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_ENDOSSORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_ENDOSSO_MENSALRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_N_EMITIDOSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.frpj_SP_RPT_SLA_CancelamentoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.frpj_SP_RPT_SLA_EmissaoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPj_SP_RPT_SLA_ENDOSSORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_INCONSISTENCIA_DIARIORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_OPERACIONAL_DIARIORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_OPERACIONAL_DIARIO_PFRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_OPERACIONAL_DIARIO_PJRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_OPERACIONAL_MENSALRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_OPERACIONAL_MENSAL_PFRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_REPORT_OPERACIONAL_MENSAL_PJRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_CANCELAMENTORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_CANCELAMENTO_CORRETORARowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_CANCELAMENTO_CORRETORA_MENSALRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_EMISSAORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_EMISSAO_MENSALRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_ENDOSSORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_ENDOSSO_MENSALRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPJ_SP_RPT_N_EMITIDOSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.frpj_SP_RPT_SLA_CancelamentoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.frpj_SP_RPT_SLA_EmissaoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional.FRPj_SP_RPT_SLA_ENDOSSORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacional">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.FRPJ_SP_REPORT_INCONSISTENCIA_DIARIOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.FRPJ_SP_REPORT_OPERACIONAL_DIARIOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.FRPJ_SP_REPORT_OPERACIONAL_DIARIO_PFTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.FRPJ_SP_REPORT_OPERACIONAL_DIARIO_PJTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.FRPJ_SP_REPORT_OPERACIONAL_MENSALTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.FRPJ_SP_REPORT_OPERACIONAL_MENSAL_PFTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.FRPJ_SP_REPORT_OPERACIONAL_MENSAL_PJTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.FRPJ_SP_RPT_CANCELAMENTOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.FRPJ_SP_RPT_CANCELAMENTO_CORRETORATableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.FRPJ_SP_RPT_CANCELAMENTO_CORRETORA_MENSALTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.FRPJ_SP_RPT_EMISSAOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.FRPJ_SP_RPT_EMISSAO_MENSALTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.FRPJ_SP_RPT_ENDOSSOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.FRPJ_SP_RPT_ENDOSSO_MENSALTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.FRPJ_SP_RPT_N_EMITIDOSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.frpj_SP_RPT_SLA_CancelamentoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.frpj_SP_RPT_SLA_EmissaoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.FRPj_SP_RPT_SLA_ENDOSSOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:FRPJ.DS_rptOperacionalTableAdapters.TableAdapterManager.UpdateUpdatedRows(FRPJ.DS_rptOperacional,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:FRPJ.DS_rptOperacionalTableAdapters.TableAdapterManager.UpdateInsertedRows(FRPJ.DS_rptOperacional,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:FRPJ.DS_rptOperacionalTableAdapters.TableAdapterManager.UpdateDeletedRows(FRPJ.DS_rptOperacional,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:FRPJ.DS_rptOperacionalTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:FRPJ.DS_rptOperacionalTableAdapters.TableAdapterManager.UpdateAll(FRPJ.DS_rptOperacional)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:FRPJ.DS_rptOperacionalTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:FRPJ.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:FRPJ.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:FRPJ.My.Resources.Resources.Calendar">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:FRPJ.My.Resources.Resources.Calendar1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:FRPJ.My.Resources.Resources.CIFRAO">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:FRPJ.My.Resources.Resources.coins">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:FRPJ.My.Resources.Resources.ieframe_18211">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:FRPJ.My.Resources.Resources.ieframe_589">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:FRPJ.My.Resources.Resources.ieframe_635">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:FRPJ.My.Resources.Resources.Logo_Santander_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:FRPJ.My.Resources.Resources.Logo_Santander1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:FRPJ.My.Resources.Resources.mmcndmgr_30565">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:FRPJ.My.Resources.Resources.pifmgr_16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:FRPJ.My.Resources.Resources.seguro_Retencao_PJ">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:FRPJ.My.Resources.Resources.StatusFlagGreen">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:FRPJ.My.Resources.Resources.wmploc_29530">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="T:FRPJ.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
